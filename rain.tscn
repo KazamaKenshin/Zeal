@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctral8ccse3nk"]
+
+[ext_resource type="Shader" path="res://cars/R32 GTR/rain.gdshader" id="1_lv8af"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0yhis"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4trbe"]
+render_priority = -1
+shader = ExtResource("1_lv8af")
+shader_parameter/dripping_speed = 2.0
+shader_parameter/dripping_wave_size = Vector2(20, 4)
+shader_parameter/dripping_wave_freq = Vector2(47, 15)
+shader_parameter/dripping_wave_power = Vector2(0.045, 1)
+shader_parameter/static_interval = 10.0
+shader_parameter/static_shift = Vector2(4.8, 0.8)
+shader_parameter/static_wave_size = Vector2(81.4321, 85.4545)
+shader_parameter/static_wave_freq = Vector2(38, 92)
+shader_parameter/static_wave_power = Vector2(1.8, 2.8)
+
+[node name="Node3D" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("PlaneMesh_0yhis")
+surface_material_override/0 = SubResource("ShaderMaterial_4trbe")

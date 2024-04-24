@@ -1,0 +1,260 @@
+[gd_scene load_steps=15 format=3 uid="uid://b8r4nmtetco21"]
+
+[ext_resource type="Resource" uid="uid://cyn5acj2m75oi" path="res://game_settings/settings/display/audio.tres" id="3_h21ad"]
+[ext_resource type="Resource" uid="uid://di8jb230k8yww" path="res://game_settings/settings/display/fullscreen.tres" id="3_sfn8n"]
+[ext_resource type="Theme" uid="uid://bobbvhicbn4gy" path="res://ui/menu.tres" id="4_s0k5s"]
+[ext_resource type="PackedScene" uid="uid://cha8xesfthpfk" path="res://game_settings/components/switch/switch.tscn" id="5_rvi3b"]
+[ext_resource type="PackedScene" uid="uid://dm1av7skxvp1j" path="res://game_settings/components/input_btn/input_btn.tscn" id="6_ltom4"]
+[ext_resource type="Script" path="res://game_settings/components/input_btn/input_btn.gd" id="7_sc1y3"]
+[ext_resource type="Resource" uid="uid://or3vheoj0k5e" path="res://game_settings/settings/display/throttle.tres" id="8_seirb"]
+[ext_resource type="PackedScene" uid="uid://ds06mwhee8ygm" path="res://game_settings/components/slider/slider.tscn" id="8_ujco2"]
+[ext_resource type="Script" path="res://game_settings/templates/input.gd" id="9_5to2d"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_uw3dw"]
+color = Color(1, 1, 1, 1)
+thickness = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xq7nu"]
+bg_color = Color(1, 1, 1, 0)
+
+[sub_resource type="InputEventKey" id="InputEventKey_allij"]
+device = -1
+physical_keycode = 4194319
+
+[sub_resource type="InputEventKey" id="InputEventKey_jotpy"]
+device = -1
+physical_keycode = 4194319
+
+[sub_resource type="Resource" id="Resource_aimsx"]
+script = ExtResource("9_5to2d")
+action = "left"
+event_index = 0
+type = 1
+default_as_event = SubResource("InputEventKey_jotpy")
+current_as_event = SubResource("InputEventKey_allij")
+current = [1, 4194319]
+default = [1, 4194319]
+name = ""
+category = ""
+value_type = 28
+value_hint = 0
+value_hint_string = ""
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 2
+offset_left = 40.0
+offset_top = 107.0
+offset_right = 1112.0
+offset_bottom = 111.0
+theme_override_styles/separator = SubResource("StyleBoxLine_uw3dw")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xq7nu")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 30
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Fullscreen" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Switch" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Fullscreen" instance=ExtResource("5_rvi3b")]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_top = 5
+setting = ExtResource("3_sfn8n")
+apply_on_change = true
+grab_focus_on_mouse_over = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Fullscreen/Switch"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Fullscreen/Switch"]
+layout_mode = 2
+theme = ExtResource("4_s0k5s")
+theme_override_font_sizes/font_size = 35
+text = "FULLSCREEN"
+vertical_alignment = 1
+uppercase = true
+
+[node name="Audio" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="audio" type="Label" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Audio"]
+layout_mode = 2
+theme = ExtResource("4_s0k5s")
+theme_override_font_sizes/font_size = 35
+text = "AUDIO"
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Audio/audio"]
+layout_mode = 0
+offset_left = 506.0
+offset_right = 1100.0
+offset_bottom = 44.0
+theme_override_constants/margin_bottom = 12
+
+[node name="Slider" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Audio/audio/MarginContainer" instance=ExtResource("8_ujco2")]
+layout_mode = 2
+size_flags_horizontal = 8
+setting = ExtResource("3_h21ad")
+apply_on_change = true
+grab_focus_on_mouse_over = true
+
+[node name="Slider" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Audio/audio/MarginContainer/Slider" index="0"]
+custom_minimum_size = Vector2(500, 0)
+size_flags_vertical = 1
+
+[node name="Input" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="controls" type="Label" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Input"]
+layout_mode = 2
+theme = ExtResource("4_s0k5s")
+theme_override_font_sizes/font_size = 35
+text = "CONTROLS"
+
+[node name="Throttle" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="throttle" type="Label" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Throttle"]
+layout_mode = 2
+theme = ExtResource("4_s0k5s")
+theme_override_font_sizes/font_size = 35
+text = "THROTTLE
+"
+
+[node name="InputBtn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Throttle/throttle" instance=ExtResource("6_ltom4")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 900.0
+offset_right = 900.0
+script = ExtResource("7_sc1y3")
+setting = ExtResource("8_seirb")
+apply_on_change = true
+grab_focus_on_mouse_over = true
+
+[node name="Btn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Throttle/throttle/InputBtn" index="0"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text_overrun_behavior = 3
+clip_text = true
+icon_alignment = 1
+
+[node name="Brake" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="brake" type="Label" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Brake"]
+layout_mode = 2
+theme = ExtResource("4_s0k5s")
+theme_override_font_sizes/font_size = 35
+text = "BRAKE"
+
+[node name="InputBtn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Brake/brake" instance=ExtResource("6_ltom4")]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 900.0
+offset_right = 955.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7_sc1y3")
+setting = SubResource("Resource_aimsx")
+apply_on_change = true
+grab_focus_on_mouse_over = true
+
+[node name="Btn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Brake/brake/InputBtn" index="0"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text_overrun_behavior = 3
+clip_text = true
+icon_alignment = 1
+
+[node name="Left" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="left" type="Label" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Left"]
+layout_mode = 2
+theme = ExtResource("4_s0k5s")
+theme_override_font_sizes/font_size = 35
+text = "LEFT"
+
+[node name="InputBtn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Left/left" instance=ExtResource("6_ltom4")]
+layout_mode = 0
+anchors_preset = 0
+offset_left = 900.0
+offset_right = 993.0
+setting = SubResource("Resource_aimsx")
+apply_on_change = true
+grab_focus_on_mouse_over = true
+
+[node name="Right" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="right" type="Label" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Right"]
+layout_mode = 2
+theme = ExtResource("4_s0k5s")
+theme_override_font_sizes/font_size = 35
+text = "RIGHT
+"
+
+[node name="InputBtn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Right/right" instance=ExtResource("6_ltom4")]
+layout_mode = 0
+anchors_preset = 0
+offset_left = 900.0
+offset_right = 968.0
+setting = SubResource("Resource_aimsx")
+apply_on_change = true
+grab_focus_on_mouse_over = true
+
+[node name="ColorRect" type="ColorRect" parent="Panel"]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[editable path="Panel/MarginContainer/ScrollContainer/VBoxContainer/Fullscreen/Switch"]
+[editable path="Panel/MarginContainer/ScrollContainer/VBoxContainer/Audio/audio/MarginContainer/Slider"]
+[editable path="Panel/MarginContainer/ScrollContainer/VBoxContainer/Throttle/throttle/InputBtn"]
+[editable path="Panel/MarginContainer/ScrollContainer/VBoxContainer/Brake/brake/InputBtn"]
+[editable path="Panel/MarginContainer/ScrollContainer/VBoxContainer/Left/left/InputBtn"]
+[editable path="Panel/MarginContainer/ScrollContainer/VBoxContainer/Right/right/InputBtn"]

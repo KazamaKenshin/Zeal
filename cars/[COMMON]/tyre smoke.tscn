@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://bt0b4qeo5p203"]
+
+[ext_resource type="Texture2D" uid="uid://rttvybl75a3q" path="res://cars/[COMMON]/smoke.png" id="1_pb88b"]
+
+[sub_resource type="Curve" id="Curve_ud22t"]
+_data = [Vector2(0, 0.501779), 0.0, 0.0, 0, 0, Vector2(0.511429, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.530249), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_gkr1r"]
+width = 2048
+curve = SubResource("Curve_ud22t")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xee1q"]
+emission_shape = 1
+emission_sphere_radius = 0.3
+angle_min = -720.0
+angle_max = 720.0
+direction = Vector3(0, 1, 0)
+spread = 0.0
+initial_velocity_min = 0.5
+initial_velocity_max = 1.5
+angular_velocity_min = -50.0
+angular_velocity_max = 50.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 1.0
+linear_accel_max = 2.0
+radial_accel_min = 1.0
+radial_accel_max = 2.0
+scale_min = 0.1
+scale_curve = SubResource("CurveTexture_gkr1r")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gnkcy"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+albedo_color = Color(1, 1, 1, 0.0313726)
+albedo_texture = ExtResource("1_pb88b")
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+grow = true
+grow_amount = 10.0
+
+[sub_resource type="QuadMesh" id="QuadMesh_d6gan"]
+material = SubResource("StandardMaterial3D_gnkcy")
+center_offset = Vector3(0, 0, -10)
+
+[node name="GPUParticles3D" type="GPUParticles3D"]
+amount = 1000
+randomness = 1.0
+fixed_fps = 60
+visibility_aabb = AABB(-2.51732, -1.28262, -2.4869, 4.89116, 5.768, 4.71626)
+trail_enabled = true
+process_material = SubResource("ParticleProcessMaterial_xee1q")
+draw_pass_1 = SubResource("QuadMesh_d6gan")

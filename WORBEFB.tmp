@@ -1,0 +1,119 @@
+[gd_scene load_steps=13 format=3 uid="uid://by2sy68eiwns6"]
+
+[ext_resource type="Material" uid="uid://m80rmki4fbox" path="res://assets/sky/night_sky.tres" id="1_7t0v8"]
+[ext_resource type="Shader" path="res://WORLD.gdshader" id="1_yk16r"]
+[ext_resource type="PackedScene" uid="uid://i4p4c70soetw" path="res://assets/GTR R32/PLAYER.tscn" id="2_a68p1"]
+[ext_resource type="Script" path="res://addons/road-generator/nodes/road_manager.gd" id="4_ungvi"]
+[ext_resource type="Script" path="res://addons/road-generator/nodes/road_container.gd" id="5_d0iar"]
+[ext_resource type="Material" uid="uid://dd45j1t4k546o" path="res://addons/road-generator/resources/road_texture.material" id="6_gk88e"]
+[ext_resource type="Script" path="res://addons/road-generator/nodes/road_point.gd" id="7_axlix"]
+
+[sub_resource type="Sky" id="Sky_uap4y"]
+sky_material = ExtResource("1_7t0v8")
+
+[sub_resource type="Environment" id="Environment_6xln7"]
+background_mode = 2
+sky = SubResource("Sky_uap4y")
+ambient_light_energy = 0.5
+tonemap_mode = 2
+glow_enabled = true
+glow_intensity = 0.2
+glow_strength = 0.9
+glow_bloom = 0.1
+glow_blend_mode = 1
+glow_hdr_threshold = 1.9
+glow_hdr_scale = 4.0
+glow_map_strength = 0.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_f3t6e"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tloqs"]
+shader = ExtResource("1_yk16r")
+shader_parameter/brightness = 1.0
+shader_parameter/anchor = -0.5
+shader_parameter/speed_scale = 1.0
+shader_parameter/fov = 0.2
+shader_parameter/line_count = 1.0
+shader_parameter/background_color = Color(0, 0.101961, 0.2, 1)
+shader_parameter/grid_color = Color(1, 0.5, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hq0r1"]
+resource_local_to_scene = true
+
+[node name="World" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6xln7")
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.984196, 0.113116, -0.136249, 0, 0.7694, 0.638767, 0.177085, -0.628672, 0.75724, 0, 0, 0)
+light_energy = 0.3
+light_indirect_energy = 0.01
+shadow_enabled = true
+
+[node name="PLAYER" parent="." instance=ExtResource("2_a68p1")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("WorldBoundaryShape3D_f3t6e")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(9999, 0, 0, 0, 1, 0, 0, 0, 9999, 0, 0.15, 0)
+visible = false
+material_override = SubResource("ShaderMaterial_tloqs")
+mesh = SubResource("PlaneMesh_hq0r1")
+
+[node name="RoadManager" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.74033, 0, 0)
+script = ExtResource("4_ungvi")
+
+[node name="RoadContainer" type="Node3D" parent="RoadManager"]
+script = ExtResource("5_d0iar")
+material_resource = ExtResource("6_gk88e")
+use_lowpoly_preview = true
+edge_containers = Array[NodePath]([NodePath(""), NodePath("")])
+edge_rp_targets = Array[NodePath]([NodePath(""), NodePath("")])
+edge_rp_target_dirs = Array[int]([-1, -1])
+edge_rp_locals = Array[NodePath]([NodePath("RP_001"), NodePath("RP_003")])
+edge_rp_local_dirs = Array[int]([1, 0])
+
+[node name="RP_001" type="Node3D" parent="RoadManager/RoadContainer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.06716, 0, 0)
+script = ExtResource("7_axlix")
+traffic_dir = [2, 2, 1, 1]
+lanes = [2, 4, 4, 2]
+lane_width = 8.0
+shoulder_width_l = 5.0
+shoulder_width_r = 5.0
+gutter_profile = Vector2(2, 0)
+next_pt_init = NodePath("../RP_002")
+
+[node name="RP_002" type="Node3D" parent="RoadManager/RoadContainer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.06716, 0, 32)
+script = ExtResource("7_axlix")
+traffic_dir = [2, 2, 1, 1]
+lanes = [2, 4, 4, 2]
+lane_width = 8.0
+shoulder_width_l = 5.0
+shoulder_width_r = 5.0
+gutter_profile = Vector2(2, 0)
+prior_pt_init = NodePath("../RP_001")
+next_pt_init = NodePath("../RP_003")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_003" type="Node3D" parent="RoadManager/RoadContainer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.06716, 0, 96)
+script = ExtResource("7_axlix")
+traffic_dir = [2, 2, 1, 1]
+lanes = [2, 4, 4, 2]
+lane_width = 8.0
+shoulder_width_l = 5.0
+shoulder_width_r = 5.0
+gutter_profile = Vector2(2, 0)
+prior_pt_init = NodePath("../RP_002")
+prior_mag = 32.0
+next_mag = 32.0

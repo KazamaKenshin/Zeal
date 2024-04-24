@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ggsInputSetting" load_steps=4 format=3 uid="uid://or3vheoj0k5e"]
+
+[ext_resource type="Script" path="res://game_settings/templates/input.gd" id="1_vltxo"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_rdd8p"]
+device = -1
+physical_keycode = 4194320
+
+[sub_resource type="InputEventKey" id="InputEventKey_q3p54"]
+device = -1
+physical_keycode = 4194320
+
+[resource]
+resource_name = "throttle"
+script = ExtResource("1_vltxo")
+action = "throttle"
+event_index = 0
+type = 1
+default_as_event = SubResource("InputEventKey_q3p54")
+current_as_event = SubResource("InputEventKey_rdd8p")
+current = [1, 4194320]
+default = [1, 4194320]
+name = "throttle"
+category = "display"
+value_type = 28
+value_hint = 0
+value_hint_string = ""

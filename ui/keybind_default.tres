@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="keybind" load_steps=9 format=3 uid="uid://bvomcdxbgffih"]
+
+[ext_resource type="Script" path="res://ui/keybind.gd" id="1_uuf3d"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_vx8mu"]
+device = -1
+physical_keycode = 83
+unicode = 115
+
+[sub_resource type="InputEventKey" id="InputEventKey_5btyn"]
+device = -1
+physical_keycode = 32
+unicode = 32
+
+[sub_resource type="InputEventKey" id="InputEventKey_xyyd7"]
+device = -1
+physical_keycode = 4194319
+
+[sub_resource type="InputEventKey" id="InputEventKey_lcevu"]
+device = -1
+physical_keycode = 4194321
+
+[sub_resource type="InputEventKey" id="InputEventKey_b6818"]
+device = -1
+physical_keycode = 4194322
+
+[sub_resource type="InputEventKey" id="InputEventKey_c5i31"]
+device = -1
+physical_keycode = 4194320
+
+[sub_resource type="InputEventKey" id="InputEventKey_k7kup"]
+device = -1
+physical_keycode = 87
+unicode = 119
+
+[resource]
+script = ExtResource("1_uuf3d")
+DEFAULT_LEFT_KEY = SubResource("InputEventKey_xyyd7")
+DEFAULT_RIGHT_KEY = SubResource("InputEventKey_lcevu")
+DEFAULT_THROTTLE_KEY = SubResource("InputEventKey_k7kup")
+DEFAULT_BRAKE_KEY = SubResource("InputEventKey_vx8mu")
+DEFAULT_SHIFT_UP_KEY = SubResource("InputEventKey_c5i31")
+DEFAULT_SHIFT_DOWN_KEY = SubResource("InputEventKey_b6818")
+DEFAULT_HANDBRAKE_KEY = SubResource("InputEventKey_5btyn")

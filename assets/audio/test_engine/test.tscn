@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/audio/car/test_engine/i61.tscn" type="PackedScene" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.877583, -0.229849, 0.420736, 0, 0.877583, 0.479426, -0.479426, -0.420736, 0.770151, 1.68294, 1.9177, 3.0806 )
+
+[node name="engine_sound" parent="." instance=ExtResource( 1 )]
