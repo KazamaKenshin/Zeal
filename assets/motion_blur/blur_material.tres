@@ -9,4 +9,4 @@ shader_parameter/linear_velocity = Vector3(0, 0, 0)
 shader_parameter/angular_velocity = Vector3(0, 0, 0)
 shader_parameter/iteration_count = 3
 shader_parameter/intensity = 0.0
-shader_parameter/startRadius = 0.5
+shader_parameter/startRadius = 0.1

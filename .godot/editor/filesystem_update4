@@ -1,4 +1,4 @@
-res://assets/lamp/lamp1.tscn
+res://cars/R32 GTR/PLAYER.tscn
 res://addons/ggs/editor/_theme/ggs_theme.tres
 res://addons/road-generator/resources/road_texture.material
 res://game_settings/settings/display/fullscreen.tres
@@ -6,16 +6,18 @@ res://game_settings/settings/display/throttle.tres
 res://assets/motion_blur/motion_blur.gd
 res://assets/motion_blur/moblur_shader.gdshader
 res://assets/motion_blur/blur_material.tres
-res://cars/R32 GTR/rain.gdshader
-res://sky/night_sky.tres
-res://WORLD.gdshader
-res://ui/alpha.gdshader
+res://cars/R32 GTR temp (wrong dims)/rain.gdshader
+res://cars/R32 GTR temp (wrong dims)/paint/Black Pearl Metallic.tres
 res://ui/menu.tres
-res://WORLD.tscn
-res://cars/R32 GTR/PLAYER.tscn
-res://ui/TITLE.tscn
-res://cars/[COMMON]/Cam2.gd
-res://cars/[COMMON]/tyre smoke.tscn
-res://cars/R32 GTR/R32 GTR.gd
-res://WORLD2.tscn
-res://sky/day_sky.tres
+res://sky/stylized_sky.gdshader
+res://sky/night_sky.tres
+res://addons/road-generator/resources/road_texture1.material
+res://grid.gdshader
+res://VHS.gdshader
+res://PulseGlow.gdshader
+res://CRT.gdshader
+res://ter.gdshader
+res://test.gdshader
+res://sobel w gaussian.gdshader
+res://glass.gdshader
+res://tiles.gdshader

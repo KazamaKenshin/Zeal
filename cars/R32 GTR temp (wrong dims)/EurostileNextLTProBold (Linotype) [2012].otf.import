@@ -1,0 +1,33 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://co7ssco1c5ybd"
+path="res://.godot/imported/EurostileNextLTProBold (Linotype) [2012].otf-827ce9291c321d947d00793a1db6933c.fontdata"
+
+[deps]
+
+source_file="res://cars/R32 GTR temp (wrong dims)/EurostileNextLTProBold (Linotype) [2012].otf"
+dest_files=["res://.godot/imported/EurostileNextLTProBold (Linotype) [2012].otf-827ce9291c321d947d00793a1db6933c.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

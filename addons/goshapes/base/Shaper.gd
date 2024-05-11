@@ -9,6 +9,8 @@ extends Resource
 		enabled = value
 		emit_changed()
 
+func _init():
+	pass
 
 func get_builder() -> ShapeBuilder:
 	return null

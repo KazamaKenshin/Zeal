@@ -16,6 +16,7 @@ loop = true
 
 [node name="other_sounds" type="Node3D"]
 script = ExtResource("5")
+volume = 0.15
 
 [node name="scwhine" type="AudioStreamPlayer3D" parent="."]
 stream = SubResource("AudioStreamOggVorbis_kd8pv")

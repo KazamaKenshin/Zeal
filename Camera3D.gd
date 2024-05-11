@@ -46,14 +46,14 @@ func _input(event):
 	# Receives key input
 	if event is InputEventKey:
 		match event.keycode:
-			KEY_W:
-				_w = event.pressed
-			KEY_S:
-				_s = event.pressed
-			KEY_A:
-				_a = event.pressed
-			KEY_D:
+			KEY_RIGHT:
 				_d = event.pressed
+			KEY_LEFT:
+				_a = event.pressed
+			KEY_DOWN:
+				_s = event.pressed
+			KEY_UP:
+				_w = event.pressed
 			KEY_Q:
 				_q = event.pressed
 			KEY_E:
@@ -72,7 +72,7 @@ func _process(delta):
 func _update_movement(delta):
 	# Computes desired direction from key states
 	_direction = Vector3(
-		(_d as float) - (_a as float), 
+		(_d as float) - (_a as float),
 		(_e as float) - (_q as float),
 		(_s as float) - (_w as float)
 	)

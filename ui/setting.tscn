@@ -1,11 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://b8r4nmtetco21"]
+[gd_scene load_steps=14 format=3 uid="uid://b8r4nmtetco21"]
 
 [ext_resource type="Resource" uid="uid://cyn5acj2m75oi" path="res://game_settings/settings/display/audio.tres" id="3_h21ad"]
 [ext_resource type="Resource" uid="uid://di8jb230k8yww" path="res://game_settings/settings/display/fullscreen.tres" id="3_sfn8n"]
 [ext_resource type="Theme" uid="uid://bobbvhicbn4gy" path="res://ui/menu.tres" id="4_s0k5s"]
 [ext_resource type="PackedScene" uid="uid://cha8xesfthpfk" path="res://game_settings/components/switch/switch.tscn" id="5_rvi3b"]
 [ext_resource type="PackedScene" uid="uid://dm1av7skxvp1j" path="res://game_settings/components/input_btn/input_btn.tscn" id="6_ltom4"]
-[ext_resource type="Script" path="res://game_settings/components/input_btn/input_btn.gd" id="7_sc1y3"]
 [ext_resource type="Resource" uid="uid://or3vheoj0k5e" path="res://game_settings/settings/display/throttle.tres" id="8_seirb"]
 [ext_resource type="PackedScene" uid="uid://ds06mwhee8ygm" path="res://game_settings/components/slider/slider.tscn" id="8_ujco2"]
 [ext_resource type="Script" path="res://game_settings/templates/input.gd" id="9_5to2d"]
@@ -17,11 +16,11 @@ thickness = 3
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xq7nu"]
 bg_color = Color(1, 1, 1, 0)
 
-[sub_resource type="InputEventKey" id="InputEventKey_allij"]
+[sub_resource type="InputEventKey" id="InputEventKey_ddiid"]
 device = -1
 physical_keycode = 4194319
 
-[sub_resource type="InputEventKey" id="InputEventKey_jotpy"]
+[sub_resource type="InputEventKey" id="InputEventKey_6jcju"]
 device = -1
 physical_keycode = 4194319
 
@@ -30,8 +29,8 @@ script = ExtResource("9_5to2d")
 action = "left"
 event_index = 0
 type = 1
-default_as_event = SubResource("InputEventKey_jotpy")
-current_as_event = SubResource("InputEventKey_allij")
+default_as_event = SubResource("InputEventKey_6jcju")
+current_as_event = SubResource("InputEventKey_ddiid")
 current = [1, 4194319]
 default = [1, 4194319]
 name = ""
@@ -156,22 +155,11 @@ text = "THROTTLE
 
 [node name="InputBtn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Throttle/throttle" instance=ExtResource("6_ltom4")]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
 offset_left = 900.0
 offset_right = 900.0
-script = ExtResource("7_sc1y3")
 setting = ExtResource("8_seirb")
 apply_on_change = true
 grab_focus_on_mouse_over = true
-
-[node name="Btn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Throttle/throttle/InputBtn" index="0"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text_overrun_behavior = 3
-clip_text = true
-icon_alignment = 1
 
 [node name="Brake" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
@@ -185,23 +173,16 @@ text = "BRAKE"
 
 [node name="InputBtn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Brake/brake" instance=ExtResource("6_ltom4")]
 layout_mode = 0
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
 offset_left = 900.0
 offset_right = 955.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("7_sc1y3")
+grow_horizontal = 1
+grow_vertical = 1
 setting = SubResource("Resource_aimsx")
 apply_on_change = true
 grab_focus_on_mouse_over = true
-
-[node name="Btn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Brake/brake/InputBtn" index="0"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text_overrun_behavior = 3
-clip_text = true
-icon_alignment = 1
 
 [node name="Left" type="HBoxContainer" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
@@ -216,8 +197,12 @@ text = "LEFT"
 [node name="InputBtn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Left/left" instance=ExtResource("6_ltom4")]
 layout_mode = 0
 anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
 offset_left = 900.0
 offset_right = 993.0
+grow_horizontal = 1
+grow_vertical = 1
 setting = SubResource("Resource_aimsx")
 apply_on_change = true
 grab_focus_on_mouse_over = true
@@ -236,8 +221,12 @@ text = "RIGHT
 [node name="InputBtn" parent="Panel/MarginContainer/ScrollContainer/VBoxContainer/Right/right" instance=ExtResource("6_ltom4")]
 layout_mode = 0
 anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
 offset_left = 900.0
 offset_right = 968.0
+grow_horizontal = 1
+grow_vertical = 1
 setting = SubResource("Resource_aimsx")
 apply_on_change = true
 grab_focus_on_mouse_over = true

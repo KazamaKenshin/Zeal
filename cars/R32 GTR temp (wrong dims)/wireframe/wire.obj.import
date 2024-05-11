@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4q6cisa3gx3v"
+path="res://.godot/imported/wire.obj-447a9076dc7c5e9309b4914a7ba979ad.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wire.obj-447a9076dc7c5e9309b4914a7ba979ad.mesh"]
+
+source_file="res://cars/R32 GTR temp (wrong dims)/wireframe/wire.obj"
+dest_files=["res://.godot/imported/wire.obj-447a9076dc7c5e9309b4914a7ba979ad.mesh", "res://.godot/imported/wire.obj-447a9076dc7c5e9309b4914a7ba979ad.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

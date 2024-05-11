@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://ctral8ccse3nk"]
 
-[ext_resource type="Shader" path="res://cars/R32 GTR/rain.gdshader" id="1_lv8af"]
+[ext_resource type="Shader" path="res://cars/R32 GTR temp (wrong dims)/rain.gdshader" id="1_lv8af"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_0yhis"]
 

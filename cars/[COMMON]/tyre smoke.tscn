@@ -51,6 +51,5 @@ amount = 1000
 randomness = 1.0
 fixed_fps = 60
 visibility_aabb = AABB(-2.51732, -1.28262, -2.4869, 4.89116, 5.768, 4.71626)
-trail_enabled = true
 process_material = SubResource("ParticleProcessMaterial_xee1q")
 draw_pass_1 = SubResource("QuadMesh_d6gan")
