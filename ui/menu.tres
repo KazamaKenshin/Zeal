@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=7 format=3 uid="uid://bobbvhicbn4gy"]
 
-[ext_resource type="FontFile" uid="uid://co7ssco1c5ybd" path="res://cars/R32 GTR temp (wrong dims)/EurostileNextLTProBold (Linotype) [2012].otf" id="1_nohct"]
+[ext_resource type="FontFile" uid="uid://co7ssco1c5ybd" path="res://cars/R32 GTR/EurostileNextLTProBold (Linotype) [2012].otf" id="1_nohct"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_40hq3"]
 content_margin_left = 4.0

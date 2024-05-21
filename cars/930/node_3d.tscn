@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://cniftk844fhbk"]
+
+[ext_resource type="PackedScene" uid="uid://bgf2jcd4ojg71" path="res://cars/930/Porsche 930.tscn" id="1_nrjma"]
+[ext_resource type="Material" uid="uid://dh6ykun8bv60u" path="res://sky/day_sky.tres" id="2_27sbc"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_258ch"]
+size = Vector2(999, 999)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2w1jb"]
+points = PackedVector3Array(-499.5, 0, -499.5, -499.5, 0, 499.5, 499.5, 0, -499.5, 499.5, 0, 499.5)
+
+[sub_resource type="Sky" id="Sky_gigt1"]
+sky_material = ExtResource("2_27sbc")
+
+[sub_resource type="Environment" id="Environment_q4epq"]
+background_mode = 2
+sky = SubResource("Sky_gigt1")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Porsche 930" parent="." instance=ExtResource("1_nrjma")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14078, 0.9602, -1.84729)
+mass = 1250.0
+max_rpm = 7100
+idle_rpm = 900
+gear_ratio = [2.2, 1.925, 1.302, 1.0, 0.752]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("PlaneMesh_258ch")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_2w1jb")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_q4epq")

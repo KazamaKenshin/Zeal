@@ -1,7 +1,7 @@
 [gd_scene load_steps=21 format=3 uid="uid://dlgq2ht7kw33o"]
 
 [ext_resource type="PackedScene" uid="uid://i4p4c70soetw" path="res://cars/R32 GTR temp (wrong dims)/PLAYER.tscn" id="1_4130o"]
-[ext_resource type="Script" path="res://Camera3D.gd" id="1_p3ud5"]
+[ext_resource type="Script" path="res://addons/free_look_camera.gd" id="1_p3ud5"]
 [ext_resource type="Material" uid="uid://m80rmki4fbox" path="res://sky/night_sky.tres" id="2_rnv5i"]
 [ext_resource type="Script" path="res://addons/road-generator/nodes/road_manager.gd" id="3_83mw1"]
 [ext_resource type="Script" path="res://addons/road-generator/nodes/road_container.gd" id="4_thyrv"]

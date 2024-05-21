@@ -40,16 +40,16 @@ use_particle_trails = true
 material = SubResource("StandardMaterial3D_b8v2o")
 curve = SubResource("Curve_cuooq")
 
-[sub_resource type="Sky" id="Sky_u5u82"]
+[sub_resource type="Sky" id="Sky_iqnjn"]
 sky_material = ExtResource("3_5q43f")
 
 [sub_resource type="Environment" id="Environment_6xln7"]
 background_mode = 2
-sky = SubResource("Sky_u5u82")
+sky = SubResource("Sky_iqnjn")
 ambient_light_color = Color(1, 1, 1, 1)
 ambient_light_energy = 0.1
-tonemap_mode = 2
-ssil_enabled = true
+tonemap_mode = 3
+sdfgi_enabled = true
 glow_enabled = true
 glow_intensity = 0.2
 glow_strength = 0.9
@@ -214,11 +214,12 @@ shader_parameter/in_dashed_count_y = 6.0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_hq0r1"]
 resource_local_to_scene = true
+size = Vector2(500, 500)
 subdivide_width = 32
 subdivide_depth = 32
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8b4os"]
-points = PackedVector3Array(-1, 0, -1, -1, 0, 0.999999, 1, 0, -1, 1, 0, 0.999999)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uqrfb"]
+points = PackedVector3Array(-250, 0, -250, -250, 0, 249.951, 249.951, 0, -250, 249.951, 0, 249.951)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_lan22"]
 size = Vector2(2, 400)
@@ -244,13 +245,11 @@ environment = SubResource("Environment_6xln7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.3166, 0, -11.2368)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
-transform = Transform3D(1000, 0, 0, 0, 1, 0, 0, 0, 1000, -979.703, 0.15, 973.375)
 material_overlay = SubResource("ShaderMaterial_2lq22")
 mesh = SubResource("PlaneMesh_hq0r1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1000, 0, 0, 0, 1, 0, 0, 0, 1000, -979.703, 0.15, 973.375)
-shape = SubResource("ConvexPolygonShape3D_8b4os")
+shape = SubResource("ConvexPolygonShape3D_uqrfb")
 
 [node name="RoadManager" type="Node3D" parent="."]
 script = ExtResource("4_yo7r5")

@@ -1,11 +1,11 @@
 [gd_scene load_steps=20 format=3 uid="uid://ilmmikthvrpk"]
 
-[ext_resource type="Script" path="res://Camera3D.gd" id="1_q0vun"]
+[ext_resource type="Script" path="res://addons/free_look_camera.gd" id="1_q0vun"]
 [ext_resource type="PackedScene" uid="uid://i4p4c70soetw" path="res://cars/R32 GTR temp (wrong dims)/PLAYER.tscn" id="2_iqeeb"]
 [ext_resource type="Material" uid="uid://m80rmki4fbox" path="res://sky/night_sky.tres" id="3_vityt"]
 [ext_resource type="PackedScene" uid="uid://cci4baid6g5c7" path="res://assets/highway modular/bridge.tscn" id="5_0d0wn"]
 [ext_resource type="PackedScene" uid="uid://38y6lmjqom1c" path="res://assets/highway modular/bridge w light.tscn" id="6_jxvq4"]
-[ext_resource type="Shader" path="res://grid.gdshader" id="8_xaw4k"]
+[ext_resource type="Shader" path="res://shaders/grid.gdshader" id="8_xaw4k"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dd5h7"]
 emission_shape_scale = Vector3(100, 1, 100)

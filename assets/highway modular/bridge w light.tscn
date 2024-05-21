@@ -9,7 +9,7 @@
 [ext_resource type="Material" uid="uid://b7xsjklt5dy1m" path="res://addons/road-generator/resources/road_texture1.material" id="8_m0dt5"]
 [ext_resource type="Script" path="res://addons/road-generator/nodes/road_point.gd" id="9_u7fac"]
 [ext_resource type="Material" uid="uid://dd45j1t4k546o" path="res://addons/road-generator/resources/road_texture.material" id="10_ana3e"]
-[ext_resource type="Script" path="res://Camera3D.gd" id="11_erj57"]
+[ext_resource type="Script" path="res://addons/free_look_camera.gd" id="11_erj57"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w3ons"]
 resource_name = "Road"

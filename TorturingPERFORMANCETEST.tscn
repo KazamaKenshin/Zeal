@@ -1,0 +1,508 @@
+[gd_scene load_steps=15 format=3 uid="uid://2kupwuql4ukh"]
+
+[ext_resource type="Script" path="res://addons/road-generator/nodes/road_manager.gd" id="2_vd0ki"]
+[ext_resource type="Script" path="res://addons/road-generator/nodes/road_container.gd" id="3_ui5mv"]
+[ext_resource type="Material" uid="uid://dd45j1t4k546o" path="res://addons/road-generator/resources/road_texture.material" id="4_k6p35"]
+[ext_resource type="Script" path="res://addons/road-generator/nodes/road_point.gd" id="5_nm1vt"]
+[ext_resource type="PackedScene" uid="uid://l55ciskvq7rj" path="res://cars/R32 GTR/PLAYER.tscn" id="6_cm1gr"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dd5h7"]
+emission_shape_scale = Vector3(100, 1, 100)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+direction = Vector3(0, -1, 0)
+spread = 5.0
+initial_velocity_min = 30.0
+initial_velocity_max = 100.0
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.0
+
+[sub_resource type="Curve" id="Curve_cuooq"]
+max_value = 0.1
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.0334821, 0.0169811), 0.0, 0.0, 0, 0, Vector2(0.0870536, 0.0215094), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b8v2o"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 0.156863)
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+use_particle_trails = true
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_3ly6s"]
+material = SubResource("StandardMaterial3D_b8v2o")
+curve = SubResource("Curve_cuooq")
+
+[sub_resource type="Shader" id="Shader_3ekxj"]
+code = "shader_type spatial;
+
+uniform float subdivisions : hint_range(1, 1024, 1.0) = 32;
+uniform float grid_width : hint_range(0.0, 1.0, 0.01) = 0.02;
+uniform vec3 background_color : source_color = vec3(0.2, 0.2, 0.2);
+uniform vec3 background_color_two : source_color = vec3(0.1, 0.1, 0.1);
+uniform vec3 grid_color : source_color = vec3(0.5, 0.5, 0.5);
+uniform float dashed_scale_x : hint_range(0.0, 0.99, 0.01) = 0.02;
+uniform float dashed_scale_y : hint_range(0.0, 0.99, 0.01) = 0.02;
+uniform float dashed_count_x : hint_range(0.0, 16.0, 1.0) = 1.0;
+uniform float dashed_count_y : hint_range(0.0, 16.0, 1.0) = 1.0;
+
+group_uniforms Point;
+uniform float point_width : hint_range(0.0, 1.0, 0.01) = 0.021;
+uniform vec3 point_color : source_color = vec3(0.0, 0.0, 0.0);
+uniform float point_scale_x : hint_range(0.0, 1.0, 0.01) = 0.05;
+uniform float point_scale_y : hint_range(0.0, 1.0, 0.01) = 0.05;
+
+group_uniforms InsideGrid;
+uniform float inside_width : hint_range(0.0, 1.0, 0.01) = 0.01;
+uniform float inside_subdivisions : hint_range(1, 9, 1) = 6;
+uniform vec3  inside_color : source_color = vec3(0.4, 0.4, 0.4);
+uniform float in_dashed_scale_x : hint_range(0.0, 0.99, 0.01) = 0.3;
+uniform float in_dashed_scale_y : hint_range(0.0, 0.99, 0.01) = 0.3;
+uniform float in_dashed_count_x : hint_range(0.0, 18.0, 1.0) = 6.0;
+uniform float in_dashed_count_y : hint_range(0.0, 18.0, 1.0) = 6.0;
+
+
+float grid(vec2 uv, vec2 lineWidth,bool check) {
+	vec4 uvDDXY = vec4(dFdx(uv), dFdy(uv));
+	vec2 uvDeriv = vec2(length(uvDDXY.xz), length(uvDDXY.yw));
+	
+	bvec2 invertLine = bvec2(lineWidth.x > 0.5, lineWidth.y > 0.5); //RV
+	vec2 targetWidth = vec2(
+		invertLine.x ? 1.0 - lineWidth.x : lineWidth.x,
+		invertLine.y ? 1.0 - lineWidth.y : lineWidth.y
+		);
+	
+	
+	vec2 lineAA = uvDeriv * 1.5;
+	vec2 gridUV = abs((fract(uv)) * 2.0 - 1.0);
+	
+	
+	if (check == true){
+		targetWidth = vec2(1.0);
+		lineAA *= 1.5;
+		
+		float index = 0.0;
+		index += step(1.0, mod(uv.x, 2.0));
+		index += step(1.0, mod(uv.y, 2.0)) * 2.0;
+		
+		if (index == 1.0 || index == 2.0) {
+			lineAA = -lineAA;
+		}
+	} else  {
+		gridUV = vec2(
+			invertLine.x ? gridUV.x : 1.0 - gridUV.x,
+			invertLine.y ? gridUV.y : 1.0 - gridUV.y 
+		);
+	}
+	
+	vec2 drawWidth = clamp(targetWidth, uvDeriv, vec2(1.0));
+	vec2 gridBase = smoothstep(drawWidth + lineAA, drawWidth - lineAA, gridUV);
+	
+	
+	gridBase *= clamp(targetWidth / drawWidth, 0.0, 1.0);
+	gridBase = mix(gridBase , targetWidth , clamp((uvDeriv * 2.0 - 1.0) , 0.0, 1.0));
+	gridBase.x = invertLine.x ? 1.0 - gridBase.x : gridBase.x; 
+	gridBase.y = invertLine.y ? 1.0 - gridBase.y : gridBase.y; 
+	
+	
+	return mix(gridBase.x, 1.0, gridBase.y);
+}
+
+
+float dashed_grid(vec2 uv, vec2 lineWidth, vec2 dot_width, vec2 count, float add){
+	//Inverts the width values
+	lineWidth = 1.0 - lineWidth;
+	//Create two \"masks\", one for X and one for Y
+	float gridX = 1.0 - grid(vec2(uv.x * count.x, uv.y + add), vec2(dot_width.x, lineWidth.x), false);
+	float gridY = 1.0 - grid(vec2(uv.y * count.y, uv.x + add), vec2(dot_width.y, lineWidth.y), false);
+	
+	float grid = mix(gridX, 1.0, gridY);
+	return grid;
+}
+
+
+void fragment() {
+	//Subdividing uv
+	vec2 uv = UV * subdivisions;
+	
+	//CheckerBoard
+	float checkeredGrid = grid(uv , vec2(0.5), true);
+	
+	//Grid
+	float mainGrid = dashed_grid(
+			uv , vec2(grid_width), vec2(dashed_scale_x, dashed_scale_y),
+			vec2(dashed_count_x, dashed_count_y), 0.5);
+			
+	//Inside Grid
+	float insideGrid = dashed_grid(
+			uv * inside_subdivisions, vec2(inside_width),
+			vec2(in_dashed_scale_x, in_dashed_scale_y),
+			vec2(in_dashed_count_x, in_dashed_count_y), 0.5);
+
+	//Points
+	float pointGrid = dashed_grid(
+			uv + 0.5, vec2(point_width),
+			1.0 - vec2(point_scale_x , point_scale_y),
+			vec2(1.0), 0.0);
+	
+	//Add final color
+	vec3 grid = mix(background_color, background_color_two, checkeredGrid);
+	if (insideGrid != 0.0) grid = mix(grid, inside_color, insideGrid);
+	if (mainGrid != 0.0) grid = mix(grid, grid_color, mainGrid);
+	if (pointGrid != 0.0) grid = mix(grid, point_color, pointGrid);
+	
+	ALBEDO = grid;
+
+	
+}
+
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2lq22"]
+render_priority = 0
+shader = SubResource("Shader_3ekxj")
+shader_parameter/subdivisions = 200.0
+shader_parameter/grid_width = 0.02
+shader_parameter/background_color = Color(0, 0, 0, 1)
+shader_parameter/background_color_two = Color(0, 0, 0, 1)
+shader_parameter/grid_color = Color(3, 1, 3, 1)
+shader_parameter/dashed_scale_x = 0.0
+shader_parameter/dashed_scale_y = 0.0
+shader_parameter/dashed_count_x = 0.0
+shader_parameter/dashed_count_y = 0.0
+shader_parameter/point_width = 0.0
+shader_parameter/point_color = Color(0, 0, 0, 1)
+shader_parameter/point_scale_x = 0.05
+shader_parameter/point_scale_y = 0.05
+shader_parameter/inside_width = 0.0
+shader_parameter/inside_subdivisions = 6.0
+shader_parameter/inside_color = Color(0.4, 0.4, 0.4, 1)
+shader_parameter/in_dashed_scale_x = 0.3
+shader_parameter/in_dashed_scale_y = 0.3
+shader_parameter/in_dashed_count_x = 6.0
+shader_parameter/in_dashed_count_y = 6.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hq0r1"]
+resource_local_to_scene = true
+size = Vector2(500, 500)
+subdivide_width = 32
+subdivide_depth = 32
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uqrfb"]
+points = PackedVector3Array(-250, 0, -250, -250, 0, 249.951, 249.951, 0, -250, 249.951, 0, 249.951)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lan22"]
+size = Vector2(2, 400)
+
+[node name="World" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.35945, 22.581, 0)
+visible = false
+amount = 10000
+lifetime = 10.0
+randomness = 0.5
+visibility_aabb = AABB(-4, -4, -4, 100, 100, 100)
+trail_enabled = true
+trail_lifetime = 0.2
+process_material = SubResource("ParticleProcessMaterial_dd5h7")
+draw_pass_1 = SubResource("RibbonTrailMesh_3ly6s")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.3166, 0, -11.2368)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+material_overlay = SubResource("ShaderMaterial_2lq22")
+mesh = SubResource("PlaneMesh_hq0r1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_uqrfb")
+
+[node name="RoadManager" type="Node3D" parent="."]
+script = ExtResource("2_vd0ki")
+
+[node name="Road_001" type="Node3D" parent="RoadManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9058, 0)
+script = ExtResource("3_ui5mv")
+material_resource = ExtResource("4_k6p35")
+use_lowpoly_preview = true
+edge_containers = Array[NodePath]([NodePath(""), NodePath("")])
+edge_rp_targets = Array[NodePath]([NodePath(""), NodePath("")])
+edge_rp_target_dirs = Array[int]([-1, -1])
+edge_rp_locals = Array[NodePath]([NodePath("RP_001"), NodePath("RP_024")])
+edge_rp_local_dirs = Array[int]([1, 0])
+
+[node name="RP_001" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0942, -7.16494)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+lane_width = 6.0
+gutter_profile = Vector2(0, 0)
+next_pt_init = NodePath("../RP_002")
+
+[node name="RP_002" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.031, 56.8351)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_001")
+next_pt_init = NodePath("../RP_003")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_003" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(1, 0, 0, 0, 0.995376, 0.0960542, 0, -0.0960542, 0.995376, 0, 15.5552, 120.835)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_002")
+next_pt_init = NodePath("../RP_004")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_004" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.399245, 0, -0.916844, 0.0990663, 0.994145, 0.043139, 0.911476, -0.108051, 0.396908, -20.301, 15.7554, 184.835)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_003")
+next_pt_init = NodePath("../RP_005")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_005" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(-0.820511, 0, -0.57163, 0, 1, 0, 0.57163, 0, -0.820511, -61.953, 14.1951, 179.399)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_004")
+next_pt_init = NodePath("../RP_006")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_006" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -67.6935, 10.2892, 126.886)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_005")
+next_pt_init = NodePath("../RP_007")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_007" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -67.6935, 6.4609, 62.8864)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_006")
+next_pt_init = NodePath("../RP_008")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_008" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(-0.592266, 0, -0.805742, 0, 1, 0, 0.805742, 0, -0.592266, -74.3975, 4.2759, 20.1349)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_007")
+next_pt_init = NodePath("../RP_009")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_009" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.610242, 0, -0.792215, 0, 1, 0, 0.792215, 0, 0.610242, -113.752, 2.54361, 22.6245)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_008")
+next_pt_init = NodePath("../RP_010")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_010" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -120.898, 2.78551, 66.5619)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_009")
+next_pt_init = NodePath("../RP_011")
+prior_mag = 18.0
+next_mag = 18.0
+
+[node name="RP_011" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -120.898, 2.78551, 130.562)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_010")
+next_pt_init = NodePath("../RP_012")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_012" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.531901, 0, 0.846806, 0, 1, 0, -0.846806, 0, 0.531901, -112.842, 2.78551, 194.562)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_011")
+next_pt_init = NodePath("../RP_013")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_013" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.34813, 0, 0.937446, 0, 1, 0, -0.937446, 0, 0.34813, -20.4013, 2.78551, 228.604)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_012")
+next_pt_init = NodePath("../RP_014")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_014" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.999033, 0, 0.0439681, 0, 1, 0, -0.0439681, 0, 0.999033, -3.13108, 11.5362, 273.48)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_013")
+next_pt_init = NodePath("../RP_015")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_015" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.999033, 0, 0.0439681, 0, 1, 0, -0.0439681, 0, 0.999033, -0.31712, 1.57476, 436.357)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_014")
+next_pt_init = NodePath("../RP_016")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_016" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.37281, 0, -0.927908, 0, 1, 0, 0.927908, 0, 0.37281, -5.84789, 1.57476, 500.295)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_015")
+next_pt_init = NodePath("../RP_017")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_017" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.615428, 0, -0.788193, 0, 1, 0, 0.788193, 0, 0.615428, -55.4355, 1.57476, 506.836)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_016")
+next_pt_init = NodePath("../RP_018")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_018" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.999893, 0, -0.0146603, 0, 1, 0, 0.0146603, 0, 0.999893, -66.0163, 1.57476, 546.223)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_017")
+next_pt_init = NodePath("../RP_019")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_019" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.999893, 0, -0.0146603, 0, 1, 0, 0.0146603, 0, 0.999893, -66.9546, 1.57476, 610.216)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_018")
+next_pt_init = NodePath("../RP_020")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_020" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.999893, 0, -0.0146603, 0, 1, 0, 0.0146603, 0, 0.999893, -67.8928, 1.57476, 674.209)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_019")
+next_pt_init = NodePath("../RP_021")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_021" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.893081, 0, 0.449896, 0, 1, 0, -0.449896, 0, 0.893081, -62.7919, 1.57476, 738.202)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_020")
+next_pt_init = NodePath("../RP_022")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_022" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(0.758237, 0, -0.651979, 0, 1, 0, 0.651979, 0, 0.758237, -63.2944, 1.57476, 824.292)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_021")
+next_pt_init = NodePath("../RP_023")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_023" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(-0.170347, 0, -0.985384, 0, 1, 0, 0.985384, 0, -0.170347, -105.021, 1.57476, 841.274)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_022")
+next_pt_init = NodePath("../RP_024")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="RP_024" type="Node3D" parent="RoadManager/Road_001"]
+transform = Transform3D(-0.170347, 0, -0.985384, 0, 1, 0, 0.985384, 0, -0.170347, -190.308, 1.57476, 830.372)
+script = ExtResource("5_nm1vt")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+gutter_profile = Vector2(0, 0)
+prior_pt_init = NodePath("../RP_023")
+prior_mag = 16.0
+next_mag = 16.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.311, 0.258, 198.207)
+mesh = SubResource("PlaneMesh_lan22")
+skeleton = NodePath("")
+
+[node name="PLAYER" parent="." instance=ExtResource("6_cm1gr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3779, 0.15, -19.7351)
