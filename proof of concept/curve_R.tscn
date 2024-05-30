@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6luugen1et83"]
+
+[ext_resource type="Script" path="res://addons/road-generator/nodes/road_container.gd" id="1_64h15"]
+[ext_resource type="Material" uid="uid://dd45j1t4k546o" path="res://addons/road-generator/resources/road_texture.material" id="2_u2t8g"]
+[ext_resource type="Script" path="res://addons/road-generator/nodes/road_point.gd" id="3_3n7uq"]
+
+[node name="Container" type="Node3D"]
+script = ExtResource("1_64h15")
+material_resource = ExtResource("2_u2t8g")
+use_lowpoly_preview = true
+edge_containers = Array[NodePath]([NodePath(""), NodePath("")])
+edge_rp_targets = Array[NodePath]([NodePath(""), NodePath("")])
+edge_rp_target_dirs = Array[int]([-1, -1])
+edge_rp_locals = Array[NodePath]([NodePath("RP_001"), NodePath("RP_003")])
+edge_rp_local_dirs = Array[int]([1, 0])
+
+[node name="RP_001" type="Node3D" parent="."]
+script = ExtResource("3_3n7uq")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+shoulder_width_l = 1.0
+shoulder_width_r = 1.0
+gutter_profile = Vector2(1, 0)
+next_pt_init = NodePath("../RP_002")
+
+[node name="RP_002" type="Node3D" parent="."]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -15.76, 0, 35)
+script = ExtResource("3_3n7uq")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+shoulder_width_l = 1.0
+shoulder_width_r = 1.0
+gutter_profile = Vector2(1, 0)
+prior_pt_init = NodePath("../RP_001")
+next_pt_init = NodePath("../RP_003")
+prior_mag = 8.0
+next_mag = 8.0
+
+[node name="RP_003" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50, 0, 50)
+script = ExtResource("3_3n7uq")
+traffic_dir = [2, 1]
+lanes = [5, 5]
+shoulder_width_l = 1.0
+shoulder_width_r = 1.0
+gutter_profile = Vector2(1, 0)
+prior_pt_init = NodePath("../RP_002")
+prior_mag = 8.0
+next_mag = 8.0

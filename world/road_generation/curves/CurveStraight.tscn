@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="Curve3D" id=4]
+_data = {
+"points": PoolVector3Array( 0, 0, -10, 0, 0, 10, 0, 0, 0, 0, 0, -10, 0, 0, 9.99999, 0, 0, 100 ),
+"tilts": PoolRealArray( 0, 0 )
+}
+
+[node name="CurveStraight" type="Path"]
+curve = SubResource( 4 )

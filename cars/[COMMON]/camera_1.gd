@@ -1,14 +1,14 @@
 extends Node3D
 
 var direction = Vector3.FORWARD
-@export_range(1, 10, 0.1) var smooth_speed = 0.5
+@export_range(1, 10, 0.1) var smooth_speed = 0.1
 var new_fov_throttle = 100.0
 
 @export var default_fov = 38.0
 var current_fov = 38.0
 
 @export var blur_iteration = 50.0
-@export var blur_intensity = 0.0
+@export var blur_intensity = 0.01
 @export var blur_start_rad = 0.0
 
 @onready var motion_blur = preload("res://assets/motion_blur/blur_material.tres")
@@ -18,6 +18,7 @@ var current_fov = 38.0
 var initial_transform
 
 func _camera_shake():
+	var initial_transform = self.transform 
 	var elapsed_time = 0.0
 
 	while elapsed_time < period:

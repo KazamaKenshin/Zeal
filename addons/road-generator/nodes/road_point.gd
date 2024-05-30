@@ -303,22 +303,55 @@ func _notification(what):
 		emit_transform(low_poly)
 
 
+#func emit_transform(low_poly=false):
+	#if _is_internal_updating:
+		## Special internal update should bypass emit_transform, such as moving two edges in parallel
+		#return
+	#if auto_lanes:
+		#assign_lanes()
+	#var _gizmo:Node3DGizmo = get_gizmos()[0]
+	#var _gizmos = get_gizmos()
+	#if not _gizmos:
+		#push_warning("No 3D gizmos found")
+		#return
+	#if is_instance_valid(_gizmo):
+		#_gizmo.get_plugin().refresh_gizmo(_gizmo)
+	#emit_signal("on_transform", self, low_poly)
+#func emit_transform(low_poly=false):
+	#if _is_internal_updating:
+		#return
+	#if auto_lanes:
+		#assign_lanes()
+	#var _gizmos = get_gizmos()
+	#if not _gizmos or _gizmos.size() == 0:
+		#push_warning("No 3D gizmos found")
+		#return
+	#var _gizmo:Node3DGizmo = _gizmos[0]
+	#if is_instance_valid(_gizmo):
+		#_gizmo.get_plugin().refresh_gizmo(_gizmo)
+	#emit_signal("on_transform", self, low_poly)
+
+#func emit_transform(low_poly=false):
+	#if _is_internal_updating:
+		## Special internal update should bypass emit_transform, such as moving two edges in parallel
+		#return
+	#if auto_lanes:
+		#assign_lanes()
+	#if len(get_gizmos()) > 0 and is_instance_valid(get_gizmos()[0]):
+		#var _gizmo:Node3DGizmo = get_gizmos()[0]
+		#_gizmo.get_plugin().refresh_gizmo(_gizmo)
+	#emit_signal("on_transform", self, low_poly)
+
 func emit_transform(low_poly=false):
 	if _is_internal_updating:
 		# Special internal update should bypass emit_transform, such as moving two edges in parallel
 		return
 	if auto_lanes:
 		assign_lanes()
-	var _gizmo:Node3DGizmo = get_gizmos()[0]
-	var _gizmos = get_gizmos()
-	if not _gizmos:
-		push_warning("No 3D gizmos found")
-		return
-	if is_instance_valid(_gizmo):
+	if len(get_gizmos()) > 0 and is_instance_valid(get_gizmos()[0]):
+		var _gizmo:Node3DGizmo = get_gizmos()[0]
 		_gizmo.get_plugin().refresh_gizmo(_gizmo)
 	emit_signal("on_transform", self, low_poly)
-
-
 
 # ------------------------------------------------------------------------------
 # Utilities
@@ -576,6 +609,7 @@ static func increment_name(name: String) -> String:
 ## Adds a RoadPoint to SceneTree and transfers settings from another RoadPoint
 func add_road_point(new_road_point: RoadPoint, direction):
 	container.add_child(new_road_point, true)
+	
 	new_road_point.copy_settings_from(self)
 	var basis_z = new_road_point.transform.basis.z
 
@@ -1007,3 +1041,13 @@ func _autofix_noncyclic_references(
 
 	# In the event of change in edges, update all references.
 	container.update_edges()
+	
+func broadcast_position() -> Dictionary:
+	var pos = global_transform.origin
+	var rot = global_transform.basis.get_euler()
+	#var pos = global_position
+	#var rot = global_rotation
+	return{
+		"position": pos,
+		"rotation": rot
+	}	

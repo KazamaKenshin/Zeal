@@ -259,6 +259,33 @@ func get_roadpoints() -> Array:
 		var pt:RoadPoint = obj
 		rps.append(pt)
 	return rps
+	
+func get_first_roadpoint() -> RoadPoint:
+	var rps = []
+	for obj in get_children():
+		if not obj is RoadPoint:
+			continue
+		if not obj.visible:
+			continue
+		var pt: RoadPoint = obj
+		rps.append(pt)
+	if rps.size() > 0:
+		return rps[0]
+	return null
+	
+func get_last_roadpoint() -> RoadPoint:
+	var rps = []
+	for obj in get_children():
+		if not obj is RoadPoint:
+			continue
+		if not obj.visible:
+			continue
+		var pt: RoadPoint = obj
+		rps.append(pt)
+	if rps.size() > 0:
+		return rps[rps.size() - 1]
+	return null
+
 
 
 ## Returns all RoadSegments which are directly children of RoadPoints.

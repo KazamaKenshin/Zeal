@@ -2,11 +2,14 @@
 class_name PlayerVehicle
 extends VehicleBody3D
 
+# TODO: resource file for vehicle parametres instead of whatever this is
 # @onready var ai_controller: AIController3D = $AIController3D
 # TODO: fuel simulation
 const PETROL_KG_L: float = 0.7489
 const NM_2_KW: int = 9549
 const AV_2_RPM: float = 60 / TAU
+const KMH_2_MPH: float = 0.621371
+
 ############################################################
 # SET UP
 # NAMING SCHEMES
@@ -28,7 +31,8 @@ var cool_down_speed = 0.01
 @onready var reverse_lights = $"reverse lights"
 
 @onready var smokes = $smokes
-
+#might need to cleanup
+var previous_speed := linear_velocity.length()
 ############################################################
 
 ### In torque
@@ -204,9 +208,6 @@ func _process(delta : float):
 
 	var speedo = '%.0f KM/H' % [ speed ]
 
-func freewheel():
-	pass
-
 func _physics_process(delta):
 	#linear_velocity.x = ai_controller.move.x
 	#linear_velocity.y = ai_controller.move.y
@@ -242,7 +243,7 @@ func _physics_process(delta):
 
 	rpm = calculate_rpm()
 	var rpm_factor = clamp(rpm / max_rpm, 0.0, 1.0)
-	var power_factor = power_curve.sample_baked(rpm_factor) * 3
+	var power_factor = power_curve.sample_baked(rpm_factor) * 4
 
 	if current_gear == 0:
 		for child in reverse_lights.get_children():
@@ -297,22 +298,20 @@ func _physics_process(delta):
 		#$rl.wheel_friction_slip = normal_friction_slip
 
 	if brake_val == 0.0:
-		brake_lights.mesh.surface_get_material(0).emission_enabled = false
+		brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 0.2
 	else:
-		brake_lights.mesh.surface_get_material(0).emission_enabled = true
+		brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 3
+		$braketrail/l1.trailOn()
+		$braketrail/l2.trailOn()
+		$braketrail/l3.trailOn()
+		$braketrail/l4.trailOn()
 		
-	#else:
-		#$braketrail/l1.trailOn()
-		#$braketrail/l2.trailOn()
-		#$braketrail/l3.trailOn()
-		#$braketrail/l4.trailOn()
-		#
-		#
-	#if current_speed_mps < 30:
-		#$braketrail/l1.killall()
-		#$braketrail/l2.killall()
-		#$braketrail/l3.killall()
-		#$braketrail/l4.killall()
+		
+	if current_speed_mps < 30:
+		$braketrail/l1.killall()
+		$braketrail/l2.killall()
+		$braketrail/l3.killall()
+		$braketrail/l4.killall()
 	
 	
 	# remember where I am
@@ -320,14 +319,14 @@ func _physics_process(delta):
 
 
 	var skidinfos = [$fr.get_skidinfo(), $rr.get_skidinfo(), $fl.get_skidinfo(), $rl.get_skidinfo()]
-	var max_emission_rate = 1.0  # Maximum emission rate of smoke particles
-	var min_emission_rate = 0.0    # Minimum emission rate of smoke particles
-	var smoke_scale_factor = 0.5	  # Scaling factor to adjust emission rate
+	var max_emission_rate = 1.0 
+	var min_emission_rate = 0.0    
+	var smoke_scale_factor = 0.5	  
 	var front_skidinfos = [$fr.get_skidinfo(), $fl.get_skidinfo()]
 	
 	for i in range(front_skidinfos.size()):
 		if front_skidinfos[i] < 0.8:
-			torque_split = 0.5
+			torque_split = 0.3
 		else:
 			torque_split = 1.0
 			
@@ -360,4 +359,7 @@ func update_hot_brake_disk(delta):
 				var material = child.mesh.surface_get_material(0)
 				var target_color = cool_disk_color.lerp(hot_disk_color, brake_intensity)
 				material.set("emission", target_color)
+	
 
+	if abs(linear_velocity.length() - previous_speed) > 1.0:
+		$impact_sound.play()
