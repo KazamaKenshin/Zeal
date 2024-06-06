@@ -5,11 +5,15 @@ res://addons/road-generator/resources/road_texture.material
 res://game_settings/settings/display/fullscreen.tres
 res://game_settings/settings/display/throttle.tres
 res://assets/motion_blur/motion_blur.gd
+res://proof of concept/barrier.gd
 res://shaders/cel shader/diffuse-texture.tres
-res://shaders/stylized_sky.gdshader
-res://sky/day_sky.tres
 res://assets/motion_blur/moblur_shader.gdshader
+res://assets/motion_blur/blur_material.tres
 res://shaders/rain.gdshader
+res://cars/R32 GTR/brake disk.tres
+res://shaders/stylized_sky.gdshader
+res://sky/night_sky.tres
+res://addons/road-generator/resources/road_texture1.material
 res://shaders/vhs.gdshader
 res://shaders/pulse_glow.gdshader
 res://shaders/crt.gdshader
@@ -23,5 +27,12 @@ res://shaders/canvas_retrowave.gdshader
 res://proof of concept/straight.tscn
 res://proof of concept/curve_L.tscn
 res://proof of concept/curve_R.tscn
+res://cars/R32 GTR/PLAYER.tscn
+res://sky/sky updated/main.tscn
+res://cars/930/PLAYER.tscn
+res://WORLD.tscn
 res://proof of concept/poc_road_god.gd
-res://addons/road-generator/nodes/road_point.gd
+res://sky/sky updated/dynamic sky.tscn
+res://audio/engine_sound/l6genericrasp0/engine.tscn
+res://cars/R32 GTR/player_vehicle.gd
+res://cars/[COMMON]/camera_1.gd

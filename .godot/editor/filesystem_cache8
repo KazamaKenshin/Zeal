@@ -1,10 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717023330
+::res://::1717630082
 AIController3D.gd::GDScript::-1::1712241168::0::1::::<>AIController3D<>::
+camera.tscn::PackedScene::1411680342311292990::1717257727::0::1::::<><>::res://cars/[COMMON]/camera_1.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader
 cantach.tscn::PackedScene::3480981610723763290::1711288689::0::1::::<><>::uid://ygjs7n6rwy3b::::res://cars/CANTACH/new_standard_material_3d.tres
-credits.txt::TextFile::-1::1716617441::0::1::::<><>::
+credits.txt::TextFile::-1::1717033624::0::1::::<><>::
 customize.tscn::PackedScene::5265702648424769692::1714725019::0::1::::<><>::uid://rcs2fh05dkoh::::res://assets/emergency parking lot/emergency_parking_lot_0.jpg
-default_bus_layout.tres::AudioBusLayout::4034697983897976188::1716261184::0::1::::<><>::
+default_bus_layout.tres::AudioBusLayout::4034697983897976188::1717512203::0::1::::<><>::
+guardrail.tscn::PackedScene::4885518962177173237::1717226598::0::1::::<><>::uid://d0b3r4wn4pww0::::res://assets/New folder/guard_rail_0.jpg<>uid://6j1gbk5dg650::::res://assets/New folder/guard_rail_1.png<>uid://df8civr56op6c::::res://assets/New folder/guard_rail_2.png
 icon.svg::CompressedTexture2D::3904834079505177728::1698644090::1700895304::1::::<><>::
 NEEDLE.png::CompressedTexture2D::2022488543352490260::1711635928::1711636556::1::::<><>::
 rain.tscn::PackedScene::6141545198536065972::1716253918::0::1::::<><>::res://shaders/rain.gdshader
@@ -12,11 +14,9 @@ README.md::TextFile::-1::1716255176::0::1::::<><>::
 settings_menu.tscn::PackedScene::2901170891826524608::1711463487::0::1::::<><>::uid://cha8xesfthpfk::::res://game_settings/components/switch/switch.tscn<>res://demo/scenes/settings_menu/settings_menu.gd<>res://game_settings/components/_misc_components/reset_btn/reset_btn.tscn<>uid://dgmk2avdg1upv::::res://game_settings/settings/display/fullscreen.tres<>uid://b1btmq8y3gexs::::res://game_settings/components/_misc_components/input_confirm_window/input_confirm_window.tscn<>uid://b7m6l0lvojrsj::::res://game_settings/components/option_list/option_list.tscn<>uid://1v2k7glufimr::::res://game_settings/settings/display/window_size.tres<>uid://bhkyf3l4ee800::::res://game_settings/components/checkbox/checkbox.tscn<>uid://djr2qy10po5sv::::res://game_settings/settings/audio/master/mute_state.tres<>uid://ds06mwhee8ygm::::res://game_settings/components/slider/slider.tscn<>uid://7yc4gwua8pf2::::res://game_settings/settings/audio/master/volume.tres<>uid://2m1oonr3dopn::::res://game_settings/settings/audio/music/mute_state.tres<>uid://ccwm56m2e4nmo::::res://game_settings/settings/audio/music/volume.tres<>uid://dm1av7skxvp1j::::res://game_settings/components/input_btn/input_btn.tscn<>uid://bcqtoqmjue0xe::::res://game_settings/settings/audio/sfx/mute_state.tres<>uid://dnga4lbsox3wu::::res://game_settings/settings/audio/sfx/volume.tres<>uid://b3q3ecvufsboy::::res://game_settings/settings/input/move_right/keyboard_0.tres<>uid://5l0iu6tqqsuy::::res://game_settings/settings/input/move_left/keyboard_0.tres<>uid://ctwyfsk3ml7in::::res://game_settings/settings/input/move_left/keyboard_1.tres<>uid://cfp74fqf3hig0::::res://game_settings/settings/input/move_right/keyboard_1.tres<>uid://c16wxcl04k0rv::::res://game_settings/settings/input/move_left/gamepad.tres<>uid://ftlqbsy5gvwn::::res://game_settings/settings/input/move_right/gamepad.tres<>uid://dvnv8tfy60rw5::::res://game_settings/settings/input/move_up/keyboard_0.tres<>uid://hc4oukt0w1lq::::res://game_settings/settings/input/move_up/keyboard_1.tres<>uid://bxcnecq0va3gl::::res://game_settings/settings/input/move_up/gamepad.tres<>uid://7yg1d18e6p62::::res://game_settings/settings/input/move_down/keyboard_0.tres<>uid://c2xc0ava5qb6w::::res://game_settings/settings/input/move_down/keyboard_1.tres<>uid://cd5k6o2f53d4w::::res://game_settings/settings/input/move_down/gamepad.tres<>uid://di8r6amxunq7q::::res://game_settings/components/text_field/text_field.tscn<>uid://c67qu6uephcjw::::res://game_settings/settings/gameplay/player_name.tres<>uid://bqi00h7i7sg3u::::res://game_settings/components/spinbox/spinbox.tscn<>uid://dbeucupcrh31w::::res://demo/assets/audio/focus.wav<>uid://d03vle3rnm2ma::::res://demo/assets/audio/interact.wav<>uid://dsiuepvql652m::::res://game_settings/settings/gameplay/player_speed.tres<>uid://c11tbsolk6dnu::::res://game_settings/components/radio_list/radio_list.tscn<>uid://bls016g4wcy00::::res://game_settings/settings/gameplay/difficulty.tres
 Torturing.tscn::PackedScene::13589387899982303::1716367174::0::1::::<><>::uid://l55ciskvq7rj::::res://cars/R32 GTR/PLAYER.tscn<>uid://m80rmki4fbox::::res://sky/night_sky.tres<>res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
 TorturingPerformanceTest.tscn::PackedScene::501021651171951061::1716367176::0::1::::<><>::uid://m80rmki4fbox::::res://sky/night_sky.tres<>res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd<>uid://l55ciskvq7rj::::res://cars/R32 GTR/PLAYER.tscn
-WORLD.tscn::PackedScene::2204925880016977261::1716861310::0::1::::<><>::uid://m80rmki4fbox::::res://sky/night_sky.tres<>res://cars/R32 GTR/player_vehicle.gd<>uid://ce1cxghh8rast::::res://cars/R32 GTR/testcurve1.tres<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://addons/road-generator/nodes/road_manager.gd<>res://assets/motion_blur/motion_blur.gd<>res://addons/road-generator/nodes/road_container.gd<>res://shaders/rain.gdshader<>uid://b7xsjklt5dy1m::::res://addons/road-generator/resources/road_texture1.material<>res://addons/road-generator/nodes/road_segment.gd<>res://addons/road-generator/nodes/road_point.gd<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>res://addons/road-generator/nodes/road_lane.gd<>uid://bjjukpdui11sb::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_4.png<>res://cars/[COMMON]/trail_effect.gd<>uid://c6dvvjhidpvu0::::res://cars/R32 GTR temp (wrong dims)/paint/Black Pearl Metallic.tres<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>res://cars/R32 GTR/speedo_needle_ui.gd<>uid://qnrugbojpopf::::res://cars/R32 GTR/rev.png<>res://cars/R32 GTR/gear_ui.gd<>res://cars/R32 GTR/tacho_needle_ui.gd<>res://cars/R32 GTR/speedo_ui.gd<>uid://ci2ayqgdeqb38::::res://digits/0.png<>uid://843j1lg4seh0::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_0.jpg<>uid://bvchub64t05x8::::res://audio/mechanical_sounds/other_sounds.tscn<>res://cars/[COMMON]/camera_1.gd<>uid://beda61k7ekh7u::::res://audio/default_engine_sound/engine_sound.tscn<>uid://co78yx7q0at76::::res://audio/tyre_sounds/tyres.tscn<>uid://bdhcg2iru7jv5::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_1.png
-WORLDneon2.tscn::PackedScene::584969374347291204::1716254140::0::1::::<><>::res://addons/free_look_camera.gd<>uid://i4p4c70soetw::::res://cars/R32 GTR temp (wrong dims)/PLAYER.tscn<>uid://m80rmki4fbox::::res://sky/night_sky.tres<>uid://cci4baid6g5c7::::res://assets/highway modular/bridge.tscn<>uid://38y6lmjqom1c::::res://assets/highway modular/bridge w light.tscn<>res://shaders/grid.gdshader
-WORLDneon.tscn::PackedScene::7944745684424643526::1716254140::0::1::::<><>::uid://i4p4c70soetw::::res://cars/R32 GTR temp (wrong dims)/PLAYER.tscn<>res://addons/free_look_camera.gd<>uid://m80rmki4fbox::::res://sky/night_sky.tres<>res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_container.gd<>res://addons/road-generator/nodes/road_point.gd<>uid://b7xsjklt5dy1m::::res://addons/road-generator/resources/road_texture1.material
-::res://addons/::1716861413
-free_look_camera.gd::GDScript::-1::1716855186::0::1::::FreeLookCamera<>Camera3D<>::
+WORLD.tscn::PackedScene::2204925880016977261::1717629928::0::1::::<><>::uid://m80rmki4fbox::::res://sky/night_sky.tres<>res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_container.gd<>uid://b7xsjklt5dy1m::::res://addons/road-generator/resources/road_texture1.material<>res://addons/road-generator/nodes/road_segment.gd<>res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/nodes/road_lane.gd<>uid://bgf2jcd4ojg71::::res://cars/930/PLAYER.tscn
+::res://addons/::1717629153
+free_look_camera.gd::GDScript::-1::1717556406::0::1::::FreeLookCamera<>Camera3D<>::
 ::res://addons/debug_menu/::1713883795
 debug_menu.gd::GDScript::-1::1713883794::0::1::::<>CanvasLayer<>::
 debug_menu.tscn::PackedScene::153156931780978323::1713883795::0::1::::<><>::res://addons/debug_menu/debug_menu.gd
@@ -231,9 +231,9 @@ setting_group.tscn::PackedScene::9087742367079280802::1711466645::0::1::::<><>::
 ::res://addons/ggs/editor/setting_panel/setting_item/::1711466645
 setting_item.gd::GDScript::-1::1711466645::0::1::::ggsSettingItem<>Button<>::
 setting_item.tscn::PackedScene::1439284876427615274::1711466645::0::1::::<><>::res://addons/ggs/editor/setting_panel/setting_item/setting_item.gd
-::res://addons/ggs/editor/_theme/::1717023574
+::res://addons/ggs/editor/_theme/::1717629616
 ggs_theme.gd::GDScript::-1::1711466644::0::1::::<>Theme<>::
-ggs_theme.tres::Theme::6840631685889568947::1717023574::0::1::::<><>::res://addons/ggs/editor/_theme/ggs_theme.gd
+ggs_theme.tres::Theme::6840631685889568947::1717629616::0::1::::<><>::res://addons/ggs/editor/_theme/ggs_theme.gd
 ::res://addons/godot_rl_agents/::1712156004
 godot_rl_agents.gd::GDScript::-1::1709586689::0::1::::<>EditorPlugin<>::
 icon.png::CompressedTexture2D::7853482147988983494::1709586689::1712156004::1::::<><>::
@@ -335,118 +335,130 @@ PathUtils.gd::GDScript::-1::1685699507::0::1::::PathUtils<>RefCounted<>::
 ResourceUtils.gd::GDScript::-1::1685699507::0::1::::ResourceUtils<>RefCounted<>::
 ResourceWatcher.gd::GDScript::-1::1685699507::0::1::::ResourceWatcher<>RefCounted<>::
 SceneUtils.gd::GDScript::-1::1685699507::0::1::::SceneUtils<>RefCounted<>::
-::res://addons/phantom_camera/::1714915123
-plugin.cfg::TextFile::-1::1714915123::0::1::::<><>::
-plugin.gd::GDScript::-1::1714915123::0::1::::<>EditorPlugin<>::
-::res://addons/phantom_camera/assets/::1714915123
-PhantomCameraBtnPrimaryDefault.png::CompressedTexture2D::5081567352117042767::1714915123::1714915123::1::::<><>::
-PhantomCameraBtnPrimaryHover.png::CompressedTexture2D::1097276340276520798::1714915123::1714915123::1::::<><>::
-::res://addons/phantom_camera/examples/::1714915123
-credits.txt::TextFile::-1::1714915123::0::1::::<><>::
-::res://addons/phantom_camera/examples/example_scenes/::1714915123
-::res://addons/phantom_camera/examples/example_scenes/2D/::1714915123
-2d_example_scene.tscn::PackedScene::8396109236837500942::1714915123::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
-2d_follow_framed_example_scene.tscn::PackedScene::4041101467758950601::1714915123::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn
-2d_follow_group_example_scene.tscn::PackedScene::3615519047096694654::1714915123::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://cwep0on2tthn7::::res://addons/phantom_camera/examples/textures/2D/phantom_camera_2d_sprite.png<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
-2d_follow_path_example_scene.tscn::PackedScene::1090052207262972448::1714915123::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn
-2d_limit_example_scene.tscn::PackedScene::1601450723493897600::1714915123::0::1::::<><>::res://addons/phantom_camera/examples/scripts/2D/2d_room_limit_tween.gd<>uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd
-2d_tweening_example_scene.tscn::PackedScene::5875330861835730161::1714915123::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/examples/scripts/2D/2d_trigger_area.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
-::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/::1714915123
-playable_character_2d.tscn::PackedScene::2267157683035007646::1714915123::0::1::::<><>::res://addons/phantom_camera/examples/scripts/2D/player_character_body_2d.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://ci76plsequlrq::::res://addons/phantom_camera/examples/textures/2D/player_sprite.svg<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://cecrnq0wnkexh::::res://addons/phantom_camera/examples/resources/tween/item_focus_phantom_camera_2d_tween.tres<>uid://cllveybboaqk5::::res://addons/phantom_camera/examples/resources/tween/inventory_phantom_camera_2d_tween.tres
-::res://addons/phantom_camera/examples/example_scenes/3D/::1714915123
-3d_example_scene.tscn::PackedScene::5389709161117818686::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/examples/scripts/3D/npc.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_3d_tween.tres<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>res://addons/phantom_camera/examples/scripts/3D/3d_trigger_area.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd
-3d_follow_framed_example_scene.tscn::PackedScene::6831697141640160960::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_3d_tween.tres<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn
-3d_follow_glued_example_scene.tscn::PackedScene::8760621557405770743::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png
-3d_follow_group_example_scene.tscn::PackedScene::7240303035488103663::1714915123::0::1::::<><>::uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_3d_tween.tres<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd
-3d_follow_path_example_scene.tscn::PackedScene::8823052630826975221::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_3d_tween.tres<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>res://addons/phantom_camera/examples/scripts/3D/path_follow.gd<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
-3d_follow_simple_example_scene.tscn::PackedScene::3803289718966625666::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png
-3d_follow_third_person_example_scene.tscn::PackedScene::2053817529390837519::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://mskcwn1a1v6d::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_third_person_3d.tscn
-3d_look_at_example_scene.tscn::PackedScene::2612475775293339696::1714915123::0::1::::<><>::uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png
-3d_tweening_example_scene.tscn::PackedScene::2154332734917685671::1714915123::0::1::::<><>::uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_3d_tween.tres<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>res://addons/phantom_camera/examples/scripts/3D/3d_trigger_area.gd<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
-::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/::1714915123
-playable_character_3d.tscn::PackedScene::3814012827875850470::1714915123::0::1::::<><>::res://addons/phantom_camera/examples/scripts/3D/player_controller.gd
-playable_character_third_person_3d.tscn::PackedScene::880036841523467845::1714915123::0::1::::<><>::res://addons/phantom_camera/examples/scripts/3D/player_controller_third_person.gd
-::res://addons/phantom_camera/examples/models/::1714915123
-3d_cube_dark.tscn::PackedScene::5382540856779240661::1714915123::0::1::::<><>::uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png
-::res://addons/phantom_camera/examples/resources/::1714915123
-::res://addons/phantom_camera/examples/resources/tween/::1714915123
-fixed_camera_tween.tres::Resource/Resource::6643106748633668090::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
-inventory_phantom_camera_2d_tween.tres::Resource/Resource::5568910264892302066::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
-item_focus_phantom_camera_2d_tween.tres::Resource/Resource::5058781781655307589::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
-player_phantom_camera_2d_tween.tres::Resource/Resource::9514768340188899::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
-player_phantom_camera_3d_tween.tres::Resource/Resource::5865226110262250054::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
-::res://addons/phantom_camera/examples/scripts/::1714915123
-::res://addons/phantom_camera/examples/scripts/2D/::1714915123
-2d_room_limit_tween.gd::GDScript::-1::1714915123::0::1::::<>Node2D<>::
-2d_trigger_area.gd::GDScript::-1::1714915123::0::1::::<>Area2D<>::
-player_character_body_2d.gd::GDScript::-1::1714915123::0::1::::<>CharacterBody2D<>::
-::res://addons/phantom_camera/examples/scripts/3D/::1714915123
-3d_trigger_area.gd::GDScript::-1::1714915123::0::1::::<>Area3D<>::
-npc.gd::GDScript::-1::1714915123::0::1::::<>Node3D<>::
-path_follow.gd::GDScript::-1::1714915123::0::1::::<>Node<>::
-player_controller.gd::GDScript::-1::1714915123::0::1::::<>CharacterBody3D<>::
-player_controller_third_person.gd::GDScript::-1::1714915123::0::1::::<><>::
-::res://addons/phantom_camera/examples/textures/::1714915123
-::res://addons/phantom_camera/examples/textures/2D/::1714915123
-inventory_container.png::CompressedTexture2D::4637741338914361246::1714915123::1714915123::1::::<><>::
-level_spritesheet.png::CompressedTexture2D::7085760997330170155::1714915123::1714915123::1::::<><>::
-phantom_camera_2d_sprite.png::CompressedTexture2D::6326209594840534622::1714915123::1714915123::1::::<><>::
-player_sprite.svg::CompressedTexture2D::5402321824071961374::1714915123::1714915123::1::::<><>::
-sign_prompt.png::CompressedTexture2D::3188285415853117228::1714915123::1714915123::1::::<><>::
-::res://addons/phantom_camera/examples/textures/3D/::1714915127
-checker_pattern_dark.png::CompressedTexture2D::7037516729818178126::1714915123::1714915127::1::::<><>::
-::res://addons/phantom_camera/examples/ui/::1714915123
-ui_inventory.tscn::PackedScene::7647500821014000442::1714915123::0::1::::<><>::uid://b7cs6me43ufh3::::res://addons/phantom_camera/examples/textures/2D/inventory_container.png<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
-ui_sign.tscn::PackedScene::596403574585461246::1714915123::0::1::::<><>::uid://bloouh2jtndx1::::res://addons/phantom_camera/examples/textures/2D/sign_prompt.png<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
-::res://addons/phantom_camera/fonts/::1714915123
-Nunito-Black.ttf::FontFile::6833869716374227054::1714915123::1714915123::1::::<><>::
-Nunito-Regular.ttf::FontFile::8643449995156224464::1714915123::1714915123::1::::<><>::
-::res://addons/phantom_camera/gizmos/::1714915123
-custom_gizmo.gd::GDScript::-1::1714915123::0::1::::CustomPluginGizmo<>EditorNode3DGizmoPlugin<>::
-phantom_camera_gizmo_plugin_3d.gd::GDScript::-1::1714915123::0::1::::<>CustomPluginGizmo<>::
-::res://addons/phantom_camera/icons/::1714915126
-phantom_camera_2d.svg::CompressedTexture2D::5620550124471480091::1714915123::1714915123::1::::<><>::
-phantom_camera_3d.svg::CompressedTexture2D::2805591509779235340::1714915123::1714915123::1::::<><>::
-phantom_camera_camera_3d_resource.svg::CompressedTexture2D::7893455253213541371::1714915123::1714915123::1::::<><>::
-phantom_camera_gizmo.svg::CompressedTexture2D::340464189041337994::1714915123::1714915126::1::::<><>::
-phantom_camera_glow_logo.png::CompressedTexture2D::5427785683244604059::1714915123::1714915123::1::::<><>::
-phantom_camera_host.svg::CompressedTexture2D::2116021710778199696::1714915123::1714915123::1::::<><>::
-phantom_camera_logo.png::CompressedTexture2D::4966186125554950581::1714915123::1714915123::1::::<><>::
-phantom_camera_tween.svg::CompressedTexture2D::8227259423555188651::1714915123::1714915123::1::::<><>::
-::res://addons/phantom_camera/icons/misc/::1714915123
-PriorityOverride.svg::CompressedTexture2D::8912176182624502929::1714915123::1714915123::1::::<><>::
-::res://addons/phantom_camera/icons/viewfinder/::1714915123
-Camera2DIcon.svg::CompressedTexture2D::4941179596290591277::1714915123::1714915123::1::::<><>::
-Camera3DIcon.svg::CompressedTexture2D::7877918109027130005::1714915123::1714915123::1::::<><>::
-SceneTypesIcon.svg::CompressedTexture2D::7928082713000371025::1714915123::1714915123::1::::<><>::
-::res://addons/phantom_camera/inspector/::1714915123
-phantom_camera_inspector_plugin.gd::GDScript::-1::1714915123::0::1::::<>EditorInspectorPlugin<>::
-::res://addons/phantom_camera/panel/::1714915123
-editor.gd::GDScript::-1::1714915123::0::1::::<>VBoxContainer<>::
-editor.tscn::PackedScene::5130828868618714074::1714915123::0::1::::<><>::res://addons/phantom_camera/panel/editor.gd<>uid://cuqkqsp3ikv5u::::res://addons/phantom_camera/panel/updater/UpdateButton.tscn<>uid://dbkr3d716wtx0::::res://addons/phantom_camera/panel/viewfinder/viewfinder_panel.tscn
-::res://addons/phantom_camera/panel/updater/::1714915123
-download_update_panel.tscn::PackedScene::4343775578160032417::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/panel/updater/download_update_panel.gd<>uid://cjli3p2b8mfyh::::res://addons/phantom_camera/icons/PhantomCameraGlowLogo.png<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://dve7mgsjik4dg::::res://addons/phantom_camera/fonts/Nunito-Regular.ttf<>uid://censw3w53gldn::::res://addons/phantom_camera/assets/PhantomCameraBtnPrimaryDefault.png
-update_button.tscn::PackedScene::-1::1714915123::0::1::::<><>::
-::res://addons/phantom_camera/panel/viewfinder/::1714915128
-deadzone_style_box.tres::StyleBoxFlat::8214081647515075988::1714915128::0::1::::<><>::
-viewfinder_panel.tscn::PackedScene::7251177071591726931::1714915123::0::1::::<><>::res://addons/phantom_camera/scripts/panel/viewfinder/viewfinder.gd<>uid://dpa7yvxlq043a::::res://addons/phantom_camera/panel/viewfinder/deadzone_style_box.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://b671h5enwiljg::::res://addons/phantom_camera/icons/PhantomCameraGizmoIcon2D.svg<>uid://dve7mgsjik4dg::::res://addons/phantom_camera/fonts/Nunito-Regular.ttf<>uid://dy8eifa6aw2en::::res://addons/phantom_camera/icons/misc/PriorityOverride.svg
-::res://addons/phantom_camera/scripts/::1714915123
-::res://addons/phantom_camera/scripts/panel/::1714915123
-::res://addons/phantom_camera/scripts/panel/updater/::1714915123
-download_update_panel.gd::GDScript::-1::1714915123::0::1::::<>Control<>::
-updater_constants.gd::GDScript::-1::1714915123::0::1::::<>RefCounted<>::
-update_button.gd::GDScript::-1::1714915123::0::1::::<>Button<>::
-::res://addons/phantom_camera/scripts/panel/viewfinder/::1714915123
-viewfinder.gd::GDScript::-1::1714915123::0::1::::<>Control<>::
-::res://addons/phantom_camera/scripts/phantom_camera/::1714915123
-phantom_camera_2d.gd::GDScript::-1::1714915123::0::1::::PhantomCamera2D<>Node2D<>res://addons/phantom_camera/icons/phantom_camera_2d.svg::
-phantom_camera_3d.gd::GDScript::-1::1714915123::0::1::::PhantomCamera3D<>Node3D<>res://addons/phantom_camera/icons/phantom_camera_3d.svg::
-phantom_camera_constants.gd::GDScript::-1::1714915123::0::1::::<>RefCounted<>::
-::res://addons/phantom_camera/scripts/phantom_camera_host/::1714915123
-phantom_camera_host.gd::GDScript::-1::1714915123::0::1::::PhantomCameraHost<>Node<>res://addons/phantom_camera/icons/PhantomCameraHostIcon.svg::
-::res://addons/phantom_camera/scripts/resources/::1714915123
-camera_3d_resource.gd::GDScript::-1::1714915123::0::1::::Camera3DResource<>Resource<>res://addons/phantom_camera/icons/phantom_camera_camera_3d_resource.svg::
-tween_resource.gd::GDScript::-1::1714915123::0::1::::PhantomCameraTween<>Resource<>::
+::res://addons/phantom_camera/::1717629153
+plugin.cfg::TextFile::-1::1717629153::0::1::::<><>::
+plugin.gd::GDScript::-1::1717629153::0::1::::<>EditorPlugin<>::
+::res://addons/phantom_camera/assets/::1717629153
+PhantomCameraBtnPrimaryDefault.png::CompressedTexture2D::5081567352117042767::1717629153::1717629153::1::::<><>::
+PhantomCameraBtnPrimaryHover.png::CompressedTexture2D::1097276340276520798::1717629153::1717629153::1::::<><>::
+::res://addons/phantom_camera/examples/::1717629153
+credits.txt::TextFile::-1::1717629153::0::1::::<><>::
+::res://addons/phantom_camera/examples/example_scenes/::1717629153
+::res://addons/phantom_camera/examples/example_scenes/2D/::1717629153
+2d_example_scene.tscn::PackedScene::8396109236837500942::1717629153::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+2d_follow_framed_example_scene.tscn::PackedScene::4041101467758950601::1717629153::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn
+2d_follow_group_example_scene.tscn::PackedScene::3615519047096694654::1717629153::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://cwep0on2tthn7::::res://addons/phantom_camera/examples/textures/2D/phantom_camera_2d_sprite.png<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+2d_follow_path_example_scene.tscn::PackedScene::1090052207262972448::1717629153::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn
+2d_limit_example_scene.tscn::PackedScene::1601450723493897600::1717629153::0::1::::<><>::res://addons/phantom_camera/examples/scripts/2D/2d_room_limit_tween.gd<>uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd
+2d_tweening_example_scene.tscn::PackedScene::5875330861835730161::1717629153::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/examples/scripts/2D/2d_trigger_area.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/::1717629153
+playable_character_2d.tscn::PackedScene::2267157683035007646::1717629153::0::1::::<><>::res://addons/phantom_camera/examples/scripts/2D/player_character_body_2d.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://ci76plsequlrq::::res://addons/phantom_camera/examples/textures/2D/player_sprite.svg<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://cecrnq0wnkexh::::res://addons/phantom_camera/examples/resources/tween/item_focus_phantom_camera_2d_tween.tres<>uid://cllveybboaqk5::::res://addons/phantom_camera/examples/resources/tween/inventory_phantom_camera_2d_tween.tres
+::res://addons/phantom_camera/examples/example_scenes/2D-4.3/::1717629153
+2d_example_scene.tscn::PackedScene::998447531291583502::1717629153::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/examples/scripts/2D/player_character_body_2d_4.3.gd
+2d_follow_framed_example_scene.tscn::PackedScene::7635259044284913144::1717629153::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/examples/scripts/2D/player_character_body_2d_4.3.gd
+2d_follow_group_example_scene.tscn::PackedScene::2978736400746796671::1717629153::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://cwep0on2tthn7::::res://addons/phantom_camera/examples/textures/2D/phantom_camera_2d_sprite.png<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/examples/scripts/2D/player_character_body_2d_4.3.gd
+2d_follow_path_example_scene.tscn::PackedScene::4694773633599900829::1717629153::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/examples/scripts/2D/player_character_body_2d_4.3.gd
+2d_limit_example_scene.tscn::PackedScene::1785076392835743211::1717629153::0::1::::<><>::res://addons/phantom_camera/examples/scripts/2D/2d_room_limit_tween_4.3.gd<>uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/examples/scripts/2D/player_character_body_2d_4.3.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd
+2d_tweening_example_scene.tscn::PackedScene::3892317079312557545::1717629153::0::1::::<><>::uid://c77npili4pel4::::res://addons/phantom_camera/examples/textures/2D/level_spritesheet.png<>uid://dg7rhrymsrrrm::::res://addons/phantom_camera/examples/ui/ui_inventory.tscn<>uid://iq5xd1ob1res::::res://addons/phantom_camera/examples/ui/ui_sign.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://euybd2w0bax::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_2d_tween.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://7kh0xydx0b1o::::res://addons/phantom_camera/examples/example_scenes/2D/sub_scenes/playable_character_2d.tscn<>res://addons/phantom_camera/examples/scripts/2D/2d_trigger_area.gd<>res://addons/phantom_camera/examples/scripts/2D/player_character_body_2d_4.3.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd
+::res://addons/phantom_camera/examples/example_scenes/3D/::1717629153
+3d_example_scene.tscn::PackedScene::5389709161117818686::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/examples/scripts/3D/npc.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_3d_tween.tres<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>res://addons/phantom_camera/examples/scripts/3D/3d_trigger_area.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd
+3d_follow_framed_example_scene.tscn::PackedScene::6831697141640160960::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_3d_tween.tres<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn
+3d_follow_glued_example_scene.tscn::PackedScene::8760621557405770743::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png
+3d_follow_group_example_scene.tscn::PackedScene::7240303035488103663::1717629153::0::1::::<><>::uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_3d_tween.tres<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd
+3d_follow_path_example_scene.tscn::PackedScene::8823052630826975221::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_3d_tween.tres<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>res://addons/phantom_camera/examples/scripts/3D/path_follow.gd<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+3d_follow_simple_example_scene.tscn::PackedScene::3803289718966625666::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>res://addons/phantom_camera/examples/scripts/3D/player_controller.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png
+3d_follow_third_person_example_scene.tscn::PackedScene::2053817529390837519::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://mskcwn1a1v6d::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_third_person_3d.tscn
+3d_look_at_example_scene.tscn::PackedScene::2612475775293339696::1717629153::0::1::::<><>::uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png
+3d_tweening_example_scene.tscn::PackedScene::2154332734917685671::1717629153::0::1::::<><>::uid://cixlwqycoox8h::::res://addons/phantom_camera/examples/models/3d_cube_dark.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd<>uid://cptfoggk2ok67::::res://addons/phantom_camera/examples/resources/tween/player_phantom_camera_3d_tween.tres<>res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd<>res://addons/phantom_camera/examples/scripts/3D/3d_trigger_area.gd<>uid://bulsh7s0ibmao::::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/playable_character_3d.tscn<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+::res://addons/phantom_camera/examples/example_scenes/3D/sub_scenes/::1717629153
+playable_character_3d.tscn::PackedScene::3814012827875850470::1717629153::0::1::::<><>::res://addons/phantom_camera/examples/scripts/3D/player_controller.gd
+playable_character_third_person_3d.tscn::PackedScene::880036841523467845::1717629153::0::1::::<><>::res://addons/phantom_camera/examples/scripts/3D/player_controller_third_person.gd
+::res://addons/phantom_camera/examples/models/::1717629153
+3d_cube_dark.tscn::PackedScene::5382540856779240661::1717629153::0::1::::<><>::uid://c7ja4woxol8yc::::res://addons/phantom_camera/examples/textures/3D/checker_pattern_dark.png
+::res://addons/phantom_camera/examples/resources/::1717629153
+::res://addons/phantom_camera/examples/resources/tween/::1717629153
+fixed_camera_tween.tres::Resource/Resource::6643106748633668090::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+inventory_phantom_camera_2d_tween.tres::Resource/Resource::5568910264892302066::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+item_focus_phantom_camera_2d_tween.tres::Resource/Resource::5058781781655307589::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+player_phantom_camera_2d_tween.tres::Resource/Resource::9514768340188899::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+player_phantom_camera_3d_tween.tres::Resource/Resource::5865226110262250054::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/resources/tween_resource.gd
+::res://addons/phantom_camera/examples/scripts/::1717629153
+::res://addons/phantom_camera/examples/scripts/2D/::1717629153
+2d_room_limit_tween.gd::GDScript::-1::1717629153::0::1::::<>Node2D<>::
+2d_room_limit_tween_4.3.gd::GDScript::-1::1717629153::0::1::::<>Node2D<>::
+2d_trigger_area.gd::GDScript::-1::1717629153::0::1::::<>Area2D<>::
+player_character_body_2d.gd::GDScript::-1::1717629153::0::1::::<>CharacterBody2D<>::
+player_character_body_2d_4.3.gd::GDScript::-1::1717629153::0::1::::<>CharacterBody2D<>::
+::res://addons/phantom_camera/examples/scripts/3D/::1717629153
+3d_trigger_area.gd::GDScript::-1::1717629153::0::1::::<>Area3D<>::
+npc.gd::GDScript::-1::1717629153::0::1::::<>Node3D<>::
+path_follow.gd::GDScript::-1::1717629153::0::1::::<>Node<>::
+player_controller.gd::GDScript::-1::1717629153::0::1::::<>CharacterBody3D<>::
+player_controller_third_person.gd::GDScript::-1::1717629153::0::1::::<><>::
+::res://addons/phantom_camera/examples/textures/::1717629153
+::res://addons/phantom_camera/examples/textures/2D/::1717629153
+inventory_container.png::CompressedTexture2D::4637741338914361246::1717629153::1717629153::1::::<><>::
+level_spritesheet.png::CompressedTexture2D::7085760997330170155::1717629153::1717629153::1::::<><>::
+phantom_camera_2d_sprite.png::CompressedTexture2D::6326209594840534622::1717629153::1717629153::1::::<><>::
+player_sprite.svg::CompressedTexture2D::5402321824071961374::1717629153::1717629153::1::::<><>::
+sign_prompt.png::CompressedTexture2D::3188285415853117228::1717629153::1717629153::1::::<><>::
+::res://addons/phantom_camera/examples/textures/3D/::1717629161
+checker_pattern_dark.png::CompressedTexture2D::7037516729818178126::1717629153::1717629161::1::::<><>::
+::res://addons/phantom_camera/examples/ui/::1717629153
+ui_inventory.tscn::PackedScene::7647500821014000442::1717629153::0::1::::<><>::uid://b7cs6me43ufh3::::res://addons/phantom_camera/examples/textures/2D/inventory_container.png<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+ui_sign.tscn::PackedScene::596403574585461246::1717629153::0::1::::<><>::uid://bloouh2jtndx1::::res://addons/phantom_camera/examples/textures/2D/sign_prompt.png<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf
+::res://addons/phantom_camera/fonts/::1717629153
+Nunito-Black.ttf::FontFile::6833869716374227054::1717629153::1717629153::1::::<><>::
+Nunito-Regular.ttf::FontFile::8643449995156224464::1717629153::1717629153::1::::<><>::
+::res://addons/phantom_camera/gizmos/::1717629153
+custom_gizmo.gd::GDScript::-1::1717629153::0::1::::CustomPluginGizmo<>EditorNode3DGizmoPlugin<>::
+phantom_camera_gizmo_plugin_3d.gd::GDScript::-1::1717629153::0::1::::<>CustomPluginGizmo<>::
+::res://addons/phantom_camera/icons/::1717629160
+phantom_camera_2d.svg::CompressedTexture2D::5620550124471480091::1717629153::1717629153::1::::<><>::
+phantom_camera_3d.svg::CompressedTexture2D::2805591509779235340::1717629153::1717629153::1::::<><>::
+phantom_camera_camera_3d_resource.svg::CompressedTexture2D::7893455253213541371::1717629153::1717629153::1::::<><>::
+phantom_camera_gizmo.svg::CompressedTexture2D::340464189041337994::1717629153::1717629160::1::::<><>::
+phantom_camera_glow_logo.png::CompressedTexture2D::5427785683244604059::1717629153::1717629153::1::::<><>::
+phantom_camera_host.svg::CompressedTexture2D::2116021710778199696::1717629153::1717629153::1::::<><>::
+phantom_camera_logo.png::CompressedTexture2D::4966186125554950581::1717629153::1717629153::1::::<><>::
+phantom_camera_tween.svg::CompressedTexture2D::8227259423555188651::1717629153::1717629153::1::::<><>::
+phantom_camera_updater_panel_icon.svg::CompressedTexture2D::9215092105644912232::1717629153::1717629160::1::::<><>::
+::res://addons/phantom_camera/icons/misc/::1717629153
+PriorityOverride.svg::CompressedTexture2D::8912176182624502929::1717629153::1717629153::1::::<><>::
+::res://addons/phantom_camera/icons/viewfinder/::1717629153
+Camera2DIcon.svg::CompressedTexture2D::4941179596290591277::1717629153::1717629153::1::::<><>::
+Camera3DIcon.svg::CompressedTexture2D::7877918109027130005::1717629153::1717629153::1::::<><>::
+SceneTypesIcon.svg::CompressedTexture2D::7928082713000371025::1717629153::1717629153::1::::<><>::
+::res://addons/phantom_camera/inspector/::1717629153
+phantom_camera_inspector_plugin.gd::GDScript::-1::1717629153::0::1::::<>EditorInspectorPlugin<>::
+::res://addons/phantom_camera/panel/::1717629153
+editor.gd::GDScript::-1::1717629153::0::1::::<>VBoxContainer<>::
+editor.tscn::PackedScene::5130828868618714074::1717629153::0::1::::<><>::res://addons/phantom_camera/panel/editor.gd<>uid://cuqkqsp3ikv5u::::res://addons/phantom_camera/panel/updater/UpdateButton.tscn<>uid://dbkr3d716wtx0::::res://addons/phantom_camera/panel/viewfinder/viewfinder_panel.tscn
+::res://addons/phantom_camera/panel/updater/::1717629153
+download_update_panel.tscn::PackedScene::4343775578160032417::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/panel/updater/download_update_panel.gd<>uid://cjli3p2b8mfyh::::res://addons/phantom_camera/icons/PhantomCameraGlowLogo.png<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://dve7mgsjik4dg::::res://addons/phantom_camera/fonts/Nunito-Regular.ttf<>uid://censw3w53gldn::::res://addons/phantom_camera/assets/PhantomCameraBtnPrimaryDefault.png
+update_button.tscn::PackedScene::-1::1717629153::0::1::::<><>::
+::res://addons/phantom_camera/panel/viewfinder/::1717629163
+deadzone_style_box.tres::StyleBoxFlat::8214081647515075988::1717629163::0::1::::<><>::
+viewfinder_panel.tscn::PackedScene::7251177071591726931::1717629153::0::1::::<><>::res://addons/phantom_camera/scripts/panel/viewfinder/viewfinder.gd<>uid://dpa7yvxlq043a::::res://addons/phantom_camera/panel/viewfinder/deadzone_style_box.tres<>uid://c4mm3of2mc8o5::::res://addons/phantom_camera/fonts/Nunito-Black.ttf<>uid://b671h5enwiljg::::res://addons/phantom_camera/icons/PhantomCameraGizmoIcon2D.svg<>uid://dve7mgsjik4dg::::res://addons/phantom_camera/fonts/Nunito-Regular.ttf<>uid://dy8eifa6aw2en::::res://addons/phantom_camera/icons/misc/PriorityOverride.svg
+::res://addons/phantom_camera/scripts/::1717629153
+::res://addons/phantom_camera/scripts/managers/::1717629153
+phantom_camera_manager.gd::GDScript::-1::1717629153::0::1::::<>Node<>::
+::res://addons/phantom_camera/scripts/panel/::1717629153
+::res://addons/phantom_camera/scripts/panel/updater/::1717629153
+download_update_panel.gd::GDScript::-1::1717629153::0::1::::<>Control<>::
+updater_constants.gd::GDScript::-1::1717629153::0::1::::<>RefCounted<>::
+update_button.gd::GDScript::-1::1717629153::0::1::::<>Button<>::
+::res://addons/phantom_camera/scripts/panel/viewfinder/::1717629153
+viewfinder.gd::GDScript::-1::1717629153::0::1::::<>Control<>::
+::res://addons/phantom_camera/scripts/phantom_camera/::1717629153
+phantom_camera_2d.gd::GDScript::-1::1717629153::0::1::::PhantomCamera2D<>Node2D<>res://addons/phantom_camera/icons/phantom_camera_2d.svg::
+phantom_camera_3d.gd::GDScript::-1::1717629153::0::1::::PhantomCamera3D<>Node3D<>res://addons/phantom_camera/icons/phantom_camera_3d.svg::
+phantom_camera_constants.gd::GDScript::-1::1717629153::0::1::::<>RefCounted<>::
+::res://addons/phantom_camera/scripts/phantom_camera_host/::1717629153
+phantom_camera_host.gd::GDScript::-1::1717629153::0::1::::PhantomCameraHost<>Node<>res://addons/phantom_camera/icons/PhantomCameraHostIcon.svg::
+::res://addons/phantom_camera/scripts/resources/::1717629153
+camera_3d_resource.gd::GDScript::-1::1717629153::0::1::::Camera3DResource<>Resource<>res://addons/phantom_camera/icons/phantom_camera_camera_3d_resource.svg::
+tween_resource.gd::GDScript::-1::1717629153::0::1::::PhantomCameraTween<>Resource<>::
 ::res://addons/proton_scatter/::1714657321
 plugin.cfg::TextFile::-1::1714657313::0::1::::<><>::
 plugin.gd::GDScript::-1::1714657313::0::1::::<>EditorPlugin<>::
@@ -715,21 +727,21 @@ unit_testing.tscn::PackedScene::155225341127764101::1714657321::0::1::::<><>::re
 plugin.cfg::TextFile::-1::1706426579::0::1::::<><>::
 plugin.gd::GDScript::-1::1706426579::0::1::::<>EditorPlugin<>::
 README.md::TextFile::-1::1706426579::0::1::::<><>::
-::res://addons/road-generator/nodes/::1716965134
-road_container.gd::GDScript::-1::1716960373::0::1::::RoadContainer<>Node3D<>res://addons/road-generator/resources/road_container.png::
+::res://addons/road-generator/nodes/::1717556407
+road_container.gd::GDScript::-1::1717556407::0::1::::RoadContainer<>Node3D<>res://addons/road-generator/resources/road_container.png::
 road_intersection.gd::GDScript::-1::1706426579::0::1::::RoadIntersection<>Node3D<>res://addons/road-generator/resources/road_intersection.png::
 road_lane.gd::GDScript::-1::1712473623::0::1::::RoadLane<>Path3D<>res://addons/road-generator/resources/road_lane.png::
-road_manager.gd::GDScript::-1::1706426579::0::1::::RoadManager<>Node3D<>res://addons/road-generator/resources/road_manager.png::
-road_point.gd::GDScript::-1::1716965134::0::1::::RoadPoint<>Node3D<>res://addons/road-generator/resources/road_point.png::
+road_manager.gd::GDScript::-1::1717556407::0::1::::RoadManager<>Node3D<>res://addons/road-generator/resources/road_manager.png::
+road_point.gd::GDScript::-1::1717028665::0::1::::RoadPoint<>Node3D<>res://addons/road-generator/resources/road_point.png::
 road_segment.gd::GDScript::-1::1706426579::0::1::::<>Node3D<>::
-::res://addons/road-generator/resources/::1717023575
+::res://addons/road-generator/resources/::1717629617
 road_container.png::CompressedTexture2D::7354533396782869334::1706426579::1706426579::1::::<><>::
 road_intersection.png::CompressedTexture2D::7443363485354325915::1706426579::1706426579::1::::<><>::
 road_lane.png::CompressedTexture2D::882146482603644181::1706426579::1706426579::1::::<><>::
 road_manager.png::CompressedTexture2D::689097667283262952::1706426579::1706426579::1::::<><>::
 road_point.png::CompressedTexture2D::1756463494516045297::1706426579::1706426579::1::::<><>::
-road_texture1.material::StandardMaterial3D::4681053889598312312::1715780173::0::1::::<><>::uid://6fppg4q2oigl::::res://addons/road-generator/resources/road_texture.png
-road_texture.material::StandardMaterial3D::7431534515079863824::1717023575::0::1::::<><>::uid://6fppg4q2oigl::::res://addons/road-generator/resources/road_texture.png
+road_texture1.material::StandardMaterial3D::4681053889598312312::1717629617::0::1::::<><>::uid://6fppg4q2oigl::::res://addons/road-generator/resources/road_texture.png
+road_texture.material::StandardMaterial3D::7431534515079863824::1717629616::0::1::::<><>::uid://6fppg4q2oigl::::res://addons/road-generator/resources/road_texture.png
 road_texture.png::CompressedTexture2D::2187113944052409687::1706426579::1706426579::1::::<><>::
 road_texture@1x.png::CompressedTexture2D::20127258871610031::1706426579::1706426579::1::::<><>::
 road_texture@2x.png::CompressedTexture2D::7073209567348625694::1706426579::1706426579::1::::<><>::
@@ -807,15 +819,15 @@ normal.gdshader::Shader::-1::1702673099::0::1::::<><>::
 position.gdshader::Shader::-1::1702673099::0::1::::<><>::
 ::res://addons/simplegrasstextured/textures/::1716124629
 grassbushcc008.png::CompressedTexture2D::6821074585685753060::1702673099::1716124629::1::::<><>::
-::res://addons/SIsilicon.vfx.lens flare/::1717023574
+::res://addons/SIsilicon.vfx.lens flare/::1717629616
 lens-dirt-default.jpeg::CompressedTexture2D::180792783846997269::1691519046::1716169478::1::::<><>::
 lens-flare-plugin.gd::GDScript::-1::1691519046::0::1::::<>EditorPlugin<>::
-lens-flare-shader.tres::ShaderMaterial::4124092767701715282::1717023574::0::1::::<><>::uid://cttvpeo7w72p::::res://addons/SIsilicon.vfx.lens flare/lens-dirt-default.jpeg<>res://addons/SIsilicon.vfx.lens flare/lens_flare.gdshader
+lens-flare-shader.tres::ShaderMaterial::4124092767701715282::1717629616::0::1::::<><>::uid://cttvpeo7w72p::::res://addons/SIsilicon.vfx.lens flare/lens-dirt-default.jpeg<>res://addons/SIsilicon.vfx.lens flare/lens_flare.gdshader
 lens-flare.gd::GDScript::-1::1691519046::0::1::::<>Node<>::
 lens_flare.gdshader::Shader::-1::1691519046::0::1::::<><>::
 lens_flare_icon.png::CompressedTexture2D::8847494517825154621::1691519046::1716169478::1::::<><>::
 plugin.cfg::TextFile::-1::1691519046::0::1::::<><>::
-::res://addons/Todo_Manager/::1717024055
+::res://addons/Todo_Manager/::1717630086
 ColourPicker.gd::GDScript::-1::1714686197::0::1::::<>HBoxContainer<>::
 Current.gd::GDScript::-1::1714686197::0::1::::<>Panel<>::
 Dock.gd::GDScript::-1::1714686197::0::1::::<>Control<>::
@@ -823,7 +835,7 @@ Pattern.gd::GDScript::-1::1714686197::0::1::::<>HBoxContainer<>::
 plugin.cfg::TextFile::-1::1714686197::0::1::::<><>::
 plugin.gd::GDScript::-1::1714686197::0::1::::<>EditorPlugin<>::
 Project.gd::GDScript::-1::1714686197::0::1::::<>Panel<>::
-todo.cfg::TextFile::-1::1717023319::0::1::::<><>::
+todo.cfg::TextFile::-1::1717629930::0::1::::<><>::
 todoItem_class.gd::GDScript::-1::1714686197::0::1::::<>RefCounted<>::
 todo_class.gd::GDScript::-1::1714686197::0::1::::<>RefCounted<>::
 ::res://addons/Todo_Manager/doc/::1715516637
@@ -1108,11 +1120,18 @@ image_file_cache.gd::GDScript::-1::1714646318::0::1::::<>RefCounted<>::
 logger.gd::GDScript::-1::1714646318::0::1::::<>RefCounted<>::
 util.gd::GDScript::-1::1714646318::0::1::::<>RefCounted<>::
 xyz_format.gd::GDScript::-1::1714646318::0::1::::<>RefCounted<>::
-::res://assets/::1716861294
+::res://assets/::1717472079
 bridge base.tscn::PackedScene::8049000162057245019::1714815199::0::1::::<><>::uid://dsjae8ae66cq7::::res://assets/highway modular/highway_modular_street_assets_vol_0.png<>uid://dwbng7kg3t5bi::::res://assets/highway modular/highway_modular_street_assets_vol_2.jpg<>uid://d2iln7kipqsgw::::res://assets/highway modular/highway_modular_street_assets_vol_1.png<>uid://bta7hsbhxrae6::::res://assets/highway modular/highway_modular_street_assets_vol_3.png
 player_save.gd::GDScript::-1::1714314500::0::1::::PlayerSave<>Resource<>::
 rgba-noise-medium.png::CompressedTexture2D::7469706609169200162::1714311507::1714311552::1::::<><>::
 save.gd::GDScript::-1::1714314500::0::1::::<>Resource<>::
+::res://assets/barrier_attempt/::1717472081
+barrier attempt 1.tscn::PackedScene::7832308910704163091::1717472079::0::1::::<><>::res://proof of concept/barrier.gd<>uid://bf41brdova5d5::::res://assets/barrier_attempt/barrier.tres
+barrier.tres::ArrayMesh::2798813182552388940::1717472079::0::1::::<><>::uid://drb4jevk26rry::::res://assets/barrier_attempt/untitled2_Image_0.png<>uid://d2syioqxmcasq::::res://assets/barrier_attempt/untitled2_Image_1.png<>uid://bgo62mt2j23q3::::res://assets/barrier_attempt/untitled2_Image_2.png
+untitled2.glb::PackedScene::1489259178475117769::1717471546::1717472081::1::::<><>::uid://drb4jevk26rry::::res://assets/barrier_attempt/untitled2_Image_0.png<>uid://d2syioqxmcasq::::res://assets/barrier_attempt/untitled2_Image_1.png<>uid://bgo62mt2j23q3::::res://assets/barrier_attempt/untitled2_Image_2.png
+untitled2_Image_0.png::CompressedTexture2D::8356313878641252294::1717470925::1717472081::1::::<><>::
+untitled2_Image_1.png::CompressedTexture2D::9092991884161790500::1717470924::1717472081::1::::<><>::
+untitled2_Image_2.png::CompressedTexture2D::2838386138160688052::1717470923::1717472081::1::::<><>::
 ::res://assets/emergency parking lot/::1714725026
 emergency_parking_lot.glb::PackedScene::1886790605560833412::1714057265::1714725026::1::::<><>::uid://rcs2fh05dkoh::::res://assets/emergency parking lot/emergency_parking_lot_0.jpg
 emergency_parking_lot_0.jpg::CompressedTexture2D::1198480494266385891::1714057280::1714725025::1::::<><>::
@@ -1131,10 +1150,10 @@ highway_modular_street_assets_vol_3.png::CompressedTexture2D::372196510445613651
 highway_modular_street_assets_vol_4.png::CompressedTexture2D::7027870908934031228::1714724986::1714724987::1::::<><>::
 ::res://assets/lamp/::1713883634
 lamp1.tscn::PackedScene::9133964488757474792::1713883634::0::1::::<><>::
-::res://assets/motion_blur/::1717024054
-blur_material.tres::ShaderMaterial::396163770150284134::1716854532::0::1::::<><>::res://assets/motion_blur/moblur_shader.gdshader
-moblur_shader.gdshader::Shader::-1::1717024054::0::1::::<><>::
-motion_blur.gd::GDScript::-1::1717023575::0::1::::<>MeshInstance3D<>::
+::res://assets/motion_blur/::1717629929
+blur_material.tres::ShaderMaterial::396163770150284134::1717629617::0::1::::<><>::res://assets/motion_blur/moblur_shader.gdshader
+moblur_shader.gdshader::Shader::-1::1717630094::0::1::::<><>::
+motion_blur.gd::GDScript::-1::1717629616::0::1::::<>MeshInstance3D<>::
 motion_blur.tscn::PackedScene::379577891003110585::1713683588::0::1::::<><>::res://assets/motion_blur/moblur_shader.gdshader<>res://assets/motion_blur/motion_blur.gd
 ::res://assets/station/::1714483886
 gas_station_props.glb::PackedScene::5722230747411280260::1711981668::1714483886::1::::<><>::uid://bxy0j3yma1o28::::res://assets/station/gas_station_props_0.png<>uid://dhgeap8n70qrj::::res://assets/station/gas_station_props_1.jpg<>uid://bmt5ayxd5ofju::::res://assets/station/gas_station_props_2.jpg<>uid://b0pjc1g30r676::::res://assets/station/gas_station_props_3.jpg<>uid://c2nclpa45xkib::::res://assets/station/gas_station_props_4.jpg<>uid://k7t3ltryw3my::::res://assets/station/gas_station_props_5.jpg<>uid://c2fqblhs1aue3::::res://assets/station/gas_station_props_6.jpg<>uid://ds2cqr0ykc0r2::::res://assets/station/gas_station_props_7.jpg<>uid://dr1mablsugx2v::::res://assets/station/gas_station_props_8.jpg<>uid://jrm8kosc1mps::::res://assets/station/gas_station_props_9.jpg<>uid://da2b2m11vgjs5::::res://assets/station/gas_station_props_10.jpg<>uid://dshm8rntq8sla::::res://assets/station/gas_station_props_11.jpg<>uid://b1kwdx0v4m6ei::::res://assets/station/gas_station_props_12.jpg<>uid://b4ma8sxnby81e::::res://assets/station/gas_station_props_13.jpg<>uid://xkxw848ingh7::::res://assets/station/gas_station_props_14.jpg<>uid://bxnjv5xpfn8fj::::res://assets/station/gas_station_props_15.jpg<>uid://ne4plmm6cjkm::::res://assets/station/gas_station_props_16.jpg<>uid://bla7iaa3kvalu::::res://assets/station/gas_station_props_17.jpg<>uid://eo1exda11ce0::::res://assets/station/gas_station_props_18.jpg<>uid://bpjqqqivab0tp::::res://assets/station/gas_station_props_19.jpg<>uid://0hq2jbjak3c::::res://assets/station/gas_station_props_20.png<>uid://cnkjbjssirnj8::::res://assets/station/gas_station_props_21.jpg<>uid://dkyp1vox2skt3::::res://assets/station/gas_station_props_22.png<>uid://0j4hqiykfcui::::res://assets/station/gas_station_props_23.jpg<>uid://qo1ovbfg60yx::::res://assets/station/gas_station_props_24.jpg<>uid://b0q5onlxl6l2::::res://assets/station/gas_station_props_25.png<>uid://ciws7tqlxjcah::::res://assets/station/gas_station_props_26.png<>uid://du2hvably53db::::res://assets/station/gas_station_props_27.png<>uid://hpiu1atnu64p::::res://assets/station/gas_station_props_28.jpg<>uid://cgnata4t6lwjy::::res://assets/station/gas_station_props_29.jpg<>uid://cn77n7uqst6y1::::res://assets/station/gas_station_props_30.png<>uid://dyogp3vs21mid::::res://assets/station/gas_station_props_31.jpg<>uid://cr04gy5ow3gan::::res://assets/station/gas_station_props_32.png<>uid://b5exwsh2dbj0u::::res://assets/station/gas_station_props_33.jpg<>uid://bcgihcmbsdvak::::res://assets/station/gas_station_props_34.jpg<>uid://dl2coui282w8d::::res://assets/station/gas_station_props_35.jpg<>uid://bby8y4mjmpxg8::::res://assets/station/gas_station_props_36.png<>uid://comi6e7ss6xok::::res://assets/station/gas_station_props_37.png<>uid://dc48khatkl2kn::::res://assets/station/gas_station_props_38.png<>uid://cbismi5ge2xew::::res://assets/station/gas_station_props_39.png<>uid://datntjewo1uc::::res://assets/station/gas_station_props_40.png<>uid://b6fxwflcvr1ot::::res://assets/station/gas_station_props_41.png<>uid://c3bvpvouthe88::::res://assets/station/gas_station_props_42.jpg<>uid://bixkcqo0s32qa::::res://assets/station/gas_station_props_43.jpg<>uid://d025rr3lch65m::::res://assets/station/gas_station_props_44.png<>uid://d26uwfnxufkhb::::res://assets/station/gas_station_props_45.png<>uid://cxwe6arqyxpx3::::res://assets/station/gas_station_props_46.png<>uid://dw75iiv6w8hj0::::res://assets/station/gas_station_props_47.png<>uid://bopacoigoq6yj::::res://assets/station/gas_station_props_48.png<>uid://dbp7nb08qoeru::::res://assets/station/gas_station_props_49.png<>uid://cujmkuhnvo3p7::::res://assets/station/gas_station_props_50.png<>uid://by3glr0v4e5lq::::res://assets/station/gas_station_props_51.png<>uid://p4ionirxaq30::::res://assets/station/gas_station_props_52.png<>uid://cq5ubq468rwpk::::res://assets/station/gas_station_props_53.png<>uid://cc4ipmmo3uct0::::res://assets/station/gas_station_props_54.png
@@ -1399,11 +1418,11 @@ roll1.ogg::AudioStreamOggVorbis::795742387260265311::1661167334::1716861298::1::
 roll2.ogg::AudioStreamOggVorbis::5486615493107108552::1661167334::1716861298::1::::<><>::
 tyres.gd::GDScript::-1::1713612440::0::1::::<>Node3D<>::
 tyres.tscn::PackedScene::5823593044494772027::1716861294::0::1::::<><>::res://audio/tyre_sounds/tyres.gd<>uid://dsugmmgt1i6k3::::res://audio/tyre_sounds/peel0.ogg<>uid://q780x4qnvwc2::::res://audio/tyre_sounds/roll0.ogg<>uid://llp04s17ks1t::::res://audio/tyre_sounds/roll1.ogg<>uid://cc4odl5kd008a::::res://audio/tyre_sounds/peel1.ogg<>uid://ckf00xo2jkg8o::::res://audio/tyre_sounds/roll2.ogg<>uid://b1iyklc5unpf7::::res://audio/tyre_sounds/peel2.ogg
-::res://cars/::1716263446
-::res://cars/930/::1716253918
-node_3d.tscn::PackedScene::5702149449329759520::1715423453::0::1::::<><>::uid://bgf2jcd4ojg71::::res://cars/930/Porsche 930.tscn<>uid://dh6ykun8bv60u::::res://sky/day_sky.tres
+::res://cars/::1717556426
+::res://cars/930/::1717629928
+node_3d.tscn::PackedScene::5702149449329759520::1717563796::0::1::::<><>::uid://bgf2jcd4ojg71::::res://cars/930/PLAYER.tscn<>uid://dh6ykun8bv60u::::res://sky/day_sky.tres
+PLAYER.tscn::PackedScene::2819531176259244154::1717629928::0::1::::<><>::uid://q0vk7kw4qrpt::::res://cars/930/Porsche 930_Image_2.jpg<>res://cars/R32 GTR/player_vehicle.gd<>uid://dbc5rcc1d0eal::::res://cars/930/Porsche 930_Image_3.png<>uid://ce1cxghh8rast::::res://cars/R32 GTR/default curve.tres<>uid://cpxl58vud6c2c::::res://cars/930/Porsche 930_Image_4.png<>uid://c5bs014ipa3ss::::res://cars/930/Porsche 930_Image_0.png<>uid://5w7j414pm0i7::::res://cars/930/Porsche 930_Image_1.png<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader<>res://cars/[COMMON]/camera_1.gd<>res://cars/[COMMON]/trail_effect.gd<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn
 Porsche 930.glb::PackedScene::1705071112350121387::1715411830::1715413366::1::::<><>::uid://q0vk7kw4qrpt::::res://cars/930/Porsche 930_Image_2.jpg<>uid://dbc5rcc1d0eal::::res://cars/930/Porsche 930_Image_3.png<>uid://cpxl58vud6c2c::::res://cars/930/Porsche 930_Image_4.png<>uid://c5bs014ipa3ss::::res://cars/930/Porsche 930_Image_0.png<>uid://5w7j414pm0i7::::res://cars/930/Porsche 930_Image_1.png
-Porsche 930.tscn::PackedScene::2819531176259244154::1716253918::0::1::::<><>::uid://q0vk7kw4qrpt::::res://cars/930/Porsche 930_Image_2.jpg<>res://cars/930/car script.gd<>uid://dbc5rcc1d0eal::::res://cars/930/Porsche 930_Image_3.png<>uid://cpxl58vud6c2c::::res://cars/930/Porsche 930_Image_4.png<>uid://c5bs014ipa3ss::::res://cars/930/Porsche 930_Image_0.png<>uid://5w7j414pm0i7::::res://cars/930/Porsche 930_Image_1.png<>res://cars/[COMMON]/Cam2.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader
 Porsche 930_Image_0.png::CompressedTexture2D::6881710015788645398::1715413363::1715413366::1::::<><>::
 Porsche 930_Image_1.png::CompressedTexture2D::2153042200324199684::1715413363::1715413366::1::::<><>::
 Porsche 930_Image_2.jpg::CompressedTexture2D::1175925554081388133::1715413362::1715413366::1::::<><>::
@@ -1435,22 +1454,10 @@ tesla_cybertruck_7.png::CompressedTexture2D::605993185124760915::1698644090::171
 tesla_cybertruck_8.png::CompressedTexture2D::5812224452435771502::1698644090::1711288695::1::::<><>::
 ::res://cars/IMPREZA/::1716263427
 ::res://cars/M3 E30/::1716263441
-::res://cars/NSX/::1716253918
-PLAYER.tscn::PackedScene::983472734502197236::1716253918::0::1::::<><>::res://cars/NSX/NSX Prototype.gd<>uid://3qir1x0ljrpb::::res://cars/R32 GTR/powercurve.tres<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>uid://cchyns5ahnjb5::::res://cars/NSX/model/untitled_Image_1.png<>uid://cinpp7u84dvmq::::res://cars/NSX/model/untitled_Image_2.png<>uid://bvqesspb6jh4s::::res://cars/NSX/model/untitled_Image_3.jpg<>uid://d05t4mh5traab::::res://cars/NSX/model/untitled_Image_0.jpg<>res://cars/[COMMON]/Cam2.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader
-::res://cars/NSX/model/::1711872590
-untitled.glb::PackedScene::6778221954763221016::1711872564::1711872590::1::::<><>::
-untitled_Image_0.jpg::CompressedTexture2D::8977120528020664761::1711872565::1711872571::1::::<><>::
-untitled_Image_1.png::CompressedTexture2D::4929151113862154940::1711872567::1711872571::1::::<><>::
-untitled_Image_2.png::CompressedTexture2D::5362128282274866948::1711872566::1711872571::1::::<><>::
-untitled_Image_3.jpg::CompressedTexture2D::3893692425097685024::1711872568::1711872571::1::::<><>::
-::res://cars/NSX/modelbackup/::1711872547
-Honda NSX.glb::PackedScene::1856897815430362827::1711811690::1711872547::1::::<><>::uid://d4bba3xeqojxl::::res://cars/NSX/modelbackup/Honda NSX_0.jpg<>uid://dyn2n5al22oy0::::res://cars/NSX/modelbackup/Honda NSX_1.png<>uid://chr5ewj2sie68::::res://cars/NSX/modelbackup/Honda NSX_2.png<>uid://ba1gipevogo3y::::res://cars/NSX/modelbackup/Honda NSX_3.jpg
-Honda NSX_0.jpg::CompressedTexture2D::9196865117717058669::1711869147::1711872544::1::::<><>::
-Honda NSX_1.png::CompressedTexture2D::8872295359557768937::1711869147::1711872544::1::::<><>::
-Honda NSX_2.png::CompressedTexture2D::5301087518298132047::1711869148::1711872544::1::::<><>::
-Honda NSX_3.jpg::CompressedTexture2D::2440473888609068600::1711869149::1711872544::1::::<><>::
-::res://cars/R32 GTR/::1716864957
-brake disk.tres::StandardMaterial3D::4500387494613823::1716707466::0::1::::<><>::
+::res://cars/NSX/::1717555977
+::res://cars/R32 GTR/::1717629925
+brake disk.tres::StandardMaterial3D::4500387494613823::1717629617::0::1::::<><>::
+default curve.tres::Curve::5107433397105778991::1715097102::0::1::::<><>::
 EurostileNextLTProBold (Linotype) [2012].otf::FontFile::5822670444467815509::1198026504::1715653052::1::::<><>::
 gear_ui.gd::GDScript::-1::1715179405::0::1::::<>Sprite2D<>::
 gtr logo.webp::CompressedTexture2D::7818793585619970421::1714483741::1716253673::1::::<><>::
@@ -1465,17 +1472,15 @@ Nissan Skyline GT-R R32_Image_1.png::CompressedTexture2D::2611571438923865964::1
 Nissan Skyline GT-R R32_Image_2.png::CompressedTexture2D::5286492589072158819::1715069907::1715069911::1::::<><>::
 Nissan Skyline GT-R R32_Image_3.png::CompressedTexture2D::4329411050697677677::1715069907::1715069911::1::::<><>::
 Nissan Skyline GT-R R32_Image_4.png::CompressedTexture2D::3037932667421425885::1715069906::1715069911::1::::<><>::
-PLAYER.tscn::PackedScene::835834142487317595::1716861358::0::1::::<><>::res://cars/R32 GTR/player_vehicle.gd<>uid://bjjukpdui11sb::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_4.png<>uid://ce1cxghh8rast::::res://cars/R32 GTR/testcurve1.tres<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://843j1lg4seh0::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_0.jpg<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>uid://bdhcg2iru7jv5::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_1.png<>uid://cgeds7r238f::::res://cars/R32 GTR/brake disk.tres<>res://assets/motion_blur/motion_blur.gd<>uid://qnrugbojpopf::::res://cars/R32 GTR/rev.png<>res://cars/R32 GTR/speedo_needle_ui.gd<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>res://cars/R32 GTR/tacho_needle_ui.gd<>uid://c6dvvjhidpvu0::::res://cars/R32 GTR temp (wrong dims)/paint/Black Pearl Metallic.tres<>res://cars/R32 GTR/gear_ui.gd<>res://cars/R32 GTR/speedo_ui.gd<>uid://ci2ayqgdeqb38::::res://digits/0.png<>res://cars/[COMMON]/camera_1.gd<>res://shaders/rain.gdshader<>uid://bvchub64t05x8::::res://audio/mechanical_sounds/other_sounds.tscn<>uid://beda61k7ekh7u::::res://audio/default_engine_sound/engine_sound.tscn<>uid://co78yx7q0at76::::res://audio/tyre_sounds/tyres.tscn<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>res://cars/[COMMON]/trail_effect.gd<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav
-player_vehicle.gd::GDScript::-1::1716864957::0::1::::PlayerVehicle<>VehicleBody3D<>::
-powercurve.tres::Curve::1998835162656942619::1715081724::0::1::::<><>::
+PLAYER.tscn::PackedScene::835834142487317595::1717629925::0::1::::<><>::res://cars/R32 GTR/player_vehicle.gd<>uid://bjjukpdui11sb::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_4.png<>uid://ce1cxghh8rast::::res://cars/R32 GTR/default curve.tres<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://843j1lg4seh0::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_0.jpg<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>uid://bdhcg2iru7jv5::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_1.png<>uid://cgeds7r238f::::res://cars/R32 GTR/brake disk.tres<>uid://qnrugbojpopf::::res://cars/R32 GTR/rev.png<>res://cars/R32 GTR/speedo_needle_ui.gd<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>res://cars/R32 GTR/tacho_needle_ui.gd<>res://cars/R32 GTR/gear_ui.gd<>res://cars/R32 GTR/speedo_ui.gd<>uid://ci2ayqgdeqb38::::res://digits/0.png<>uid://ud3f0l62hu0u::::res://camera.tscn<>uid://drn4wjyuuotva::::res://cars/[COMMON]/glass.tres<>uid://bvchub64t05x8::::res://audio/mechanical_sounds/other_sounds.tscn<>uid://beda61k7ekh7u::::res://audio/default_engine_sound/engine_sound.tscn<>uid://co78yx7q0at76::::res://audio/tyre_sounds/tyres.tscn<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>res://cars/[COMMON]/trail_effect.gd<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav
+player_vehicle.gd::GDScript::-1::1717596779::0::1::::PlayerVehicle<>VehicleBody3D<>::
 rev.png::CompressedTexture2D::1150926631100057539::1711553573::1716253489::1::::<><>::
 speedo.png::CompressedTexture2D::8537981828979865611::1711553791::1715653052::1::::<><>::
 speedo_needle_ui.gd::GDScript::-1::1711782828::0::1::::<>Sprite2D<>::
 speedo_ui.gd::GDScript::-1::1715179231::0::1::::<>Control<>::
 tacho_needle_ui.gd::GDScript::-1::1715074815::0::1::::<>Sprite2D<>::
-testcurve1.tres::Curve::5107433397105778991::1715097102::0::1::::<><>::
-::res://cars/R32 GTR/paint/::1715072433
-Black Pearl Metallic.tres::StandardMaterial3D::6956201695839373053::1715072433::0::1::::<><>::
+::res://cars/R32 GTR/paint/::1717566453
+Black Pearl Metallic.tres::StandardMaterial3D::6956201695839373053::1717566453::0::1::::<><>::
 Crystal White.tres::StandardMaterial3D::8372502572436533935::1715067983::0::1::::<><>::
 Dark Blue Pearl.tres::StandardMaterial3D::2944632457709236263::1714292536::0::1::::<><>::
 Greyish Blue Pearl.tres::StandardMaterial3D::7666759328976659657::1714292344::0::1::::<><>::
@@ -1492,37 +1497,12 @@ wire w wheel_Image_2.png::CompressedTexture2D::1735191120357324508::1714814194::
 wire w wheel_Image_3.png::CompressedTexture2D::1513191500497663763::1714814194::1715653052::1::::<><>::
 wire w wheel_Image_4.png::CompressedTexture2D::937518290707158654::1714814189::1715653052::1::::<><>::
 wire.obj::Mesh::2070392755962427161::1711289271::1715653056::1::::<><>::
-::res://cars/R32 GTR temp (wrong dims)/::1716861309
-PLAYER.tscn::PackedScene::622340402527668316::1716861309::0::1::::<><>::res://cars/R32 GTR/player_vehicle.gd<>uid://ce1cxghh8rast::::res://cars/R32 GTR/testcurve1.tres<>res://cars/[COMMON]/Cam2.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>uid://bsxltdfj0ycq5::::res://cars/R32 GTR temp (wrong dims)/model/nissan_skyline_r32_gt-r_Image_4.png<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader<>uid://bqpcx8daf8wyn::::res://cars/R32 GTR temp (wrong dims)/model/nissan_skyline_r32_gt-r_Image_1.png<>res://cars/[COMMON]/trail_effect.gd<>uid://fcko54ya3hyl::::res://cars/R32 GTR temp (wrong dims)/model/nissan_skyline_r32_gt-r_Image_0.png<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>uid://c6dvvjhidpvu0::::res://cars/R32 GTR temp (wrong dims)/paint/Black Pearl Metallic.tres<>res://cars/R32 GTR/tacho_needle_ui.gd<>res://cars/R32 GTR/speedo_needle_ui.gd<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://qnrugbojpopf::::res://cars/R32 GTR/rev.png<>res://cars/R32 GTR/speedo_ui.gd<>uid://ci2ayqgdeqb38::::res://digits/0.png<>uid://bvchub64t05x8::::res://audio/mechanical_sounds/other_sounds.tscn<>uid://beda61k7ekh7u::::res://audio/default_engine_sound/engine_sound.tscn<>uid://co78yx7q0at76::::res://audio/tyre_sounds/tyres.tscn
-::res://cars/R32 GTR temp (wrong dims)/model/::1715067996
-mesh_Image.png::CompressedTexture2D::3776900449848511250::1707492703::1715067992::1::::<><>::
-mesh_Image_0.png::CompressedTexture2D::368344038430593907::1707492703::1715067992::1::::<><>::
-mesh_Image_1.png::CompressedTexture2D::8176830294847851940::1707492705::1715067993::1::::<><>::
-mesh_Image_2.png::CompressedTexture2D::8458888118059192175::1707492704::1715067992::1::::<><>::
-mesh_Image_3.png::CompressedTexture2D::398480881767788765::1707492704::1715067992::1::::<><>::
-mesh_Image_4.png::CompressedTexture2D::2405305802617092::1707492702::1715067992::1::::<><>::
-nissan_skyline_r32_gt-r.glb::PackedScene::1719189026548999993::1698644090::1715067996::1::::<><>::uid://bsxltdfj0ycq5::::res://cars/R32 GTR temp (wrong dims)/model/nissan_skyline_r32_gt-r_Image_4.png<>uid://chlgf33bb3ygn::::res://cars/R32 GTR temp (wrong dims)/model/nissan_skyline_r32_gt-r_Image_0.jpg<>uid://d27l10bimyi40::::res://cars/R32 GTR temp (wrong dims)/model/nissan_skyline_r32_gt-r_Image_2.png<>uid://b0le1i2e652wd::::res://cars/R32 GTR temp (wrong dims)/model/nissan_skyline_r32_gt-r_Image_3.png<>uid://bqpcx8daf8wyn::::res://cars/R32 GTR temp (wrong dims)/model/nissan_skyline_r32_gt-r_Image_1.png
-nissan_skyline_r32_gt-r_Image.png::CompressedTexture2D::2832743533639949844::1698644090::1715067992::1::::<><>::
-nissan_skyline_r32_gt-r_Image_0.jpg::CompressedTexture2D::5287246173029437513::1711288697::1715067992::1::::<><>::
-nissan_skyline_r32_gt-r_Image_0.png::CompressedTexture2D::355706766332006647::1698644090::1715067992::1::::<><>::
-nissan_skyline_r32_gt-r_Image_1.png::CompressedTexture2D::3540572093370834349::1698644090::1715067993::1::::<><>::
-nissan_skyline_r32_gt-r_Image_2.png::CompressedTexture2D::9121136550007079763::1698644090::1715067992::1::::<><>::
-nissan_skyline_r32_gt-r_Image_3.png::CompressedTexture2D::4164139690672060923::1698644090::1715067992::1::::<><>::
-nissan_skyline_r32_gt-r_Image_4.png::CompressedTexture2D::3698002540263028854::1698644090::1715067992::1::::<><>::
-::res://cars/R32 GTR temp (wrong dims)/paint/::1716707466
-Black Pearl Metallic.tres::StandardMaterial3D::6956201695839373053::1716707466::0::1::::<><>::
-Crystal White.tres::StandardMaterial3D::8372502572436533935::1715067983::0::1::::<><>::
-Dark Blue Pearl.tres::StandardMaterial3D::2944632457709236263::1714292536::0::1::::<><>::
-Greyish Blue Pearl.tres::StandardMaterial3D::7666759328976659657::1714292344::0::1::::<><>::
-Gun Grey Metallic.tres::StandardMaterial3D::5874426836464965700::1714292396::0::1::::<><>::
-Light Red.tres::StandardMaterial3D::5235450885596328133::1714292127::0::1::::<><>::
-Red Pearl Metallic.tres::StandardMaterial3D::6089891228247522431::1714292232::0::1::::<><>::
-Spark Silver Metallic.tres::StandardMaterial3D::5685476516677753466::1714292467::0::1::::<><>::
 ::res://cars/RX-7/::1715827810
 ::res://cars/SUPRA/::1715827815
-::res://cars/[COMMON]/::1716288401
+::res://cars/[COMMON]/::1717571499
 Cam2.gd::GDScript::-1::1716253556::0::1::::<>Node3D<>::
-camera_1.gd::GDScript::-1::1716288401::0::1::::<>Node3D<>::
+camera_1.gd::GDScript::-1::1717571499::0::1::::<>Node3D<>::
+glass.tres::StandardMaterial3D::8381109894706231366::1717511189::0::1::::<><>::
 smoke.png::CompressedTexture2D::1233625906357192280::1704981772::1711288696::1::::<><>::
 trail_effect.gd::GDScript::-1::1705585038::0::1::::Trail3D<>MeshInstance3D<>::
 tyre smoke.tscn::PackedScene::3771731508912846834::1715683268::0::1::::<><>::uid://rttvybl75a3q::::res://cars/[COMMON]/smoke.png
@@ -1580,11 +1560,11 @@ reset_btn.tscn::PackedScene::-1::1711466645::0::1::::<><>::res://game_settings/c
 binary_selection.gd::GDScript::-1::1711466645::0::1::::<>ggsUIComponent<>::
 ::res://game_settings/settings/::1711466798
 nonempty.txt::TextFile::-1::1711466645::0::1::::<><>::
-::res://game_settings/settings/display/::1717023575
+::res://game_settings/settings/display/::1717629616
 audio.tres::Resource::6486032155478775740::1712744439::0::1::::<><>::res://game_settings/templates/audio/audio_volume.gd
 brake.tres::Resource/Resource::6902663252672967987::1712753464::0::1::::<><>::res://game_settings/templates/input.gd
-fullscreen.tres::Resource::7789446967331889962::1717023575::0::1::::<><>::res://game_settings/templates/display/display_fullscreen.gd
-throttle.tres::Resource/ggsInputSetting::1019476184712720192::1717023575::0::1::::<><>::res://game_settings/templates/input.gd
+fullscreen.tres::Resource::7789446967331889962::1717629616::0::1::::<><>::res://game_settings/templates/display/display_fullscreen.gd
+throttle.tres::Resource/ggsInputSetting::1019476184712720192::1717629616::0::1::::<><>::res://game_settings/templates/input.gd
 ::res://game_settings/templates/::1711466645
 input.gd::GDScript::-1::1711466645::0::1::::ggsInputSetting<>ggsSetting<>::
 ::res://game_settings/templates/audio/::1711466645
@@ -1601,14 +1581,15 @@ README.md::TextFile::-1::1711197057::0::1::::<><>::
 reference.json::JSON::-1::1711197057::0::1::::<><>::
 ::res://lib/godot-steering-ai-framework-master/assets/::1711900995
 banner.svg::CompressedTexture2D::5953531226865406032::1711197057::1711900995::1::::<><>::
-::res://proof of concept/::1717024053
-curve_L.tscn::PackedScene::8973097472616781267::1717024053::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
-poc_road_god.gd::GDScript::-1::1716965375::0::1::::<>Node3D<>::
-proof_of_concept_1.tscn::PackedScene::2107824207869456801::1717024052::0::1::::<><>::res://addons/free_look_camera.gd<>uid://dh6ykun8bv60u::::res://sky/day_sky.tres<>res://proof of concept/poc_road_god.gd<>res://addons/road-generator/nodes/road_manager.gd
-curve_R.tscn::PackedScene::4586233369445093802::1717026855::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
+::res://proof of concept/::1717629924
+barrier.gd::GDScript::-1::1717629616::0::1::::<>Path3D<>::
+curve_L.tscn::PackedScene::8973097472616781267::1717629924::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
+curve_R.tscn::PackedScene::4586233369445093802::1717629924::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
+poc_road_god.gd::GDScript::-1::1717630094::0::1::::<>Node3D<>::
+proof_of_concept_1.tscn::PackedScene::2107824207869456801::1717629923::0::1::::<><>::res://proof of concept/poc_road_god.gd<>res://addons/road-generator/nodes/road_manager.gd
 road_god.gd::GDScript::-1::1716430559::0::1::::RoadGod<>Node3D<>::
 road_god_1.tscn::PackedScene::3651861250394840327::1716433117::0::1::::<><>::res://proof of concept/road_god.gd<>res://addons/road-generator/nodes/road_manager.gd<>res://addons/free_look_camera.gd<>uid://dh6ykun8bv60u::::res://sky/day_sky.tres
-straight.tscn::PackedScene::3729551748838547147::1717024053::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
+straight.tscn::PackedScene::3729551748838547147::1717629923::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
 ::res://road/::1716367181
 straight.tscn::PackedScene::4879733416646210638::1716367180::0::1::::<><>::res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
 turn.tscn::PackedScene::7792613805494437407::1716367181::0::1::::<><>::res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
@@ -1618,21 +1599,21 @@ _albedo000.png::CompressedTexture2D::978165628953950705::1715782369::1715782375:
 ::res://script_templates/::1712158337
 ::res://script_templates/AIController/::1712158759
 controller_template.gd::GDScript::-1::1712158759::0::1::::<>_BASE_<>::
-::res://shaders/::1717024054
-canvas_retrowave.gdshader::Shader::-1::1717024054::0::1::::<><>::
-crt.gdshader::Shader::-1::1717024054::0::1::::<><>::
-glass.gdshader::Shader::-1::1717024054::0::1::::<><>::
-grid.gdshader::Shader::-1::1717024054::0::1::::<><>::
-pulse_glow.gdshader::Shader::-1::1717024054::0::1::::<><>::
-rain.gdshader::Shader::-1::1717024054::0::1::::<><>::
-sobel_w_gaussian.gdshader::Shader::-1::1717024054::0::1::::<><>::
-stylized_sky.gdshader::Shader::-1::1717024054::0::1::::<><>::
-ter.gdshader::Shader::-1::1717024054::0::1::::<><>::
-test.gdshader::Shader::-1::1717024054::0::1::::<><>::
-tiles.gdshader::Shader::-1::1717024054::0::1::::<><>::
-vhs.gdshader::Shader::-1::1717024054::0::1::::<><>::
-::res://shaders/cel shader/::1717023575
-diffuse-texture.tres::GradientTexture1D::3862723911531671896::1717023575::0::1::::<><>::
+::res://shaders/::1717629929
+canvas_retrowave.gdshader::Shader::-1::1717630094::0::1::::<><>::
+crt.gdshader::Shader::-1::1717630094::0::1::::<><>::
+glass.gdshader::Shader::-1::1717630094::0::1::::<><>::
+grid.gdshader::Shader::-1::1717630094::0::1::::<><>::
+pulse_glow.gdshader::Shader::-1::1717630094::0::1::::<><>::
+rain.gdshader::Shader::-1::1717630094::0::1::::<><>::
+sobel_w_gaussian.gdshader::Shader::-1::1717630094::0::1::::<><>::
+stylized_sky.gdshader::Shader::-1::1717630094::0::1::::<><>::
+ter.gdshader::Shader::-1::1717630094::0::1::::<><>::
+test.gdshader::Shader::-1::1717630094::0::1::::<><>::
+tiles.gdshader::Shader::-1::1717630094::0::1::::<><>::
+vhs.gdshader::Shader::-1::1717630094::0::1::::<><>::
+::res://shaders/cel shader/::1717629617
+diffuse-texture.tres::GradientTexture1D::3862723911531671896::1717629617::0::1::::<><>::
 ::res://shaders/cel shader/src/::1715778821
 cel-shader-base.gdshader::Shader::-1::1714013697::0::1::::<><>::
 outline.gdshader::Shader::-1::1714013697::0::1::::<><>::
@@ -1646,11 +1627,19 @@ occlusion.gdshaderinc::ShaderInclude::-1::1714013697::0::1::::<><>::
 reflections.gdshaderinc::ShaderInclude::-1::1714013697::0::1::::<><>::
 refraction.gdshaderinc::ShaderInclude::-1::1714013697::0::1::::<><>::
 transparency.gdshaderinc::ShaderInclude::-1::1714013697::0::1::::<><>::
-::res://sky/::1717023575
-day_sky.tres::ShaderMaterial::7716055804737854714::1717023575::0::1::::<><>::res://shaders/stylized_sky.gdshader
-night_sky.tres::ShaderMaterial::911939518986587247::1716365033::0::1::::<><>::res://shaders/stylized_sky.gdshader<>uid://dvuwb0yce4sb7::::res://sky/shooting_star_sampler.png
+::res://sky/::1717629617
+day_sky.tres::ShaderMaterial::7716055804737854714::1717256647::0::1::::<><>::res://shaders/stylized_sky.gdshader
+night_sky.tres::ShaderMaterial::911939518986587247::1717629617::0::1::::<><>::res://shaders/stylized_sky.gdshader<>uid://dvuwb0yce4sb7::::res://sky/shooting_star_sampler.png
 shooting_star_sampler.png::CompressedTexture2D::8675854232450382322::1702138833::1711852665::1::::<><>::
-::res://textures/::1714737308
+::res://sky/sky updated/::1717630082
+dynamic sky.tscn::PackedScene::3036828501316273272::1717630094::0::1::::<><>::res://sky/sky updated/main.gd<>res://sky/sky updated/sky.gdshader<>uid://b432faq60e5o2::::res://sky/sky updated/stars.png
+main.gd::GDScript::-1::1717556407::0::1::::<>Node3D<>::
+sky.gdshader::Shader::-1::1704620680::0::1::::<><>::
+stars.png::CompressedTexture2D::4481348040242902527::1704620680::1717555568::1::::<><>::
+::res://textures/::1717459413
+barrier_one_albedo000.png::CompressedTexture2D::1751563892118640616::1717459409::1717459412::1::::<><>::
+barrier_one_normal000.png::CompressedTexture2D::3663113015181560138::1717459409::1717459412::1::::<><>::
+barrier_one_orm000.png::CompressedTexture2D::6484195376112290029::1717459409::1717459412::1::::<><>::
 Road_albedo000.png::CompressedTexture2D::7645997211114554366::1714737302::1714737308::1::::<><>::
 Road_albedo002.png::CompressedTexture2D::1692332508816340100::1714737303::1714737308::1::::<><>::
 Road_albedo003.png::CompressedTexture2D::4708311677908417984::1714737303::1714737308::1::::<><>::
@@ -1675,15 +1664,3 @@ TITLE.tscn::PackedScene::8020835671024247695::1716367175::0::1::::<><>::uid://bs
 transparnet.png::CompressedTexture2D::3199080333921885415::1710076879::1715575819::1::::<><>::
 Untitled.png::Image::8742477201272136942::1710070094::1715575819::1::::<><>::
 Untitledcompressed.png::CompressedTexture2D::2362947253103713855::1710070622::1715575819::1::::<><>::
-::res://world/::1716425490
-::res://world/biome_gen/::1716425499
-::res://world/biome_gen/biomes/::1716433118
-generic_rp2.tscn::PackedScene::787967977140781971::1716433118::0::1::::<><>::res://addons/road-generator/nodes/road_point.gd
-grass_tex_triplanar.material::StandardMaterial3D::-1::1716420479::0::1::::<><>::res://textures/seamless_brush_512.png
-::res://world/road_generation/::1716422800
-::res://world/road_generation/curves/::1716433118
-CurveLeft.tscn::PackedScene::588781311378031746::1716433118::0::1::::<><>::
-CurveRight.tscn::PackedScene::-1::1716420480::0::1::::<><>::
-CurveS.tscn::PackedScene::-1::1716420480::0::1::::<><>::
-CurveStraight.tscn::PackedScene::-1::1716420480::0::1::::<><>::
-CurveWeird.tscn::PackedScene::-1::1716420480::0::1::::<><>::

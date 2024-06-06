@@ -5,6 +5,8 @@ extends VehicleBody3D
 # TODO: resource file for vehicle parametres instead of whatever this is
 # @onready var ai_controller: AIController3D = $AIController3D
 # TODO: fuel simulation
+# TODO: "We recommend favoring primitive shapes for dynamic objects such as RigidBodies and CharacterBodies as their behavior is the most reliable. They often provide better performance as well."
+# TODO: keeping this here because wheel rad was 0.35 but only stops clipping through the road at 0.4
 const PETROL_KG_L: float = 0.7489
 const NM_2_KW: int = 9549
 const AV_2_RPM: float = 60 / TAU
@@ -20,16 +22,16 @@ const KMH_2_MPH: float = 0.621371
 
 
 @onready var brake_lights = $"Node3D/brake_lights"
-var hot_brake_disk = true
-var hot_disk_color = Color(1275, 10, 0)
+@export var hot_brake_disk = true
+var hot_disk_color = Color(510, 10, 0)
 var cool_disk_color = Color(0, 0, 0)
 var brake_intensity = 0.0
-var heat_up_speed = 0.1
+var heat_up_speed = 0.05
 var cool_down_speed = 0.01
 
 # TODO: fix so that it is a consistent reference with brake_lights
 @onready var reverse_lights = $"reverse lights"
-
+@onready var braketrail = $braketrail
 @onready var smokes = $smokes
 #might need to cleanup
 var previous_speed := linear_velocity.length()
@@ -69,7 +71,7 @@ var current_hp = max_hp
 @export var power_curve: Curve
 
 @export var nos = 100 # 1 default
-@export var nos_duration = 3.0
+@export var nos_duration = 0.5
 @export var nos_power = 250
 var nos_timer = 0.0
 var nos_active = false
@@ -134,10 +136,9 @@ func calculate_rpm() -> float:
 
 
 func _ready():
-	fov_change = 0.0
-
-
-	
+	# so this doesnt get in the way when in editor
+	$smokes.visible = true
+	nitro()
 
 func nitro():
 	if not nos_active:
@@ -171,11 +172,11 @@ func _process_gear_inputs(delta: float):
 			else:
 				clutch_position = 1.0
 		elif transmission == tranny_type.AUTO:
-			if rpm > 0.9 * max_rpm and current_gear > 0 and current_gear < gear_ratio.size() and (Time.get_ticks_msec() - last_shift_time) > shift_time:
+			if rpm > 0.95 * max_rpm and current_gear > 0 and current_gear < gear_ratio.size() and (Time.get_ticks_msec() - last_shift_time) > shift_time:
 				current_gear = current_gear + 1
 				gear_timer = gear_shift_time
 				last_shift_time = Time.get_ticks_msec()
-			elif rpm < 0.5* max_rpm and current_gear <= gear_ratio.size() and current_gear > 1 and(Time.get_ticks_msec() - last_shift_time) > shift_time:
+			elif rpm < 0.55* max_rpm and current_gear <= gear_ratio.size() and current_gear > 1 and(Time.get_ticks_msec() - last_shift_time) > shift_time:
 				current_gear = current_gear - 1
 				gear_timer = gear_shift_time
 			elif current_gear == 1 and auto_reverse_time > 1:
@@ -202,7 +203,7 @@ func _process(delta : float):
 	if rpm > max_rpm:
 		rpm = max_rpm
 	
-	var info = 'Brake %.0f Drivetype %s Gear %d| Clutch Pos %.0f\nThrottle %.1f Brake %.1f \nFRONT L %.0f | FRONT R %.0f \nREAR L %.0f | REAR R %.0f'  % [brake, drivetype, current_gear, clutch_position, throttle_val,brake_val, $fr.engine_force, $fl.engine_force, $rl.engine_force, $rr.engine_force] # .0f no decimals
+	var info = 'Brake %.0f Drivetype %s Gear %d| KMH %.0f\nThrottle %.1f Brake %.1f \nFRONT L %.0f | FRONT R %.0f \nREAR L %.0f | REAR R %.0f'  % [brake, drivetype, current_gear, speed, throttle_val,brake_val, $fr.engine_force, $fl.engine_force, $rl.engine_force, $rr.engine_force] # .0f no decimals
 	
 	$Label.text = info
 
@@ -211,7 +212,7 @@ func _process(delta : float):
 func _physics_process(delta):
 	#linear_velocity.x = ai_controller.move.x
 	#linear_velocity.y = ai_controller.move.y
-	whinepitch = abs(rpm/gear_ratio[current_gear - 1])*1.5
+	whinepitch = abs(rpm/gear_ratio[current_gear - 1])*1.5	
 	current_speed_mps = (position - last_pos).length() / delta
 	var max_steer_at_speed = max_steer - (steer_decay * speed)
 	max_steer_at_speed = max(0.2, max_steer_at_speed)
@@ -236,9 +237,25 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("freecam"):
 		$"../FreeLookCamera".current = true
+	#TODO: 
 	if Input.is_action_pressed("reset"):
-		self.position = Vector3(4.378, 0.2, -19.735)
-		self.rotation = Vector3(0,0,0)
+		var road_god = get_tree().current_scene.get_node("RoadGod")
+		var road_manager = road_god.get_node("RoadManager")
+		var road_containers = road_manager.get_children()
+		var player_pos = self.global_transform.origin
+		var closest_road_container = null
+		var min_distance = INF
+		for container in road_containers:
+			var distance = container.global_transform.origin.distance_to(player_pos)
+			if distance < min_distance:
+				min_distance = distance
+				closest_road_container = container
+
+		if closest_road_container:
+			var new_transform = closest_road_container.global_transform
+			#new_transform.origin.z += 10
+			self.global_transform = new_transform
+			nitro()
 		
 
 	rpm = calculate_rpm()
@@ -297,21 +314,19 @@ func _physics_process(delta):
 		#$rr.wheel_friction_slip = normal_friction_slip
 		#$rl.wheel_friction_slip = normal_friction_slip
 
-	if brake_val == 0.0:
-		brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 0.2
-	else:
-		brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 3
-		$braketrail/l1.trailOn()
-		$braketrail/l2.trailOn()
-		$braketrail/l3.trailOn()
-		$braketrail/l4.trailOn()
-		
+	if  brake_lights != null:
+		if brake_val == 0.0:
+			brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 0.2
+			for child in braketrail.get_children():
+				child.trailOff()
+		else:
+			brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 5
+			for child in braketrail.get_children():
+				child.trailOn()	
 		
 	if current_speed_mps < 30:
-		$braketrail/l1.killall()
-		$braketrail/l2.killall()
-		$braketrail/l3.killall()
-		$braketrail/l4.killall()
+		for child in braketrail.get_children():
+				child.killall()
 	
 	
 	# remember where I am
@@ -328,7 +343,7 @@ func _physics_process(delta):
 		if front_skidinfos[i] < 0.8:
 			torque_split = 0.3
 		else:
-			torque_split = 1.0
+			torque_split = 0.5
 			
 	for i in range(skidinfos.size()):
 		if skidinfos[i] < 0.5:
@@ -361,5 +376,5 @@ func update_hot_brake_disk(delta):
 				material.set("emission", target_color)
 	
 
-	if abs(linear_velocity.length() - previous_speed) > 1.0:
-		$impact_sound.play()
+	#if abs(linear_velocity.length() - previous_speed) > 1.0:
+		#$impact_sound.play()

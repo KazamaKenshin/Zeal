@@ -8,6 +8,7 @@
 script = ExtResource("1_yt28y")
 material_resource = ExtResource("2_ti7jh")
 use_lowpoly_preview = true
+generate_ai_lanes = true
 edge_containers = Array[NodePath]([NodePath(""), NodePath("")])
 edge_rp_targets = Array[NodePath]([NodePath(""), NodePath("")])
 edge_rp_target_dirs = Array[int]([-1, -1])
@@ -20,17 +21,18 @@ traffic_dir = [2, 1]
 lanes = [5, 5]
 shoulder_width_l = 1.0
 shoulder_width_r = 1.0
-gutter_profile = Vector2(1, 0)
+gutter_profile = Vector2(1, 1)
 next_pt_init = NodePath("../RP_002")
+next_mag = 2.0
 
 [node name="RP_002" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 100)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 100.272)
 script = ExtResource("3_djv2l")
 traffic_dir = [2, 1]
 lanes = [5, 5]
 shoulder_width_l = 1.0
 shoulder_width_r = 1.0
-gutter_profile = Vector2(1, 0)
+gutter_profile = Vector2(1, 1)
 prior_pt_init = NodePath("../RP_001")
 prior_mag = 16.0
-next_mag = 16.0
+next_mag = 2.0

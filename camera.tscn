@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://ud3f0l62hu0u"]
+
+[ext_resource type="Script" path="res://cars/[COMMON]/camera_1.gd" id="1_4raaf"]
+[ext_resource type="Material" uid="uid://fv5025aoykty" path="res://assets/motion_blur/blur_material.tres" id="2_km4y1"]
+[ext_resource type="Script" path="res://assets/motion_blur/motion_blur.gd" id="3_72qd6"]
+[ext_resource type="Shader" path="res://shaders/rain.gdshader" id="4_qjoio"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_m8mwk"]
+size = Vector2(40, 20)
+
+[sub_resource type="QuadMesh" id="QuadMesh_h7teb"]
+size = Vector2(5, 5)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j6grg"]
+render_priority = -1
+shader = ExtResource("4_qjoio")
+shader_parameter/dripping_speed = 1.5
+shader_parameter/dripping_wave_size = Vector2(20, 4)
+shader_parameter/dripping_wave_freq = Vector2(47, 15)
+shader_parameter/dripping_wave_power = Vector2(0.045, 1)
+shader_parameter/static_interval = 10.0
+shader_parameter/static_shift = Vector2(4.8, 0.8)
+shader_parameter/static_wave_size = Vector2(81.4321, 85.4545)
+shader_parameter/static_wave_freq = Vector2(38, 92)
+shader_parameter/static_wave_power = Vector2(1.8, 2.8)
+
+[node name="CamPivot" type="Node3D"]
+script = ExtResource("1_4raaf")
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(-1, 1.51808e-08, -8.60946e-08, 0, 0.984808, 0.173648, 8.74228e-08, 0.173648, -0.984808, 0, 1.8, -6)
+current = true
+fov = 38.0
+far = 100.0
+
+[node name="motion_blur" type="MeshInstance3D" parent="Camera"]
+transform = Transform3D(0.2, 0, 0, 0, -8.74228e-09, -0.2, 0, 0.2, -8.74228e-09, -4.84454e-09, 1.10389, -2.05542)
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_m8mwk")
+surface_material_override/0 = ExtResource("2_km4y1")
+script = ExtResource("3_72qd6")
+
+[node name="rain" type="MeshInstance3D" parent="Camera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.45664e-08, 0, -1.08172)
+visible = false
+extra_cull_margin = 16384.0
+mesh = SubResource("QuadMesh_h7teb")
+surface_material_override/0 = SubResource("ShaderMaterial_j6grg")
