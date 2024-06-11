@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ccia13t6mjwy4"
+path="res://.godot/imported/roof-flat-border-corner-slanted-passage.obj-ed56a7cc24f61d22e0d28061282b7284.mesh"
+
+[deps]
+
+files=["res://.godot/imported/roof-flat-border-corner-slanted-passage.obj-ed56a7cc24f61d22e0d28061282b7284.mesh"]
+
+source_file="res://assets/New folder (2)/OBJ format/roof-flat-border-corner-slanted-passage.obj"
+dest_files=["res://.godot/imported/roof-flat-border-corner-slanted-passage.obj-ed56a7cc24f61d22e0d28061282b7284.mesh", "res://.godot/imported/roof-flat-border-corner-slanted-passage.obj-ed56a7cc24f61d22e0d28061282b7284.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,4 +1,4 @@
-res://proof of concept/proof_of_concept_1.tscn
+res://proof of concept/GAME.tscn
 res://addons/SIsilicon.vfx.lens flare/lens-flare-shader.tres
 res://addons/ggs/editor/_theme/ggs_theme.tres
 res://addons/road-generator/resources/road_texture.material
@@ -6,33 +6,37 @@ res://game_settings/settings/display/fullscreen.tres
 res://game_settings/settings/display/throttle.tres
 res://assets/motion_blur/motion_blur.gd
 res://proof of concept/barrier.gd
-res://shaders/cel shader/diffuse-texture.tres
 res://assets/motion_blur/moblur_shader.gdshader
 res://assets/motion_blur/blur_material.tres
+res://cars/930/paint/Yoshida Special Purple.tres
 res://shaders/rain.gdshader
-res://cars/R32 GTR/brake disk.tres
-res://shaders/stylized_sky.gdshader
-res://sky/night_sky.tres
-res://addons/road-generator/resources/road_texture1.material
+res://cars/[COMMON]/brake_lights.tres
+res://cars/[COMMON]/clear glass.tres
+res://shaders/cel shader/diffuse-texture.tres
 res://shaders/vhs.gdshader
 res://shaders/pulse_glow.gdshader
 res://shaders/crt.gdshader
 res://shaders/ter.gdshader
 res://shaders/test.gdshader
+res://shaders/stylized_sky.gdshader
 res://shaders/sobel_w_gaussian.gdshader
 res://shaders/glass.gdshader
 res://shaders/grid.gdshader
 res://shaders/tiles.gdshader
 res://shaders/canvas_retrowave.gdshader
-res://proof of concept/straight.tscn
-res://proof of concept/curve_L.tscn
-res://proof of concept/curve_R.tscn
-res://cars/R32 GTR/PLAYER.tscn
-res://sky/sky updated/main.tscn
+res://cars/930/glitch.gdshader
 res://cars/930/PLAYER.tscn
-res://WORLD.tscn
-res://proof of concept/poc_road_god.gd
-res://sky/sky updated/dynamic sky.tscn
-res://audio/engine_sound/l6genericrasp0/engine.tscn
-res://cars/R32 GTR/player_vehicle.gd
-res://cars/[COMMON]/camera_1.gd
+res://cars/930/glow outline.gdshader
+res://base player.tscn
+res://cars/R32 GTR/brake disk.tres
+res://cars/R32 GTR/PLAYER.tscn
+res://cars/930/delifnowork.gdshader
+res://delifnowork.gd
+res://cars/930/PLAYER.gdshader
+res://proof of concept/road_god.gd
+res://cars/930/TRAFFIC AI TEST.gd
+res://proof of concept/straight.tscn
+res://proof of concept/long_straight.tscn
+res://proof of concept/curve_R.tscn
+res://proof of concept/curve_L.tscn
+res://cars/930/TRAFFIC AI TEST.tscn

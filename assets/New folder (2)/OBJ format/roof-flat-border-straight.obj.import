@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4hge1shdtot1"
+path="res://.godot/imported/roof-flat-border-straight.obj-947d1d715741262b38bf9745d83be53e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/roof-flat-border-straight.obj-947d1d715741262b38bf9745d83be53e.mesh"]
+
+source_file="res://assets/New folder (2)/OBJ format/roof-flat-border-straight.obj"
+dest_files=["res://.godot/imported/roof-flat-border-straight.obj-947d1d715741262b38bf9745d83be53e.mesh", "res://.godot/imported/roof-flat-border-straight.obj-947d1d715741262b38bf9745d83be53e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

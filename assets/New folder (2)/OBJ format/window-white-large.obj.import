@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://drqs12412v2pc"
+path="res://.godot/imported/window-white-large.obj-8fda16466638512b215484012a9800ce.mesh"
+
+[deps]
+
+files=["res://.godot/imported/window-white-large.obj-8fda16466638512b215484012a9800ce.mesh"]
+
+source_file="res://assets/New folder (2)/OBJ format/window-white-large.obj"
+dest_files=["res://.godot/imported/window-white-large.obj-8fda16466638512b215484012a9800ce.mesh", "res://.godot/imported/window-white-large.obj-8fda16466638512b215484012a9800ce.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

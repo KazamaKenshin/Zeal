@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cey6dtldu73qa"
+path="res://.godot/imported/window-brown-round-wide.obj-4e5ffec56b908172ab057b7f0356e78e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/window-brown-round-wide.obj-4e5ffec56b908172ab057b7f0356e78e.mesh"]
+
+source_file="res://assets/New folder (2)/OBJ format/window-brown-round-wide.obj"
+dest_files=["res://.godot/imported/window-brown-round-wide.obj-4e5ffec56b908172ab057b7f0356e78e.mesh", "res://.godot/imported/window-brown-round-wide.obj-4e5ffec56b908172ab057b7f0356e78e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

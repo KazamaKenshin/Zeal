@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ZEAL"
-run/main_scene="res://proof of concept/proof_of_concept_1.tscn"
+run/main_scene="res://proof of concept/GAME.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 run/max_fps=60
 boot_splash/bg_color=Color(0, 0, 0, 1)
@@ -23,7 +23,6 @@ config/icon="res://icon.svg"
 GGS="*res://addons/ggs/classes/global/ggs.tscn"
 DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
 SaveSystem="*res://addons/save_system/save_system.gd"
-SimpleGrass="*res://addons/simplegrasstextured/singleton.tscn"
 PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
 
 [display]
@@ -43,7 +42,7 @@ export/convert_text_resources_to_binary=false
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/SIsilicon.vfx.lens flare/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/ggs/plugin.cfg", "res://addons/godot_rl_agents/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/road-generator/plugin.cfg", "res://addons/save_system/plugin.cfg", "res://addons/simplegrasstextured/plugin.cfg", "res://addons/waterways/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg")
+enabled=PackedStringArray("res://addons/SIsilicon.vfx.lens flare/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/ggs/plugin.cfg", "res://addons/godot_rl_agents/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/road-generator/plugin.cfg", "res://addons/save_system/plugin.cfg", "res://addons/waterways/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg")
 
 [filesystem]
 
@@ -114,15 +113,15 @@ shift={
 
 [rendering]
 
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=1
 camera/depth_of_field/depth_of_field_bokeh_shape=0
 environment/ssao/quality=0
 environment/ssil/quality=0
-environment/glow/upscale_mode=0
-global_illumination/sdfgi/probe_ray_count=0
-global_illumination/sdfgi/frames_to_converge=0
+global_illumination/sdfgi/frames_to_converge=2
 global_illumination/sdfgi/frames_to_update_lights=4
-anti_aliasing/quality/msaa_3d=1
+anti_aliasing/quality/screen_space_aa=1
 occlusion_culling/use_occlusion_culling=true
+lights_and_shadows/positional_shadow/atlas_size=2048
 
 [shader_globals]
 
@@ -145,40 +144,4 @@ outline_color={
 diffuse_curve={
 "type": "sampler2D",
 "value": "res://shaders/cel shader/diffuse-texture.tres"
-}
-sgt_player_position={
-"type": "vec3",
-"value": Vector3(1e+06, 1e+06, 1e+06)
-}
-sgt_player_mov={
-"type": "vec3",
-"value": Vector3(0, 0, 0)
-}
-sgt_normal_displacement={
-"type": "sampler2D",
-"value": "res://addons/simplegrasstextured/images/normal.png"
-}
-sgt_motion_texture={
-"type": "sampler2D",
-"value": "res://addons/simplegrasstextured/images/motion.png"
-}
-sgt_wind_direction={
-"type": "vec3",
-"value": Vector3(1, 0, 0)
-}
-sgt_wind_movement={
-"type": "vec3",
-"value": Vector2(0, 0)
-}
-sgt_wind_strength={
-"type": "float",
-"value": 0.15
-}
-sgt_wind_turbulence={
-"type": "float",
-"value": 1.0
-}
-sgt_wind_pattern={
-"type": "sampler2D",
-"value": "res://addons/simplegrasstextured/images/wind_pattern.png"
 }

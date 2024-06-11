@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cd6mm6x1q8hgo"
+path="res://.godot/imported/door-brown-window.obj-a64daf28ce2c7e6a27ab6d5c8dff0336.mesh"
+
+[deps]
+
+files=["res://.godot/imported/door-brown-window.obj-a64daf28ce2c7e6a27ab6d5c8dff0336.mesh"]
+
+source_file="res://assets/New folder (2)/OBJ format/door-brown-window.obj"
+dest_files=["res://.godot/imported/door-brown-window.obj-a64daf28ce2c7e6a27ab6d5c8dff0336.mesh", "res://.godot/imported/door-brown-window.obj-a64daf28ce2c7e6a27ab6d5c8dff0336.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

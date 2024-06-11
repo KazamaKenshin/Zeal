@@ -1,0 +1,307 @@
+[gd_scene load_steps=29 format=3 uid="uid://dhjxlhu8mdnoe"]
+
+[ext_resource type="Script" path="res://cars/R32 GTR/player_vehicle.gd" id="1_wo6ng"]
+[ext_resource type="Curve" uid="uid://ce1cxghh8rast" path="res://cars/R32 GTR/default curve.tres" id="2_gw8lj"]
+[ext_resource type="Script" path="res://cars/[COMMON]/camera_1.gd" id="3_250nr"]
+[ext_resource type="Material" uid="uid://fv5025aoykty" path="res://assets/motion_blur/blur_material.tres" id="4_iin6h"]
+[ext_resource type="Script" path="res://assets/motion_blur/motion_blur.gd" id="5_1jlxu"]
+[ext_resource type="Shader" path="res://shaders/rain.gdshader" id="6_hy4rf"]
+[ext_resource type="Script" path="res://cars/[COMMON]/trail_effect.gd" id="7_q5hh6"]
+[ext_resource type="PackedScene" uid="uid://bt0b4qeo5p203" path="res://cars/[COMMON]/tyre smoke.tscn" id="8_jpip8"]
+[ext_resource type="Texture2D" uid="uid://dxkd7ep71xh20" path="res://cars/930/930 rev.png" id="17_8ewyy"]
+[ext_resource type="Texture2D" uid="uid://ci2ayqgdeqb38" path="res://digits/0.png" id="18_d7trx"]
+[ext_resource type="Shader" path="res://cars/930/glitch.gdshader" id="19_6wabf"]
+[ext_resource type="AudioStream" uid="uid://du57sc3m6gvp0" path="res://audio/impact_sounds/impact_1.wav" id="19_dvvgx"]
+[ext_resource type="Script" path="res://cars/R32 GTR/gear_ui.gd" id="19_fajsw"]
+[ext_resource type="AudioStream" uid="uid://cikuvqpak7poo" path="res://audio/impact_sounds/impact_2.wav" id="20_8dei2"]
+[ext_resource type="Texture2D" uid="uid://dxasex0kbq0o0" path="res://cars/R32 GTR/NEEDLE2.png" id="20_ijlvd"]
+[ext_resource type="AudioStream" uid="uid://d13npw5ja18om" path="res://audio/impact_sounds/impact_3.wav" id="21_2id5a"]
+[ext_resource type="Script" path="res://cars/R32 GTR/tacho_needle_ui.gd" id="21_c3elp"]
+[ext_resource type="Texture2D" uid="uid://dtv4kwgjqo5s6" path="res://cars/R32 GTR/speedo.png" id="22_c3hl8"]
+[ext_resource type="AudioStream" uid="uid://bhiv5pm5usxqb" path="res://audio/impact_sounds/impact_4.wav" id="22_f6427"]
+[ext_resource type="Texture2D" uid="uid://b1xc8vr5id7ua" path="res://cars/R32 GTR/NEEDLE.png" id="23_syele"]
+[ext_resource type="Script" path="res://cars/R32 GTR/speedo_needle_ui.gd" id="24_l684e"]
+[ext_resource type="Script" path="res://cars/R32 GTR/speedo_ui.gd" id="25_l8usa"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_m8mwk"]
+size = Vector2(40, 20)
+
+[sub_resource type="QuadMesh" id="QuadMesh_h7teb"]
+size = Vector2(5, 5)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j6grg"]
+render_priority = -1
+shader = ExtResource("6_hy4rf")
+shader_parameter/dripping_speed = 1.5
+shader_parameter/dripping_wave_size = Vector2(20, 4)
+shader_parameter/dripping_wave_freq = Vector2(47, 15)
+shader_parameter/dripping_wave_power = Vector2(0.045, 1)
+shader_parameter/static_interval = 10.0
+shader_parameter/static_shift = Vector2(4.8, 0.8)
+shader_parameter/static_wave_size = Vector2(81.4321, 85.4545)
+shader_parameter/static_wave_freq = Vector2(38, 92)
+shader_parameter/static_wave_power = Vector2(1.8, 2.8)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xa34i"]
+resource_name = "red_glass"
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+shading_mode = 0
+specular_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(5, 0, 0, 1)
+texture_repeat = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1d3ub"]
+shader = ExtResource("19_6wabf")
+shader_parameter/shake_power = 0.03
+shader_parameter/shake_rate = 1.0
+shader_parameter/shake_speed = 10.0
+shader_parameter/shake_block_size = 50.0
+shader_parameter/shake_color_rate = 0.01
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4jvyv"]
+random_pitch = 1.05
+streams_count = 4
+stream_0/stream = ExtResource("19_dvvgx")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("20_8dei2")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("21_2id5a")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("22_f6427")
+stream_3/weight = 1.0
+
+[node name="base" type="VehicleBody3D"]
+mass = 1200.0
+center_of_mass_mode = 1
+center_of_mass = Vector3(0, 0, -0.2)
+script = ExtResource("1_wo6ng")
+max_engine_force = 260
+max_brake_force = 100
+max_rpm = 7000
+idle_rpm = 1000
+max_steer = 0.7
+gear_ratio = [2.25, 1.304, 0.893, 0.656]
+reverse_ratio = -2.437
+final_drive = 4.0
+drivetype = 1
+power_curve = ExtResource("2_gw8lj")
+transmission = 0
+
+[node name="lights" type="Node3D" parent="."]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 0, 0, 0)
+
+[node name="r" type="OmniLight3D" parent="lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.493, 0.5, 1.575)
+light_color = Color(5, 5, 2.9, 1)
+omni_range = 0.3
+omni_attenuation = 0.34151
+omni_shadow_mode = 0
+
+[node name="l" type="OmniLight3D" parent="lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.493393, 0.5, 1.575)
+light_color = Color(5, 5, 2.9, 1)
+omni_range = 0.3
+omni_attenuation = 0.34151
+omni_shadow_mode = 0
+
+[node name="r2" type="OmniLight3D" parent="lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.441371, 0.21, 1.745)
+light_color = Color(5, 5, 2.9, 1)
+omni_range = 0.3
+omni_attenuation = 0.34151
+omni_shadow_mode = 0
+
+[node name="l2" type="OmniLight3D" parent="lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.441, 0.21, 1.745)
+light_color = Color(5, 5, 2.9, 1)
+omni_range = 0.3
+omni_attenuation = 0.34151
+omni_shadow_mode = 0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="lights"]
+transform = Transform3D(1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 0.493393, 0.5, 1.575)
+light_color = Color(5, 5, 2.9, 1)
+spot_range = 50.0
+spot_angle = 20.0
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="lights"]
+transform = Transform3D(1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, -0.493, 0.5, 1.575)
+light_color = Color(5, 5, 2.9, 1)
+spot_range = 50.0
+spot_angle = 20.0
+
+[node name="CamPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0127628, 0, 0)
+script = ExtResource("3_250nr")
+
+[node name="Camera" type="Camera3D" parent="CamPivot"]
+transform = Transform3D(-1, 1.51808e-08, -8.60946e-08, 0, 0.984808, 0.173648, 8.74228e-08, 0.173648, -0.984808, 0, 1.8, -6)
+current = true
+fov = 38.0
+far = 100.0
+
+[node name="motion_blur" type="MeshInstance3D" parent="CamPivot/Camera"]
+transform = Transform3D(0.2, 0, 0, 0, -8.74228e-09, -0.2, 0, 0.2, -8.74228e-09, -4.84454e-09, 1.10389, -2.05542)
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_m8mwk")
+surface_material_override/0 = ExtResource("4_iin6h")
+script = ExtResource("5_1jlxu")
+
+[node name="rain" type="MeshInstance3D" parent="CamPivot/Camera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.45664e-08, 0, -1.08172)
+visible = false
+extra_cull_margin = 16384.0
+mesh = SubResource("QuadMesh_h7teb")
+surface_material_override/0 = SubResource("ShaderMaterial_j6grg")
+
+[node name="reverse lights" type="Node3D" parent="."]
+transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.45, 0.00574325, 0.0770783, -2.37231)
+
+[node name="reverse1" type="OmniLight3D" parent="reverse lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 1.53477e-13, 0, -1.53477e-13, 1, 1.17198, 0.977594, 1.05)
+light_energy = 0.5
+omni_range = 0.5
+
+[node name="reverse2" type="OmniLight3D" parent="reverse lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 1.53477e-13, 0, -1.53477e-13, 1, -1.27434, 0.977594, 1.05)
+light_energy = 0.5
+omni_range = 0.5
+
+[node name="braketrail" type="Node3D" parent="."]
+transform = Transform3D(-1.06412, 9.30285e-08, 0, 3.32696e-14, 3.8056e-07, 1.56606, 9.30285e-08, 1.06412, -5.60066e-07, 0, 0, 0)
+
+[node name="l2" type="MeshInstance3D" parent="braketrail"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45, -1.96, 0.34)
+material_override = SubResource("StandardMaterial3D_xa34i")
+cast_shadow = 0
+gi_mode = 0
+script = ExtResource("7_q5hh6")
+fromWidth = 0.03
+toWidth = 0.03
+motionDelta = 0.4
+scaleTexture = false
+startColor = Color(1, 0, 0, 0)
+endColor = Color(5, 0, 0, 0)
+
+[node name="l4" type="MeshInstance3D" parent="braketrail"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, -1.96, 0.34)
+material_override = SubResource("StandardMaterial3D_xa34i")
+cast_shadow = 0
+gi_mode = 0
+script = ExtResource("7_q5hh6")
+fromWidth = 0.03
+toWidth = 0.03
+motionDelta = 0.4
+scaleTexture = false
+startColor = Color(1, 0, 0, 0)
+endColor = Color(5, 0, 0, 0)
+
+[node name="smokes" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0127628, 0, 0)
+visible = false
+
+[node name="GPUParticles3D" parent="smokes" instance=ExtResource("8_jpip8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.76, 0.286774, 1.41096)
+
+[node name="GPUParticles3D2" parent="smokes" instance=ExtResource("8_jpip8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.76, 0.287, -0.933634)
+
+[node name="GPUParticles3D3" parent="smokes" instance=ExtResource("8_jpip8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76, 0.287, 1.411)
+
+[node name="GPUParticles3D4" parent="smokes" instance=ExtResource("8_jpip8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76, 0.287, -0.934)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.415, 0.635, -0.0127628)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 25.5567
+offset_top = 237.345
+offset_right = 205.557
+offset_bottom = 306.345
+
+[node name="Dash" type="Node2D" parent="."]
+scale = Vector2(0.88, 0.88)
+
+[node name="Tacho" type="Sprite2D" parent="Dash"]
+position = Vector2(1172.73, 602.273)
+scale = Vector2(0.679, 0.679)
+texture = ExtResource("17_8ewyy")
+
+[node name="Gear" type="Sprite2D" parent="Dash/Tacho"]
+position = Vector2(0, 148.949)
+scale = Vector2(0.128282, 0.128282)
+texture = ExtResource("18_d7trx")
+script = ExtResource("19_fajsw")
+
+[node name="TachoNeedle" type="Sprite2D" parent="Dash/Tacho"]
+z_index = 1
+position = Vector2(2.49097, 6.12695)
+rotation = -0.610865
+scale = Vector2(0.309319, 0.340251)
+texture = ExtResource("20_ijlvd")
+offset = Vector2(-253.53, -3.74)
+script = ExtResource("21_c3elp")
+
+[node name="Speedo2" type="Sprite2D" parent="Dash"]
+visible = false
+position = Vector2(137.5, 593.182)
+scale = Vector2(0.539492, 0.539492)
+texture = ExtResource("22_c3hl8")
+
+[node name="SpeedoNeedle" type="Sprite2D" parent="Dash/Speedo2"]
+z_index = 1
+position = Vector2(0, -3.717)
+rotation = 2.68781
+scale = Vector2(0.394418, 0.43386)
+texture = ExtResource("23_syele")
+offset = Vector2(-253.53, -3.74)
+script = ExtResource("24_l684e")
+
+[node name="Speedo" type="Control" parent="Dash"]
+z_index = 2
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1172.26
+offset_top = 606.06
+offset_right = 1172.26
+offset_bottom = 607.06
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("25_l8usa")
+
+[node name="digit1" type="Sprite2D" parent="Dash/Speedo"]
+position = Vector2(-40, 0)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("18_d7trx")
+
+[node name="digit3" type="Sprite2D" parent="Dash/Speedo"]
+position = Vector2(40, 0)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("18_d7trx")
+
+[node name="digit2" type="Sprite2D" parent="Dash/Speedo"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("18_d7trx")
+
+[node name="glitch" type="ColorRect" parent="."]
+visible = false
+z_index = 5
+material = SubResource("ShaderMaterial_1d3ub")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="impact_sound" type="AudioStreamPlayer3D" parent="."]
+stream = SubResource("AudioStreamRandomizer_4jvyv")
+volume_db = -9.0
+max_polyphony = 3
+attenuation_filter_cutoff_hz = 20500.0
+
+[node name="Node3D" type="Node3D" parent="."]

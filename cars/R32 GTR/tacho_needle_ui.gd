@@ -1,7 +1,7 @@
 extends Sprite2D
 
-var min_rotation_deg = -62.0
-var max_rotation_deg = 113.0
+@export var min_rotation_deg = -62.0
+@export var max_rotation_deg = 113.0
 
 var current_rotation_deg = 0.0
 var lerp_speed = 5.0

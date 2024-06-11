@@ -5,7 +5,7 @@ extends VehicleBody3D
 # TODO: resource file for vehicle parametres instead of whatever this is
 # @onready var ai_controller: AIController3D = $AIController3D
 # TODO: fuel simulation
-# TODO: "We recommend favoring primitive shapes for dynamic objects such as RigidBodies and CharacterBodies as their behavior is the most reliable. They often provide better performance as well."
+
 # TODO: keeping this here because wheel rad was 0.35 but only stops clipping through the road at 0.4
 const PETROL_KG_L: float = 0.7489
 const NM_2_KW: int = 9549
@@ -23,7 +23,7 @@ const KMH_2_MPH: float = 0.621371
 
 @onready var brake_lights = $"Node3D/brake_lights"
 @export var hot_brake_disk = true
-var hot_disk_color = Color(510, 10, 0)
+var hot_disk_color = Color(255, 10, 0)
 var cool_disk_color = Color(0, 0, 0)
 var brake_intensity = 0.0
 var heat_up_speed = 0.05
@@ -103,7 +103,8 @@ var auto_reverse_time = 0.0
 var fov_change
 #var steer_decay = 0.02
 #var steer_decay = 0.05
-var steer_decay = 0.08
+#var steer_decay = 0.08
+var steer_decay = 0.0
 #var steer_decay = 0.005
 
 @onready var speed = 0.0
@@ -253,6 +254,7 @@ func _physics_process(delta):
 
 		if closest_road_container:
 			var new_transform = closest_road_container.global_transform
+			new_transform.origin.y += 1
 			#new_transform.origin.z += 10
 			self.global_transform = new_transform
 			nitro()
@@ -260,7 +262,7 @@ func _physics_process(delta):
 
 	rpm = calculate_rpm()
 	var rpm_factor = clamp(rpm / max_rpm, 0.0, 1.0)
-	var power_factor = power_curve.sample_baked(rpm_factor) * 4
+	var power_factor = power_curve.sample_baked(rpm_factor) * 7
 
 	if current_gear == 0:
 		for child in reverse_lights.get_children():
@@ -316,15 +318,15 @@ func _physics_process(delta):
 
 	if  brake_lights != null:
 		if brake_val == 0.0:
-			brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 0.2
+			brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 0.9
 			for child in braketrail.get_children():
 				child.trailOff()
 		else:
-			brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 5
+			brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 7
 			for child in braketrail.get_children():
 				child.trailOn()	
 		
-	if current_speed_mps < 30:
+	if current_speed_mps < 20:
 		for child in braketrail.get_children():
 				child.killall()
 	
@@ -376,5 +378,7 @@ func update_hot_brake_disk(delta):
 				material.set("emission", target_color)
 	
 
-	#if abs(linear_velocity.length() - previous_speed) > 1.0:
-		#$impact_sound.play()
+	if abs(linear_velocity.length() - previous_speed) > 1.0:
+		$impact_sound.play()
+		
+	previous_speed = linear_velocity.length()

@@ -8,7 +8,7 @@ var new_fov_throttle = 100.0
 var current_fov = 38.0
 var current_basis: Basis = Basis()
 
-@export var blur_iteration = 50.0
+@export var blur_iteration = 100.0
 @export var blur_intensity = 0.01
 @export var blur_start_rad = 0.0
 
@@ -17,23 +17,24 @@ var current_basis: Basis = Basis()
 @export var magnitude = 0.0
 
 var initial_transform
+var shake_offset = Vector3.ZERO
 
 func _camera_shake():
-	initial_transform = self.transform
 	var elapsed_time = 0.0
 
 	while elapsed_time < period:
-		var offset = Vector3(
+		shake_offset = Vector3(
 			randf_range(-magnitude, magnitude),
 			randf_range(-magnitude, magnitude),
 			0.0
 		)
 
-		self.transform.origin = initial_transform.origin + offset
+		self.transform.origin = initial_transform.origin + shake_offset
 		elapsed_time += get_process_delta_time()
 		await get_tree().process_frame
 
-	self.transform = initial_transform
+	shake_offset = Vector3.ZERO
+	self.transform.origin = initial_transform.origin
 
 func _ready():
 	initial_transform = self.transform
@@ -43,7 +44,7 @@ func _ready():
 func _physics_process(delta):
 	var current_velocity = get_parent().get_linear_velocity()
 
-	if current_velocity.length_squared() > 0:
+	if current_velocity.length_squared() > 2:
 		var direction_no_x = Vector3(current_velocity.x, current_velocity.y, current_velocity.z).normalized()
 		direction = direction.lerp(-direction_no_x, smooth_speed * delta)
 		var rotation_direction = direction.lerp(-direction_no_x, 1)

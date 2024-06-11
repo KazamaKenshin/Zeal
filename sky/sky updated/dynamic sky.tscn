@@ -36,7 +36,7 @@ shader_parameter/stars_speed = 1.0
 shader_parameter/stars_scale = 1.0
 shader_parameter/stars_opacity = 1.0
 shader_parameter/stars_texture = ExtResource("3_cgiag")
-shader_parameter/overwritten_time = 360000.0
+shader_parameter/overwritten_time = 2400.0
 
 [sub_resource type="Sky" id="Sky_q13r3"]
 sky_material = SubResource("ShaderMaterial_msgkm")

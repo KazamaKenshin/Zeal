@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dwswsbpcerwvm"
+path="res://.godot/imported/window-brown-detailed.obj-94b98c518eed77d4d9a746750271e150.mesh"
+
+[deps]
+
+files=["res://.godot/imported/window-brown-detailed.obj-94b98c518eed77d4d9a746750271e150.mesh"]
+
+source_file="res://assets/New folder (2)/OBJ format/window-brown-detailed.obj"
+dest_files=["res://.godot/imported/window-brown-detailed.obj-94b98c518eed77d4d9a746750271e150.mesh", "res://.godot/imported/window-brown-detailed.obj-94b98c518eed77d4d9a746750271e150.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1042,12 +1042,23 @@ func _autofix_noncyclic_references(
 	# In the event of change in edges, update all references.
 	container.update_edges()
 	
+#func broadcast_position() -> Dictionary:
+	#var pos = global_transform.origin
+	#var rot = global_transform.basis.get_euler()
+	##var pos = global_position
+	##var rot = global_rotation
+	#return{
+		#"position": pos,
+		#"rotation": rot
+	#}	
+
+
 func broadcast_position() -> Dictionary:
 	var pos = global_transform.origin
 	var rot = global_transform.basis.get_euler()
-	#var pos = global_position
-	#var rot = global_rotation
-	return{
+	var z_vector = global_transform.basis.z
+	return {
 		"position": pos,
-		"rotation": rot
-	}	
+		"rotation": rot, 
+		"z_vector": z_vector
+	}

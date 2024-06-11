@@ -36,5 +36,5 @@ func update_speedometer():
 	$digit3.texture = digit_textures[digit3_value]
 	
 func _process(delta):
-	speed = $"..".speed
+	speed = $"../..".speed
 	update_speedometer()
