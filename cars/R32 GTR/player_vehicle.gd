@@ -102,9 +102,10 @@ var rotation_angle = 0
 var auto_reverse_time = 0.0
 var fov_change
 #var steer_decay = 0.02
-#var steer_decay = 0.05
-#var steer_decay = 0.08
-var steer_decay = 0.0
+#var steer_decay = 0.1
+
+var steer_decay = 0.08
+#var steer_decay = 0.0
 #var steer_decay = 0.005
 
 @onready var speed = 0.0
@@ -217,7 +218,7 @@ func _physics_process(delta):
 	current_speed_mps = (position - last_pos).length() / delta
 	var max_steer_at_speed = max_steer - (steer_decay * speed)
 	max_steer_at_speed = max(0.2, max_steer_at_speed)
-	steering = move_toward(steering, Input.get_axis("right", "left") * max_steer_at_speed, delta * 2.5)
+	steering = move_toward(steering, Input.get_axis("right", "left") * max_steer_at_speed, delta * 0.5)
 
 	if transmission == tranny_type.MANUAL:
 		throttle_val = clamp(throttle_val + throttle_speed * delta, 0.0, 1.0) if Input.get_action_strength("throttle") else 0.0
@@ -237,9 +238,12 @@ func _physics_process(delta):
 	update_nitro(delta)
 	
 	if Input.is_action_pressed("freecam"):
-		$"../FreeLookCamera".current = true
+		$FreeLookCamera.current = true
 	#TODO: 
 	if Input.is_action_pressed("reset"):
+		linear_velocity = Vector3.ZERO
+		angular_velocity = Vector3.ZERO
+		
 		var road_god = get_tree().current_scene.get_node("RoadGod")
 		var road_manager = road_god.get_node("RoadManager")
 		var road_containers = road_manager.get_children()
@@ -259,7 +263,7 @@ func _physics_process(delta):
 			self.global_transform = new_transform
 			nitro()
 		
-
+	
 	rpm = calculate_rpm()
 	var rpm_factor = clamp(rpm / max_rpm, 0.0, 1.0)
 	var power_factor = power_curve.sample_baked(rpm_factor) * 7
@@ -318,11 +322,11 @@ func _physics_process(delta):
 
 	if  brake_lights != null:
 		if brake_val == 0.0:
-			brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 0.9
+			brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 0.5
 			for child in braketrail.get_children():
 				child.trailOff()
 		else:
-			brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 7
+			brake_lights.mesh.surface_get_material(0).emission_energy_multiplier = 5
 			for child in braketrail.get_children():
 				child.trailOn()	
 		
@@ -336,7 +340,7 @@ func _physics_process(delta):
 
 
 	var skidinfos = [$fr.get_skidinfo(), $rr.get_skidinfo(), $fl.get_skidinfo(), $rl.get_skidinfo()]
-	var max_emission_rate = 1.0 
+	var max_emission_rate = 2.0 
 	var min_emission_rate = 0.0    
 	var smoke_scale_factor = 0.5	  
 	var front_skidinfos = [$fr.get_skidinfo(), $fl.get_skidinfo()]
@@ -348,11 +352,11 @@ func _physics_process(delta):
 			torque_split = 0.5
 			
 	for i in range(skidinfos.size()):
-		if skidinfos[i] < 0.5:
-			var emissionRate = clamp(skidinfos[i] * smoke_scale_factor, min_emission_rate, max_emission_rate)
+		if skidinfos[i] < 0.3:
+			var emission_rate = clamp(skidinfos[i] * smoke_scale_factor, min_emission_rate, max_emission_rate)
 			for child in smokes.get_children():
-				child.emitting = emissionRate > 0.0
-				child.amount_ratio = emissionRate / max_emission_rate
+				child.emitting = emission_rate > 0.0
+				child.amount_ratio = emission_rate / max_emission_rate
 		else:
 			for child in smokes.get_children():
 				child.emitting = false

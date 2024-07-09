@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cniftk844fhbk"]
 
-[ext_resource type="PackedScene" uid="uid://bgf2jcd4ojg71" path="res://cars/930/PLAYER.tscn" id="1_nrjma"]
+[ext_resource type="PackedScene" uid="uid://bgf2jcd4ojg71" path="res://cars/930/930.tscn" id="1_nrjma"]
 [ext_resource type="Material" uid="uid://dh6ykun8bv60u" path="res://sky/day_sky.tres" id="2_27sbc"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_258ch"]

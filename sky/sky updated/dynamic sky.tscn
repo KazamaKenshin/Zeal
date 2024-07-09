@@ -46,7 +46,7 @@ background_mode = 2
 sky = SubResource("Sky_q13r3")
 ambient_light_source = 3
 
-[node name="Main" type="Node3D"]
+[node name="sky" type="Node3D"]
 script = ExtResource("1_xq14n")
 use_day_time_for_shader = true
 time_scale = 0.1

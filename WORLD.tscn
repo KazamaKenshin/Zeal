@@ -1,7 +1,7 @@
 [gd_scene load_steps=43 format=3 uid="uid://6oc2paja0pnp"]
 
 [ext_resource type="Material" uid="uid://m80rmki4fbox" path="res://sky/night_sky.tres" id="1_7t0v8"]
-[ext_resource type="PackedScene" uid="uid://l55ciskvq7rj" path="res://cars/R32 GTR/PLAYER.tscn" id="1_nc20g"]
+[ext_resource type="PackedScene" uid="uid://l55ciskvq7rj" path="res://cars/R32 GTR/R32 GTR.tscn" id="1_nc20g"]
 [ext_resource type="Script" path="res://addons/road-generator/nodes/road_manager.gd" id="4_lldqs"]
 [ext_resource type="Script" path="res://addons/road-generator/nodes/road_container.gd" id="5_ud5ph"]
 [ext_resource type="Material" uid="uid://b7xsjklt5dy1m" path="res://addons/road-generator/resources/road_texture1.material" id="6_uyhg4"]

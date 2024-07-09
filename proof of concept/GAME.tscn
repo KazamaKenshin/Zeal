@@ -41,23 +41,23 @@ shader_parameter/stars_opacity = 1.0
 shader_parameter/stars_texture = ExtResource("5_rc8mo")
 shader_parameter/overwritten_time = 38400.0
 
-[sub_resource type="Sky" id="Sky_ktroy"]
+[sub_resource type="Sky" id="Sky_xbtnq"]
 sky_material = SubResource("ShaderMaterial_msgkm")
 
 [sub_resource type="Environment" id="Environment_4c5lb"]
 background_mode = 2
-sky = SubResource("Sky_ktroy")
+sky = SubResource("Sky_xbtnq")
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
 tonemap_mode = 2
 ssao_enabled = true
 glow_enabled = true
 glow_intensity = 0.3
+glow_strength = 0.8
 glow_bloom = 0.3
 glow_blend_mode = 1
-glow_hdr_threshold = 1.9
+glow_hdr_threshold = 2.0
 adjustment_enabled = true
-adjustment_brightness = 0.9
 
 [node name="game" type="Node3D"]
 script = ExtResource("1_o2qff")
@@ -73,7 +73,6 @@ script = ExtResource("3_bx1jm")
 day_time = 24.0
 day_of_year = 15
 use_day_time_for_shader = true
-time_scale = 1.0
 sun_base_enegry = 0.5
 moon_base_enegry = 0.01
 

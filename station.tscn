@@ -14,8 +14,8 @@
 [ext_resource type="Script" path="res://sky/sky updated/dynamic_sky.gd" id="12_aeayn"]
 [ext_resource type="Shader" path="res://sky/sky updated/sky.gdshader" id="13_4hf87"]
 [ext_resource type="Texture2D" uid="uid://b432faq60e5o2" path="res://sky/sky updated/stars.png" id="14_2v6cl"]
-[ext_resource type="PackedScene" uid="uid://4wcvv4svsctu" path="res://freecam.tscn" id="15_yf0mu"]
-[ext_resource type="PackedScene" uid="uid://l55ciskvq7rj" path="res://cars/R32 GTR/PLAYER.tscn" id="16_t4jyn"]
+[ext_resource type="PackedScene" uid="uid://4wcvv4svsctu" path="res://addons/freecam.tscn" id="15_yf0mu"]
+[ext_resource type="PackedScene" uid="uid://l55ciskvq7rj" path="res://cars/R32 GTR/R32 GTR.tscn" id="16_t4jyn"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s5fau"]
 points = PackedVector3Array(-8.65353, 6.85747, 3.9079, -8.65003, 6.36318, 3.61587, -8.65003, 6.49356, 3.4477, -8.65003, 6.51794, 3.15274, -8.65353, 6.85747, 2.2431, -8.74443, 6.85747, 3.9079, -8.65353, 2.06657, 3.9079, -8.65003, 6.03398, 3.64651, -8.65003, 6.43869, 2.63518, -8.74443, 6.85747, 2.2431, -8.65003, 6.40821, 2.59754, -8.65003, 6.37913, 2.58124, -8.65003, 6.06586, 2.51427, -8.65353, 2.06657, 2.2431, -8.74896, 6.51794, 3.00803, -8.74896, 6.43869, 3.52576, -8.74896, 6.40821, 3.5634, -8.74896, 6.37913, 3.5797, -8.74896, 6.06586, 3.64667, -8.74443, 2.06657, 3.9079, -8.65003, 5.9913, 3.58687, -8.74896, 6.49356, 2.71324, -8.74443, 2.06657, 2.2431, -8.74896, 6.03398, 2.51443, -8.74896, 6.36318, 2.5449, -8.65003, 6.01193, 2.57016, -8.65003, 6.00115, 2.96078, -8.65003, 5.99271, 3.34699, -8.74896, 6.01193, 3.59078, -8.74896, 6.00115, 3.20016, -8.74896, 5.99271, 2.81395, -8.74896, 5.9913, 2.57407)

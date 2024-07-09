@@ -4,12 +4,12 @@ var direction = Vector3.FORWARD
 @export_range(1, 10, 0.1) var smooth_speed = 2.0
 var new_fov_throttle = 100.0
 
-@export var default_fov = 38.0
-var current_fov = 38.0
+@export var default_fov = 30.0
+var current_fov = 30.0
 var current_basis: Basis = Basis()
 
-@export var blur_iteration = 100.0
-@export var blur_intensity = 0.01
+@export var blur_iteration = 10.0
+@export var blur_intensity = 0.005
 @export var blur_start_rad = 0.0
 
 @onready var motion_blur = preload("res://assets/motion_blur/blur_material.tres")
@@ -44,7 +44,7 @@ func _ready():
 func _physics_process(delta):
 	var current_velocity = get_parent().get_linear_velocity()
 
-	if current_velocity.length_squared() > 2:
+	if current_velocity.length_squared() > 1:
 		var direction_no_x = Vector3(current_velocity.x, current_velocity.y, current_velocity.z).normalized()
 		direction = direction.lerp(-direction_no_x, smooth_speed * delta)
 		var rotation_direction = direction.lerp(-direction_no_x, 1)

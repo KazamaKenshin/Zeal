@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://d76qqmnug1bd"]
+
+[ext_resource type="PackedScene" uid="uid://cfc47xpkomhk6" path="res://Cybercar.tscn" id="1_ttomh"]
+[ext_resource type="PackedScene" uid="uid://bjjceeyq3csc3" path="res://sky/sky updated/dynamic sky.tscn" id="2_wycag"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4racd"]
+size = Vector2(500, 500)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2yuda"]
+points = PackedVector3Array(-250, 0, -250, -250, 0, 250, 250, 0, -250, 250, 0, 250)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Cybercar" parent="." instance=ExtResource("1_ttomh")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.63866, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("PlaneMesh_4racd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_2yuda")
+
+[node name="Main" parent="." instance=ExtResource("2_wycag")]
