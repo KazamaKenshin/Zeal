@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8qxspqidit0p"]
+
+[ext_resource type="Shader" path="res://shaders/tubeclock.gdshader" id="1_hp2q1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x2qbl"]
+shader = ExtResource("1_hp2q1")
+shader_parameter/TWELVE_HOUR_CLOCK = true
+shader_parameter/GLOWPULSE = true
+shader_parameter/GLOW_COLOR = Vector3(1, 0.2, 0)
+shader_parameter/SHOW_GRID = true
+shader_parameter/GRID = 0.1
+shader_parameter/now_time = 0.0
+shader_parameter/DISP = Vector2(0.45, 0.5)
+shader_parameter/scale1 = 0.15
+shader_parameter/scale2 = 1.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_x2qbl")
+offset_right = 321.0
+offset_bottom = 321.0

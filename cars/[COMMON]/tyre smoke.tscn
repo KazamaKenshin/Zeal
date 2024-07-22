@@ -48,6 +48,7 @@ center_offset = Vector3(0, 0, -10)
 
 [node name="GPUParticles3D" type="GPUParticles3D"]
 amount = 1000
+lifetime = 5.0
 randomness = 1.0
 fixed_fps = 60
 visibility_aabb = AABB(-2.51732, -1.28262, -2.4869, 4.89116, 5.768, 4.71626)

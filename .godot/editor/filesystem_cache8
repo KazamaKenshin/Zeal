@@ -1,25 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720493189
-AIController3D.gd::GDScript::-1::1712241168::0::1::::<>AIController3D<>::
-base player.tscn::PackedScene::7670579890973728140::1718065212::0::1::::<><>::res://cars/R32 GTR/player_vehicle.gd<>uid://ce1cxghh8rast::::res://cars/R32 GTR/default curve.tres<>res://cars/[COMMON]/camera_1.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader<>res://cars/[COMMON]/trail_effect.gd<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>uid://dxkd7ep71xh20::::res://cars/930/930 rev.png<>uid://ci2ayqgdeqb38::::res://digits/0.png<>res://cars/930/glitch.gdshader<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>res://cars/R32 GTR/gear_ui.gd<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>res://cars/R32 GTR/tacho_needle_ui.gd<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>res://cars/R32 GTR/speedo_needle_ui.gd<>res://cars/R32 GTR/speedo_ui.gd
-camera.tscn::PackedScene::1411680342311292990::1717257727::0::1::::<><>::res://cars/[COMMON]/camera_1.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader
-camera_1_archived.gd::GDScript::-1::1717640353::0::1::::<>Node3D<>::
+::res://::1721620576
+ball.tscn::PackedScene::3092628092637268387::1721620445::0::1::::<><>::res://shaders/retro_sun.gdshader
+base player.tscn::PackedScene::7670579890973728140::1721620503::0::1::::<><>::res://scripts/player_vehicle.gd<>uid://ce1cxghh8rast::::res://cars/R32 GTR/default curve.tres<>res://cars/[COMMON]/camera_1.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader<>res://cars/[COMMON]/trail_effect.gd<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>uid://dxkd7ep71xh20::::res://cars/930/930 rev.png<>uid://ci2ayqgdeqb38::::res://assets/digits/0.png<>res://shaders/glitch.gdshader<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>res://cars/R32 GTR/gear_ui.gd<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>res://scripts/tacho_needle_ui.gd<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>res://scripts/speedo_needle_ui.gd<>res://scripts/speedo_ui.gd
+camera.tscn::PackedScene::1411680342311292990::1721620754::0::1::::<><>::res://cars/[COMMON]/camera_1.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader
 cantach.tscn::PackedScene::3480981610723763290::1711288689::0::1::::<><>::uid://ygjs7n6rwy3b::::res://cars/CANTACH/new_standard_material_3d.tres
+clock.tscn::PackedScene::7123532699565096477::1721620445::0::1::::<><>::res://shaders/tubeclock.gdshader
 credits.txt::TextFile::-1::1720486370::0::1::::<><>::
 customize.tscn::PackedScene::5265702648424769692::1714725019::0::1::::<><>::uid://rcs2fh05dkoh::::res://assets/emergency parking lot/emergency_parking_lot_0.jpg
-Cybercar.tscn::PackedScene::5129733510962330319::1720491719::0::1::::<><>::res://cars/R32 GTR/player_vehicle.gd<>uid://855jvk0t2any::::res://assets/New folder (3)/siren.tscn
 default_bus_layout.tres::AudioBusLayout::4034697983897976188::1720480469::0::1::::<><>::
-guardrail.tscn::PackedScene::4885518962177173237::1717226598::0::1::::<><>::uid://d0b3r4wn4pww0::::res://assets/New folder/guard_rail_0.jpg<>uid://6j1gbk5dg650::::res://assets/New folder/guard_rail_1.png<>uid://df8civr56op6c::::res://assets/New folder/guard_rail_2.png
 icon.svg::CompressedTexture2D::3904834079505177728::1698644090::1700895304::1::::<><>::
-NEEDLE.png::CompressedTexture2D::2022488543352490260::1711635928::1711636556::1::::<><>::
-rain.tscn::PackedScene::6141545198536065972::1716253918::0::1::::<><>::res://shaders/rain.gdshader
 README.md::TextFile::-1::1720492909::0::1::::<><>::
 settings_menu.tscn::PackedScene::2901170891826524608::1711463487::0::1::::<><>::uid://cha8xesfthpfk::::res://game_settings/components/switch/switch.tscn<>res://demo/scenes/settings_menu/settings_menu.gd<>res://game_settings/components/_misc_components/reset_btn/reset_btn.tscn<>uid://dgmk2avdg1upv::::res://game_settings/settings/display/fullscreen.tres<>uid://b1btmq8y3gexs::::res://game_settings/components/_misc_components/input_confirm_window/input_confirm_window.tscn<>uid://b7m6l0lvojrsj::::res://game_settings/components/option_list/option_list.tscn<>uid://1v2k7glufimr::::res://game_settings/settings/display/window_size.tres<>uid://bhkyf3l4ee800::::res://game_settings/components/checkbox/checkbox.tscn<>uid://djr2qy10po5sv::::res://game_settings/settings/audio/master/mute_state.tres<>uid://ds06mwhee8ygm::::res://game_settings/components/slider/slider.tscn<>uid://7yc4gwua8pf2::::res://game_settings/settings/audio/master/volume.tres<>uid://2m1oonr3dopn::::res://game_settings/settings/audio/music/mute_state.tres<>uid://ccwm56m2e4nmo::::res://game_settings/settings/audio/music/volume.tres<>uid://dm1av7skxvp1j::::res://game_settings/components/input_btn/input_btn.tscn<>uid://bcqtoqmjue0xe::::res://game_settings/settings/audio/sfx/mute_state.tres<>uid://dnga4lbsox3wu::::res://game_settings/settings/audio/sfx/volume.tres<>uid://b3q3ecvufsboy::::res://game_settings/settings/input/move_right/keyboard_0.tres<>uid://5l0iu6tqqsuy::::res://game_settings/settings/input/move_left/keyboard_0.tres<>uid://ctwyfsk3ml7in::::res://game_settings/settings/input/move_left/keyboard_1.tres<>uid://cfp74fqf3hig0::::res://game_settings/settings/input/move_right/keyboard_1.tres<>uid://c16wxcl04k0rv::::res://game_settings/settings/input/move_left/gamepad.tres<>uid://ftlqbsy5gvwn::::res://game_settings/settings/input/move_right/gamepad.tres<>uid://dvnv8tfy60rw5::::res://game_settings/settings/input/move_up/keyboard_0.tres<>uid://hc4oukt0w1lq::::res://game_settings/settings/input/move_up/keyboard_1.tres<>uid://bxcnecq0va3gl::::res://game_settings/settings/input/move_up/gamepad.tres<>uid://7yg1d18e6p62::::res://game_settings/settings/input/move_down/keyboard_0.tres<>uid://c2xc0ava5qb6w::::res://game_settings/settings/input/move_down/keyboard_1.tres<>uid://cd5k6o2f53d4w::::res://game_settings/settings/input/move_down/gamepad.tres<>uid://di8r6amxunq7q::::res://game_settings/components/text_field/text_field.tscn<>uid://c67qu6uephcjw::::res://game_settings/settings/gameplay/player_name.tres<>uid://bqi00h7i7sg3u::::res://game_settings/components/spinbox/spinbox.tscn<>uid://dbeucupcrh31w::::res://demo/assets/audio/focus.wav<>uid://d03vle3rnm2ma::::res://demo/assets/audio/interact.wav<>uid://dsiuepvql652m::::res://game_settings/settings/gameplay/player_speed.tres<>uid://c11tbsolk6dnu::::res://game_settings/components/radio_list/radio_list.tscn<>uid://bls016g4wcy00::::res://game_settings/settings/gameplay/difficulty.tres
-station.tscn::PackedScene::4475344012140786395::1720088096::0::1::::<><>::uid://bykfwmfcp1m4x::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_BaseColor.png<>uid://x0ncfnmxxtjd::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_Emission.png<>uid://cnhpfekux4vi1::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_Metallic.png<>uid://bgb7t3i8ovnxt::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_Normal.png<>uid://c1f7ucfgkukft::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_BaseColor.png<>uid://48e38vgbf6uj::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_Emission.png<>uid://bf3kybv3bd8gv::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_Metallic.png<>uid://bf06rgqohx0nm::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_Normal.png<>res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd<>res://sky/sky updated/dynamic_sky.gd<>res://sky/sky updated/sky.gdshader<>uid://b432faq60e5o2::::res://sky/sky updated/stars.png<>uid://4wcvv4svsctu::::res://addons/freecam.tscn<>uid://l55ciskvq7rj::::res://cars/R32 GTR/R32 GTR.tscn
-test.tscn::PackedScene::278538278051157149::1720488334::0::1::::<><>::uid://cfc47xpkomhk6::::res://Cybercar.tscn<>uid://bjjceeyq3csc3::::res://sky/sky updated/dynamic sky.tscn
-Torturing.tscn::PackedScene::13589387899982303::1719992678::0::1::::<><>::res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://sky/sky updated/dynamic_sky.gd<>res://addons/road-generator/nodes/road_point.gd<>res://sky/sky updated/sky.gdshader<>uid://b432faq60e5o2::::res://sky/sky updated/stars.png<>uid://bgf2jcd4ojg71::::res://cars/930/930.tscn
+test.tscn::PackedScene::278538278051157149::1721527667::0::1::::<><>::uid://cfc47xpkomhk6::::res://cars/CYBERCAR/Cybercar.tscn<>res://sky/sky updated/dynamic_sky.gd<>res://sky/sky updated/sky.gdshader<>uid://b432faq60e5o2::::res://sky/sky updated/stars.png
+Torturing.tscn::PackedScene::13589387899982303::1721139555::0::1::::<><>::res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://sky/sky updated/dynamic_sky.gd<>res://addons/road-generator/nodes/road_point.gd<>res://sky/sky updated/sky.gdshader<>uid://b432faq60e5o2::::res://sky/sky updated/stars.png<>uid://cfc47xpkomhk6::::res://cars/CYBERCAR/Cybercar.tscn
 WORLD.tscn::PackedScene::2204925880016977261::1719992688::0::1::::<><>::uid://m80rmki4fbox::::res://sky/night_sky.tres<>uid://l55ciskvq7rj::::res://cars/R32 GTR/R32 GTR.tscn<>res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_container.gd<>uid://b7xsjklt5dy1m::::res://addons/road-generator/resources/road_texture1.material<>res://addons/road-generator/nodes/road_segment.gd<>res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/nodes/road_lane.gd
-::res://addons/::1720480421
+::res://addons/::1720679140
 freecam.tscn::PackedScene::2081052860386082178::1720480421::0::1::::<><>::res://addons/free_look_camera.gd
 free_look_camera.gd::GDScript::-1::1717556406::0::1::::FreeLookCamera<>Camera3D<>::
 ::res://addons/debug_menu/::1713883795
@@ -236,9 +231,42 @@ setting_group.tscn::PackedScene::9087742367079280802::1711466645::0::1::::<><>::
 ::res://addons/ggs/editor/setting_panel/setting_item/::1711466645
 setting_item.gd::GDScript::-1::1711466645::0::1::::ggsSettingItem<>Button<>::
 setting_item.tscn::PackedScene::1439284876427615274::1711466645::0::1::::<><>::res://addons/ggs/editor/setting_panel/setting_item/setting_item.gd
-::res://addons/ggs/editor/_theme/::1720480416
+::res://addons/ggs/editor/_theme/::1721620392
 ggs_theme.gd::GDScript::-1::1711466644::0::1::::<>Theme<>::
-ggs_theme.tres::Theme::6840631685889568947::1720480416::0::1::::<><>::res://addons/ggs/editor/_theme/ggs_theme.gd
+ggs_theme.tres::Theme::6840631685889568947::1721620392::0::1::::<><>::res://addons/ggs/editor/_theme/ggs_theme.gd
+::res://addons/godot-steering-ai-framework/::1720679032
+GSAIAgentLocation.gd::GDScript::-1::1697834742::0::1::::GSAIAgentLocation<>RefCounted<>::
+GSAIGroupBehavior.gd::GDScript::-1::1697834742::0::1::::GSAIGroupBehavior<>GSAISteeringBehavior<>::
+GSAIPath.gd::GDScript::-1::1697834742::0::1::::GSAIPath<>RefCounted<>::
+GSAISteeringAgent.gd::GDScript::-1::1697834742::0::1::::GSAISteeringAgent<>GSAIAgentLocation<>::
+GSAISteeringBehavior.gd::GDScript::-1::1697834742::0::1::::GSAISteeringBehavior<>RefCounted<>::
+GSAITargetAcceleration.gd::GDScript::-1::1697834742::0::1::::GSAITargetAcceleration<>RefCounted<>::
+GSAIUtils.gd::GDScript::-1::1697834742::0::1::::GSAIUtils<>RefCounted<>::
+::res://addons/godot-steering-ai-framework/Agents/::1720679032
+GSAICharacterBody2DAgent.gd::GDScript::-1::1697834742::0::1::::GSAICharacterBody2DAgent<>GSAISpecializedAgent<>::
+GSAICharacterBody3DAgent.gd::GDScript::-1::1697834742::0::1::::GSAICharacterBody3DAgent<>GSAISpecializedAgent<>::
+GSAIRigidBody2DAgent.gd::GDScript::-1::1697834742::0::1::::GSAIRigidBody2DAgent<>GSAISpecializedAgent<>::
+GSAIRigidBody3DAgent.gd::GDScript::-1::1697834742::0::1::::GSAIRigidBody3DAgent<>GSAISpecializedAgent<>::
+GSAISpecializedAgent.gd::GDScript::-1::1697834742::0::1::::GSAISpecializedAgent<>GSAISteeringAgent<>::
+::res://addons/godot-steering-ai-framework/Behaviors/::1720679032
+GSAIArrive.gd::GDScript::-1::1697834742::0::1::::GSAIArrive<>GSAISteeringBehavior<>::
+GSAIAvoidCollisions.gd::GDScript::-1::1697834742::0::1::::GSAIAvoidCollisions<>GSAIGroupBehavior<>::
+GSAIBlend.gd::GDScript::-1::1697834742::0::1::::GSAIBlend<>GSAISteeringBehavior<>::
+GSAICohesion.gd::GDScript::-1::1697834742::0::1::::GSAICohesion<>GSAIGroupBehavior<>::
+GSAIEvade.gd::GDScript::-1::1697834742::0::1::::GSAIEvade<>GSAIPursue<>::
+GSAIFace.gd::GDScript::-1::1697834742::0::1::::GSAIFace<>GSAIMatchOrientation<>::
+GSAIFlee.gd::GDScript::-1::1697834742::0::1::::GSAIFlee<>GSAISeek<>::
+GSAIFollowPath.gd::GDScript::-1::1697834742::0::1::::GSAIFollowPath<>GSAIArrive<>::
+GSAILookWhereYouGo.gd::GDScript::-1::1697834742::0::1::::GSAILookWhereYouGo<>GSAIMatchOrientation<>::
+GSAIMatchOrientation.gd::GDScript::-1::1697834742::0::1::::GSAIMatchOrientation<>GSAISteeringBehavior<>::
+GSAIPriority.gd::GDScript::-1::1697834742::0::1::::GSAIPriority<>GSAISteeringBehavior<>::
+GSAIPursue.gd::GDScript::-1::1697834742::0::1::::GSAIPursue<>GSAISteeringBehavior<>::
+GSAISeek.gd::GDScript::-1::1697834742::0::1::::GSAISeek<>GSAISteeringBehavior<>::
+GSAISeparation.gd::GDScript::-1::1697834742::0::1::::GSAISeparation<>GSAIGroupBehavior<>::
+::res://addons/godot-steering-ai-framework/Proximities/::1720679032
+GSAIInfiniteProximity.gd::GDScript::-1::1697834742::0::1::::GSAIInfiniteProximity<>GSAIProximity<>::
+GSAIProximity.gd::GDScript::-1::1697834742::0::1::::GSAIProximity<>RefCounted<>::
+GSAIRadiusProximity.gd::GDScript::-1::1697834742::0::1::::GSAIRadiusProximity<>GSAIProximity<>::
 ::res://addons/godot_rl_agents/::1712156004
 godot_rl_agents.gd::GDScript::-1::1709586689::0::1::::<>EditorPlugin<>::
 icon.png::CompressedTexture2D::7853482147988983494::1709586689::1712156004::1::::<><>::
@@ -739,14 +767,14 @@ road_lane.gd::GDScript::-1::1719555432::0::1::::RoadLane<>Path3D<>res://addons/r
 road_manager.gd::GDScript::-1::1717556407::0::1::::RoadManager<>Node3D<>res://addons/road-generator/resources/road_manager.png::
 road_point.gd::GDScript::-1::1717997525::0::1::::RoadPoint<>Node3D<>res://addons/road-generator/resources/road_point.png::
 road_segment.gd::GDScript::-1::1706426579::0::1::::<>Node3D<>::
-::res://addons/road-generator/resources/::1720480416
+::res://addons/road-generator/resources/::1721620392
 road_container.png::CompressedTexture2D::7354533396782869334::1706426579::1706426579::1::::<><>::
 road_intersection.png::CompressedTexture2D::7443363485354325915::1706426579::1706426579::1::::<><>::
 road_lane.png::CompressedTexture2D::882146482603644181::1706426579::1706426579::1::::<><>::
 road_manager.png::CompressedTexture2D::689097667283262952::1706426579::1706426579::1::::<><>::
 road_point.png::CompressedTexture2D::1756463494516045297::1706426579::1706426579::1::::<><>::
 road_texture1.material::StandardMaterial3D::4681053889598312312::1717923491::0::1::::<><>::uid://6fppg4q2oigl::::res://addons/road-generator/resources/road_texture.png
-road_texture.material::StandardMaterial3D::7431534515079863824::1720480416::0::1::::<><>::uid://6fppg4q2oigl::::res://addons/road-generator/resources/road_texture.png
+road_texture.material::StandardMaterial3D::7431534515079863824::1721620392::0::1::::<><>::uid://6fppg4q2oigl::::res://addons/road-generator/resources/road_texture.png
 road_texture.png::CompressedTexture2D::2187113944052409687::1706426579::1706426579::1::::<><>::
 road_texture@1x.png::CompressedTexture2D::20127258871610031::1706426579::1706426579::1::::<><>::
 road_texture@2x.png::CompressedTexture2D::7073209567348625694::1706426579::1706426579::1::::<><>::
@@ -772,15 +800,15 @@ save_system.gd::GDScript::-1::1715004267::0::1::::<>Node<>::
 save_system_test.gd::GDScript::-1::1715004267::0::1::::<>Node<>::
 save_system_test_resource.gd::GDScript::-1::1715004267::0::1::::SaveSystemTestResource<>Resource<>::
 save_system_test_subresource.gd::GDScript::-1::1715004267::0::1::::SaveSystemTestSubresource<>Resource<>::
-::res://addons/SIsilicon.vfx.lens flare/::1720480416
+::res://addons/SIsilicon.vfx.lens flare/::1721620391
 lens-dirt-default.jpeg::CompressedTexture2D::180792783846997269::1691519046::1716169478::1::::<><>::
 lens-flare-plugin.gd::GDScript::-1::1691519046::0::1::::<>EditorPlugin<>::
-lens-flare-shader.tres::ShaderMaterial::4124092767701715282::1720480416::0::1::::<><>::uid://cttvpeo7w72p::::res://addons/SIsilicon.vfx.lens flare/lens-dirt-default.jpeg<>res://addons/SIsilicon.vfx.lens flare/lens_flare.gdshader
+lens-flare-shader.tres::ShaderMaterial::4124092767701715282::1721620391::0::1::::<><>::uid://cttvpeo7w72p::::res://addons/SIsilicon.vfx.lens flare/lens-dirt-default.jpeg<>res://addons/SIsilicon.vfx.lens flare/lens_flare.gdshader
 lens-flare.gd::GDScript::-1::1691519046::0::1::::<>Node<>::
 lens_flare.gdshader::Shader::-1::1691519046::0::1::::<><>::
 lens_flare_icon.png::CompressedTexture2D::8847494517825154621::1691519046::1716169478::1::::<><>::
 plugin.cfg::TextFile::-1::1691519046::0::1::::<><>::
-::res://addons/Todo_Manager/::1720491721
+::res://addons/Todo_Manager/::1721620580
 ColourPicker.gd::GDScript::-1::1714686197::0::1::::<>HBoxContainer<>::
 Current.gd::GDScript::-1::1714686197::0::1::::<>Panel<>::
 Dock.gd::GDScript::-1::1714686197::0::1::::<>Control<>::
@@ -788,7 +816,7 @@ Pattern.gd::GDScript::-1::1714686197::0::1::::<>HBoxContainer<>::
 plugin.cfg::TextFile::-1::1714686197::0::1::::<><>::
 plugin.gd::GDScript::-1::1714686197::0::1::::<>EditorPlugin<>::
 Project.gd::GDScript::-1::1714686197::0::1::::<>Panel<>::
-todo.cfg::TextFile::-1::1720491721::0::1::::<><>::
+todo.cfg::TextFile::-1::1721620534::0::1::::<><>::
 todoItem_class.gd::GDScript::-1::1714686197::0::1::::<>RefCounted<>::
 todo_class.gd::GDScript::-1::1714686197::0::1::::<>RefCounted<>::
 ::res://addons/Todo_Manager/doc/::1715516637
@@ -1078,18 +1106,24 @@ image_file_cache.gd::GDScript::-1::1714646318::0::1::::<>RefCounted<>::
 logger.gd::GDScript::-1::1714646318::0::1::::<>RefCounted<>::
 util.gd::GDScript::-1::1714646318::0::1::::<>RefCounted<>::
 xyz_format.gd::GDScript::-1::1714646318::0::1::::<>RefCounted<>::
-::res://assets/::1720481089
+::res://assets/::1721620503
 bridge base.tscn::PackedScene::8049000162057245019::1714815199::0::1::::<><>::uid://dsjae8ae66cq7::::res://assets/highway modular/highway_modular_street_assets_vol_0.png<>uid://dwbng7kg3t5bi::::res://assets/highway modular/highway_modular_street_assets_vol_2.jpg<>uid://d2iln7kipqsgw::::res://assets/highway modular/highway_modular_street_assets_vol_1.png<>uid://bta7hsbhxrae6::::res://assets/highway modular/highway_modular_street_assets_vol_3.png
 player_save.gd::GDScript::-1::1714314500::0::1::::PlayerSave<>Resource<>::
+rain.tscn::PackedScene::6141545198536065972::1716253918::0::1::::<><>::res://shaders/rain.gdshader
 rgba-noise-medium.png::CompressedTexture2D::7469706609169200162::1714311507::1714311552::1::::<><>::
 save.gd::GDScript::-1::1714314500::0::1::::<>Resource<>::
-::res://assets/barrier_attempt/::1717472081
-barrier attempt 1.tscn::PackedScene::7832308910704163091::1717472079::0::1::::<><>::res://proof of concept/barrier.gd<>uid://bf41brdova5d5::::res://assets/barrier_attempt/barrier.tres
-barrier.tres::ArrayMesh::2798813182552388940::1717472079::0::1::::<><>::uid://drb4jevk26rry::::res://assets/barrier_attempt/untitled2_Image_0.png<>uid://d2syioqxmcasq::::res://assets/barrier_attempt/untitled2_Image_1.png<>uid://bgo62mt2j23q3::::res://assets/barrier_attempt/untitled2_Image_2.png
-untitled2.glb::PackedScene::1489259178475117769::1717471546::1717472081::1::::<><>::uid://drb4jevk26rry::::res://assets/barrier_attempt/untitled2_Image_0.png<>uid://d2syioqxmcasq::::res://assets/barrier_attempt/untitled2_Image_1.png<>uid://bgo62mt2j23q3::::res://assets/barrier_attempt/untitled2_Image_2.png
-untitled2_Image_0.png::CompressedTexture2D::8356313878641252294::1717470925::1717472081::1::::<><>::
-untitled2_Image_1.png::CompressedTexture2D::9092991884161790500::1717470924::1717472081::1::::<><>::
-untitled2_Image_2.png::CompressedTexture2D::2838386138160688052::1717470923::1717472081::1::::<><>::
+station.tscn::PackedScene::4475344012140786395::1720088096::0::1::::<><>::uid://bykfwmfcp1m4x::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_BaseColor.png<>uid://x0ncfnmxxtjd::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_Emission.png<>uid://cnhpfekux4vi1::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_Metallic.png<>uid://bgb7t3i8ovnxt::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_Normal.png<>uid://c1f7ucfgkukft::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_BaseColor.png<>uid://48e38vgbf6uj::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_Emission.png<>uid://bf3kybv3bd8gv::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_Metallic.png<>uid://bf06rgqohx0nm::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_Normal.png<>res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd<>res://sky/sky updated/dynamic_sky.gd<>res://sky/sky updated/sky.gdshader<>uid://b432faq60e5o2::::res://sky/sky updated/stars.png<>uid://4wcvv4svsctu::::res://addons/freecam.tscn<>uid://l55ciskvq7rj::::res://cars/R32 GTR/R32 GTR.tscn
+::res://assets/digits/::1721620506
+0.png::CompressedTexture2D::5390134024688504061::1713714224::1721620506::1::::<><>::
+1.png::CompressedTexture2D::7315546543041201424::1713714370::1721620506::1::::<><>::
+2.png::CompressedTexture2D::2865015767353041815::1713714782::1721620506::1::::<><>::
+3.png::CompressedTexture2D::5674094237704398259::1713714871::1721620506::1::::<><>::
+4.png::CompressedTexture2D::6395337841664020705::1713714909::1721620506::1::::<><>::
+5.png::CompressedTexture2D::3370865555135267482::1713714934::1721620506::1::::<><>::
+6.png::CompressedTexture2D::8073744058944511704::1713714946::1721620506::1::::<><>::
+7.png::CompressedTexture2D::618727527843261731::1713715278::1721620506::1::::<><>::
+8.png::CompressedTexture2D::8261468040472677439::1713715299::1721620506::1::::<><>::
+9.png::CompressedTexture2D::6491602106332308184::1713715296::1721620506::1::::<><>::
 ::res://assets/emergency parking lot/::1714725026
 emergency_parking_lot.glb::PackedScene::1886790605560833412::1714057265::1714725026::1::::<><>::uid://rcs2fh05dkoh::::res://assets/emergency parking lot/emergency_parking_lot_0.jpg
 emergency_parking_lot_0.jpg::CompressedTexture2D::1198480494266385891::1714057280::1714725025::1::::<><>::
@@ -1108,11 +1142,11 @@ highway_modular_street_assets_vol_3.png::CompressedTexture2D::372196510445613651
 highway_modular_street_assets_vol_4.png::CompressedTexture2D::7027870908934031228::1714724986::1714724987::1::::<><>::
 ::res://assets/lamp/::1713883634
 lamp1.tscn::PackedScene::9133964488757474792::1713883634::0::1::::<><>::
-::res://assets/motion_blur/::1720491720
-blur_material.tres::ShaderMaterial::396163770150284134::1720480416::0::1::::<><>::res://assets/motion_blur/moblur_shader.gdshader
-moblur_shader.gdshader::Shader::-1::1720491720::0::1::::<><>::
-motion_blur.gd::GDScript::-1::1720480416::0::1::::<>MeshInstance3D<>::
-motion_blur.tscn::PackedScene::379577891003110585::1713683588::0::1::::<><>::res://assets/motion_blur/moblur_shader.gdshader<>res://assets/motion_blur/motion_blur.gd
+::res://assets/motion_blur/::1721620533
+blur_material.tres::ShaderMaterial::396163770150284134::1721620392::0::1::::<><>::res://assets/motion_blur/moblur_shader.gdshader
+moblur_shader.gdshader::Shader::-1::1721620754::0::1::::<><>::
+motion_blur.gd::GDScript::-1::1721620392::0::1::::<>MeshInstance3D<>::
+motion_blur.tscn::PackedScene::379577891003110585::1721527668::0::1::::<><>::res://assets/motion_blur/moblur_shader.gdshader<>res://assets/motion_blur/motion_blur.gd
 ::res://assets/New folder/::1717828242
 Cubicle_JapaneseGasStationNew.glb::PackedScene::2689815328849861651::1717828075::1717828236::1::::<><>::uid://bykfwmfcp1m4x::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_BaseColor.png<>uid://cnhpfekux4vi1::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_Metallic.png<>uid://x0ncfnmxxtjd::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_Emission.png<>uid://bgb7t3i8ovnxt::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Props_Normal.png<>uid://c1f7ucfgkukft::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_BaseColor.png<>uid://bf3kybv3bd8gv::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_Metallic.png<>uid://48e38vgbf6uj::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_Emission.png<>uid://bf06rgqohx0nm::::res://assets/New folder/Cubicle_JapaneseGasStationNew_Environment_Normal.png
 Cubicle_JapaneseGasStationNew_Environment_BaseColor.png::CompressedTexture2D::6610051963449463845::1717828225::1717828242::1::::<><>::
@@ -1123,14 +1157,13 @@ Cubicle_JapaneseGasStationNew_Props_BaseColor.png::CompressedTexture2D::40919402
 Cubicle_JapaneseGasStationNew_Props_Emission.png::CompressedTexture2D::1666746023296108265::1717828197::1717828242::1::::<><>::
 Cubicle_JapaneseGasStationNew_Props_Metallic.png::CompressedTexture2D::5700666889302116310::1717828211::1717828242::1::::<><>::
 Cubicle_JapaneseGasStationNew_Props_Normal.png::CompressedTexture2D::2811596481659233277::1717828199::1717828242::1::::<><>::
-::res://assets/New folder (3)/::1720485337
-police_siren.glb::PackedScene::8644986059804725178::1720081314::1720081402::1::::<><>::uid://pe5bwyv10nwc::::res://assets/New folder (3)/police_siren_0.png<>uid://bgloymaa1ukuq::::res://assets/New folder (3)/police_siren_1.png
-police_siren_0.png::CompressedTexture2D::1062914654742519850::1720081399::1720081402::1::::<><>::
-police_siren_1.png::CompressedTexture2D::2831155428084145696::1720081400::1720081402::1::::<><>::
+::res://assets/siren/::1721620259
+police_siren.glb::PackedScene::8644986059804725178::1720081314::1721620259::1::::<><>::uid://pe5bwyv10nwc::::res://assets/siren/police_siren_0.png<>uid://bgloymaa1ukuq::::res://assets/siren/police_siren_1.png
+police_siren_0.png::CompressedTexture2D::1062914654742519850::1720081399::1721620258::1::::<><>::
+police_siren_1.png::CompressedTexture2D::2831155428084145696::1720081400::1721620258::1::::<><>::
 siren.gd::GDScript::-1::1720437978::0::1::::<>Node3D<>::
-siren.tscn::PackedScene::2380001874205734778::1720485337::0::1::::<><>::res://assets/New folder (3)/siren.gd<>uid://pe5bwyv10nwc::::res://assets/New folder (3)/police_siren_0.png<>uid://bgloymaa1ukuq::::res://assets/New folder (3)/police_siren_1.png
-siren.wav::AudioStreamWAV::5199233419501806197::1720437230::1720436276::1::::<><>::
-::res://assets/New Folder(1)/::1720481089
+siren.tscn::PackedScene::2380001874205734778::1721620210::0::1::::<><>::res://assets/siren/siren.gd<>uid://pe5bwyv10nwc::::res://assets/siren/police_siren_0.png<>uid://bgloymaa1ukuq::::res://assets/siren/police_siren_1.png
+siren.wav::AudioStreamWAV::5199233419501806197::1720437230::1721620258::1::::<><>::
 ::res://assets/terraian1/::1714656789
 color.png::CompressedTexture2D::5127526915246634745::1714656713::1714656788::1::::<><>::
 data.hterrain::Resource::-1::1714656713::0::1::::<><>::
@@ -1337,12 +1370,10 @@ roll1.ogg::AudioStreamOggVorbis::795742387260265311::1661167334::1716861298::1::
 roll2.ogg::AudioStreamOggVorbis::5486615493107108552::1661167334::1716861298::1::::<><>::
 tyres.gd::GDScript::-1::1713612440::0::1::::<>Node3D<>::
 tyres.tscn::PackedScene::5823593044494772027::1716861294::0::1::::<><>::res://audio/tyre_sounds/tyres.gd<>uid://dsugmmgt1i6k3::::res://audio/tyre_sounds/peel0.ogg<>uid://q780x4qnvwc2::::res://audio/tyre_sounds/roll0.ogg<>uid://llp04s17ks1t::::res://audio/tyre_sounds/roll1.ogg<>uid://cc4odl5kd008a::::res://audio/tyre_sounds/peel1.ogg<>uid://ckf00xo2jkg8o::::res://audio/tyre_sounds/roll2.ogg<>uid://b1iyklc5unpf7::::res://audio/tyre_sounds/peel2.ogg
-::res://cars/::1720483996
-::res://cars/930/::1720491720
+::res://cars/::1721320005
+::res://cars/930/::1721620503
 930 rev.png::CompressedTexture2D::8794488763432959971::1717644086::1717644345::1::::<><>::
-930.tscn::PackedScene::2819531176259244154::1720480422::0::1::::<><>::uid://q0vk7kw4qrpt::::res://cars/930/Porsche 930_Image_2.jpg<>res://cars/R32 GTR/player_vehicle.gd<>uid://ce1cxghh8rast::::res://cars/R32 GTR/default curve.tres<>uid://c5bs014ipa3ss::::res://cars/930/Porsche 930_Image_0.png<>uid://5w7j414pm0i7::::res://cars/930/Porsche 930_Image_1.png<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>uid://de3h8fb3k1jsh::::res://cars/930/paint/Yoshida Special Purple.tres<>res://shaders/rain.gdshader<>res://cars/[COMMON]/camera_1.gd<>uid://bcbgx70khyaph::::res://cars/[COMMON]/brake_lights.tres<>res://cars/[COMMON]/trail_effect.gd<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>uid://drn4wjyuuotva::::res://cars/[COMMON]/glass.tres<>res://audio/engine_sound/l6genericrasp0/engine.tscn<>uid://j8gsfaro441h::::res://cars/[COMMON]/clear glass.tres<>uid://dxkd7ep71xh20::::res://cars/930/930 rev.png<>uid://ci2ayqgdeqb38::::res://digits/0.png<>res://cars/R32 GTR/gear_ui.gd<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>res://cars/R32 GTR/tacho_needle_ui.gd<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>res://cars/R32 GTR/speedo_needle_ui.gd<>res://cars/R32 GTR/speedo_ui.gd<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav<>uid://bvchub64t05x8::::res://audio/mechanical_sounds/other_sounds.tscn
-glitch.gdshader::Shader::-1::1720491720::0::1::::<><>::
-glow outline.gdshader::Shader::-1::1720491720::0::1::::<><>::
+930.tscn::PackedScene::2819531176259244154::1721620754::0::1::::<><>::uid://q0vk7kw4qrpt::::res://cars/930/Porsche 930_Image_2.jpg<>res://scripts/player_vehicle.gd<>uid://ce1cxghh8rast::::res://cars/R32 GTR/default curve.tres<>uid://c5bs014ipa3ss::::res://cars/930/Porsche 930_Image_0.png<>uid://5w7j414pm0i7::::res://cars/930/Porsche 930_Image_1.png<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>uid://de3h8fb3k1jsh::::res://cars/930/paint/Yoshida Special Purple.tres<>res://shaders/rain.gdshader<>res://cars/[COMMON]/camera_1.gd<>uid://bcbgx70khyaph::::res://cars/[COMMON]/brake_lights.tres<>res://cars/[COMMON]/trail_effect.gd<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>uid://drn4wjyuuotva::::res://cars/[COMMON]/glass.tres<>res://audio/engine_sound/l6genericrasp0/engine.tscn<>uid://j8gsfaro441h::::res://cars/[COMMON]/clear glass.tres<>uid://dxkd7ep71xh20::::res://cars/930/930 rev.png<>uid://ci2ayqgdeqb38::::res://assets/digits/0.png<>res://cars/R32 GTR/gear_ui.gd<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>res://scripts/tacho_needle_ui.gd<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>res://scripts/speedo_needle_ui.gd<>res://scripts/speedo_ui.gd<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav<>uid://bvchub64t05x8::::res://audio/mechanical_sounds/other_sounds.tscn
 node_3d.tscn::PackedScene::5702149449329759520::1719992678::0::1::::<><>::uid://bgf2jcd4ojg71::::res://cars/930/930.tscn<>uid://dh6ykun8bv60u::::res://sky/day_sky.tres
 Porsche 930.glb::PackedScene::1705071112350121387::1715411830::1715413366::1::::<><>::uid://q0vk7kw4qrpt::::res://cars/930/Porsche 930_Image_2.jpg<>uid://dbc5rcc1d0eal::::res://cars/930/Porsche 930_Image_3.png<>uid://cpxl58vud6c2c::::res://cars/930/Porsche 930_Image_4.png<>uid://c5bs014ipa3ss::::res://cars/930/Porsche 930_Image_0.png<>uid://5w7j414pm0i7::::res://cars/930/Porsche 930_Image_1.png
 Porsche 930_Image_0.png::CompressedTexture2D::6881710015788645398::1715413363::1715413366::1::::<><>::
@@ -1350,10 +1381,8 @@ Porsche 930_Image_1.png::CompressedTexture2D::2153042200324199684::1715413363::1
 Porsche 930_Image_2.jpg::CompressedTexture2D::1175925554081388133::1715413362::1715413366::1::::<><>::
 Porsche 930_Image_3.png::CompressedTexture2D::7235431627827458643::1715413362::1715413366::1::::<><>::
 Porsche 930_Image_4.png::CompressedTexture2D::5873877937663027336::1715413362::1715413366::1::::<><>::
-TRAFFIC.tscn::PackedScene::723811601163250264::1720480420::0::1::::<><>::res://cars/930/traffic_vehicle.gd<>res://cars/[COMMON]/camera_1.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader<>res://cars/[COMMON]/trail_effect.gd<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>res://audio/engine_sound/l6genericrasp0/engine.tscn<>uid://de3h8fb3k1jsh::::res://cars/930/paint/Yoshida Special Purple.tres<>uid://j8gsfaro441h::::res://cars/[COMMON]/clear glass.tres<>uid://c5bs014ipa3ss::::res://cars/930/Porsche 930_Image_0.png<>uid://5w7j414pm0i7::::res://cars/930/Porsche 930_Image_1.png<>uid://q0vk7kw4qrpt::::res://cars/930/Porsche 930_Image_2.jpg<>uid://drn4wjyuuotva::::res://cars/[COMMON]/glass.tres<>uid://dxkd7ep71xh20::::res://cars/930/930 rev.png<>uid://ci2ayqgdeqb38::::res://digits/0.png<>res://cars/R32 GTR/gear_ui.gd<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>res://cars/R32 GTR/tacho_needle_ui.gd<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>res://cars/R32 GTR/speedo_needle_ui.gd<>res://cars/R32 GTR/speedo_ui.gd<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav
-traffic_vehicle.gd::GDScript::-1::1720080073::0::1::::TrafficVehicle<>VehicleBody3D<>::
-::res://cars/930/paint/::1720480416
-Yoshida Special Purple.tres::StandardMaterial3D::7498304218341476543::1720480416::0::1::::<><>::
+::res://cars/930/paint/::1721620392
+Yoshida Special Purple.tres::StandardMaterial3D::7498304218341476543::1721620392::0::1::::<><>::
 ::res://cars/CANTACH/::1717765379
 CANTACH.png::CompressedTexture2D::6376422510585350466::1698644090::1711288696::1::::<><>::
 CANTOUACH.glb::PackedScene::7042955564795502768::1698644090::1711288700::1::::<><>::
@@ -1368,45 +1397,46 @@ metal_0062_normal_opengl_1k.png::CompressedTexture2D::4985603516309880444::16986
 metal_0062_preview.jpg::CompressedTexture2D::1333328922130972719::1698644090::1711288697::1::::<><>::
 metal_0062_roughness_1k.jpg::CompressedTexture2D::5733750950021930246::1698644090::1711288697::1::::<><>::
 new_standard_material_3d.tres::StandardMaterial3D::1697498813324093433::1711288689::0::1::::<><>::uid://dim1ungxk5a72::::res://cars/CANTACH/metal_0062_height_1k.png
-::res://cars/Cybercar/::1720488406
-Cybercar.glb::PackedScene::6384571618882825226::1720483976::1720488406::1::::<><>::
-::res://cars/DeLorean/::1720481142
-untitled.glb::PackedScene::2753771049821254909::1720481102::1720481141::0::::<><>::
-untitled_Image_0.jpg::CompressedTexture2D::2348969532256713112::1720481129::1720481142::1::::<><>::
-untitled_Image_1.png::CompressedTexture2D::5045115084353800807::1720481130::1720481142::1::::<><>::
-untitled_Image_2.png::CompressedTexture2D::697742613428556851::1720481129::1720481142::1::::<><>::
-untitled_Image_3.jpg::CompressedTexture2D::8076663099045399051::1720481131::1720481142::1::::<><>::
-untitled_Image_4.png::CompressedTexture2D::5224285781277037678::1720481131::1720481142::1::::<><>::
-untitled_Image_5.jpg::CompressedTexture2D::4403074077968987699::1720481130::1720481142::1::::<><>::
-untitled_Image_6.png::CompressedTexture2D::6199937967319111304::1720481130::1720481142::1::::<><>::
-untitled_Image_7.jpg::CompressedTexture2D::8193722410356397585::1720481139::1720481142::1::::<><>::
-untitled_Image_8.png::CompressedTexture2D::2998106200060765830::1720481139::1720481142::1::::<><>::
-untitled_Image_9.png::CompressedTexture2D::1881588467180437183::1720481138::1720481142::1::::<><>::
-untitled_Image_10.jpg::CompressedTexture2D::8892863438884756482::1720481133::1720481142::1::::<><>::
-untitled_Image_11.png::CompressedTexture2D::2844389006161113797::1720481134::1720481142::1::::<><>::
-untitled_Image_12.png::CompressedTexture2D::7058275083702365506::1720481133::1720481142::1::::<><>::
-untitled_Image_13.jpg::CompressedTexture2D::2064079608559116332::1720481135::1720481142::1::::<><>::
-untitled_Image_14.png::CompressedTexture2D::1446927665555971786::1720481135::1720481142::1::::<><>::
-untitled_Image_15.jpg::CompressedTexture2D::6194692305950571781::1720481134::1720481142::1::::<><>::
-untitled_Image_16.png::CompressedTexture2D::7217339245471276287::1720481134::1720481142::1::::<><>::
-untitled_Image_17.png::CompressedTexture2D::1057309105251540::1720481132::1720481142::1::::<><>::
-untitled_Image_18.png::CompressedTexture2D::3214426315421408261::1720481132::1720481142::1::::<><>::
-untitled_Image_19.png::CompressedTexture2D::8824310161654191299::1720481132::1720481142::1::::<><>::
-untitled_Image_20.jpg::CompressedTexture2D::3095298686563303120::1720481137::1720481142::1::::<><>::
-untitled_Image_21.png::CompressedTexture2D::4157360534945545358::1720481138::1720481142::1::::<><>::
-untitled_Image_22.png::CompressedTexture2D::6037657290558942435::1720481137::1720481142::1::::<><>::
-untitled_Image_23.jpg::CompressedTexture2D::7581776057318453003::1720481136::1720481142::1::::<><>::
-untitled_Image_24.png::CompressedTexture2D::1411102245009849912::1720481136::1720481142::1::::<><>::
-untitled_Image_25.png::CompressedTexture2D::5439717924997685385::1720481136::1720481142::1::::<><>::
-untitled_Image_26.jpg::CompressedTexture2D::1332742789967621924::1720481138::1720481142::1::::<><>::
+::res://cars/CYBERCAR/::1721620400
+Cybercar.glb::PackedScene::6384571618882825226::1720483976::1720494384::1::::<><>::
+Cybercar.tscn::PackedScene::5129733510962330319::1721620400::0::1::::<><>::res://scripts/police_vehicle.gd<>uid://bcbgx70khyaph::::res://cars/[COMMON]/brake_lights.tres<>uid://855jvk0t2any::::res://assets/siren/siren.tscn
+::res://cars/DELOREAN/::1720494403
+untitled.glb::PackedScene::2753771049821254909::1720481102::1720494403::1::::<><>::uid://8p4gj4shkw85::::res://cars/DELOREAN/untitled_Image_0.jpg<>uid://cd45kqo7gxeyp::::res://cars/DELOREAN/untitled_Image_1.png<>uid://j68ypbyhn0qx::::res://cars/DELOREAN/untitled_Image_2.png<>uid://dncnpxga7jswp::::res://cars/DELOREAN/untitled_Image_3.jpg<>uid://cgoxhuoapnr7s::::res://cars/DELOREAN/untitled_Image_4.png<>uid://b3y48sx5h6ol4::::res://cars/DELOREAN/untitled_Image_5.jpg<>uid://culkcp2rwjco3::::res://cars/DELOREAN/untitled_Image_6.png<>uid://rocjduo02k::::res://cars/DELOREAN/untitled_Image_17.png<>uid://bl2deqlsjcuxh::::res://cars/DELOREAN/untitled_Image_18.png<>uid://dxytdmtunwaad::::res://cars/DELOREAN/untitled_Image_19.png<>uid://dyx1fq1siuo4q::::res://cars/DELOREAN/untitled_Image_10.jpg<>uid://bgr3w3df6publ::::res://cars/DELOREAN/untitled_Image_11.png<>uid://c7tc024r2or1k::::res://cars/DELOREAN/untitled_Image_12.png<>uid://4n4dbtes1fom::::res://cars/DELOREAN/untitled_Image_13.jpg<>uid://uu5xmp13ibcc::::res://cars/DELOREAN/untitled_Image_14.png<>uid://cui0xa4twg30t::::res://cars/DELOREAN/untitled_Image_15.jpg<>uid://da3er1qkylo6r::::res://cars/DELOREAN/untitled_Image_16.png<>uid://dgaw0kak05x8n::::res://cars/DELOREAN/untitled_Image_23.jpg<>uid://udswa4s0s7ii::::res://cars/DELOREAN/untitled_Image_24.png<>uid://cjrbmhsxlxbjl::::res://cars/DELOREAN/untitled_Image_25.png<>uid://bkdnd8oa6t1km::::res://cars/DELOREAN/untitled_Image_20.jpg<>uid://b0h4edos6uf6m::::res://cars/DELOREAN/untitled_Image_21.png<>uid://csaxllqoi2efr::::res://cars/DELOREAN/untitled_Image_22.png<>uid://s8ucxmm163me::::res://cars/DELOREAN/untitled_Image_26.jpg<>uid://do0dn8dgml5ab::::res://cars/DELOREAN/untitled_Image_7.jpg<>uid://biykmu8f38gre::::res://cars/DELOREAN/untitled_Image_8.png<>uid://12pqte8l2e5l::::res://cars/DELOREAN/untitled_Image_9.png
+untitled_Image_0.jpg::CompressedTexture2D::2348969532256713112::1720481129::1720494400::1::::<><>::
+untitled_Image_1.png::CompressedTexture2D::5045115084353800807::1720481130::1720494400::1::::<><>::
+untitled_Image_2.png::CompressedTexture2D::697742613428556851::1720481129::1720494400::1::::<><>::
+untitled_Image_3.jpg::CompressedTexture2D::8076663099045399051::1720481131::1720494400::1::::<><>::
+untitled_Image_4.png::CompressedTexture2D::5224285781277037678::1720481131::1720494400::1::::<><>::
+untitled_Image_5.jpg::CompressedTexture2D::4403074077968987699::1720481130::1720494400::1::::<><>::
+untitled_Image_6.png::CompressedTexture2D::6199937967319111304::1720481130::1720494400::1::::<><>::
+untitled_Image_7.jpg::CompressedTexture2D::8193722410356397585::1720481139::1720494400::1::::<><>::
+untitled_Image_8.png::CompressedTexture2D::2998106200060765830::1720481139::1720494400::1::::<><>::
+untitled_Image_9.png::CompressedTexture2D::1881588467180437183::1720481138::1720494400::1::::<><>::
+untitled_Image_10.jpg::CompressedTexture2D::8892863438884756482::1720481133::1720494400::1::::<><>::
+untitled_Image_11.png::CompressedTexture2D::2844389006161113797::1720481134::1720494400::1::::<><>::
+untitled_Image_12.png::CompressedTexture2D::7058275083702365506::1720481133::1720494400::1::::<><>::
+untitled_Image_13.jpg::CompressedTexture2D::2064079608559116332::1720481135::1720494400::1::::<><>::
+untitled_Image_14.png::CompressedTexture2D::1446927665555971786::1720481135::1720494400::1::::<><>::
+untitled_Image_15.jpg::CompressedTexture2D::6194692305950571781::1720481134::1720494400::1::::<><>::
+untitled_Image_16.png::CompressedTexture2D::7217339245471276287::1720481134::1720494400::1::::<><>::
+untitled_Image_17.png::CompressedTexture2D::1057309105251540::1720481132::1720494400::1::::<><>::
+untitled_Image_18.png::CompressedTexture2D::3214426315421408261::1720481132::1720494400::1::::<><>::
+untitled_Image_19.png::CompressedTexture2D::8824310161654191299::1720481132::1720494400::1::::<><>::
+untitled_Image_20.jpg::CompressedTexture2D::3095298686563303120::1720481137::1720494400::1::::<><>::
+untitled_Image_21.png::CompressedTexture2D::4157360534945545358::1720481138::1720494401::1::::<><>::
+untitled_Image_22.png::CompressedTexture2D::6037657290558942435::1720481137::1720494401::1::::<><>::
+untitled_Image_23.jpg::CompressedTexture2D::7581776057318453003::1720481136::1720494401::1::::<><>::
+untitled_Image_24.png::CompressedTexture2D::1411102245009849912::1720481136::1720494401::1::::<><>::
+untitled_Image_25.png::CompressedTexture2D::5439717924997685385::1720481136::1720494401::1::::<><>::
+untitled_Image_26.jpg::CompressedTexture2D::1332742789967621924::1720481138::1720494401::1::::<><>::
 ::res://cars/IMPREZA/::1716263427
 ::res://cars/M3 E30/::1716263441
 ::res://cars/NSX/::1717555977
-::res://cars/R32 GTR/::1720480420
-brake disk.tres::StandardMaterial3D::4500387494613823::1720480416::0::1::::<><>::
+::res://cars/R32 GTR/::1721620533
+brake disk.tres::StandardMaterial3D::4500387494613823::1721620392::0::1::::<><>::
 default curve.tres::Curve::5107433397105778991::1717753699::0::1::::<><>::
 EurostileNextLTProBold (Linotype) [2012].otf::FontFile::5822670444467815509::1198026504::1715653052::1::::<><>::
-gear_ui.gd::GDScript::-1::1715179405::0::1::::<>Sprite2D<>::
+gear_ui.gd::GDScript::-1::1721620533::0::1::::<>Sprite2D<>::
 gtr logo.webp::CompressedTexture2D::7818793585619970421::1714483741::1716253673::1::::<><>::
 hot brake disk.tres::StandardMaterial3D::5713706396353394212::1717755153::0::1::::<><>::
 NEEDLE2.png::CompressedTexture2D::8774706750912976489::1715178784::1715653052::1::::<><>::
@@ -1419,13 +1449,9 @@ Nissan Skyline GT-R R32_Image_1.png::CompressedTexture2D::2611571438923865964::1
 Nissan Skyline GT-R R32_Image_2.png::CompressedTexture2D::5286492589072158819::1715069907::1715069911::1::::<><>::
 Nissan Skyline GT-R R32_Image_3.png::CompressedTexture2D::4329411050697677677::1715069907::1715069911::1::::<><>::
 Nissan Skyline GT-R R32_Image_4.png::CompressedTexture2D::3037932667421425885::1715069906::1715069911::1::::<><>::
-player_vehicle.gd::GDScript::-1::1720002381::0::1::::PlayerVehicle<>VehicleBody3D<>::
-R32 GTR.tscn::PackedScene::835834142487317595::1720480420::0::1::::<><>::res://cars/R32 GTR/player_vehicle.gd<>uid://ce1cxghh8rast::::res://cars/R32 GTR/default curve.tres<>uid://bjjukpdui11sb::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_4.png<>uid://cgeds7r238f::::res://cars/R32 GTR/brake disk.tres<>uid://qnrugbojpopf::::res://cars/R32 GTR/rev.png<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>res://cars/R32 GTR/tacho_needle_ui.gd<>uid://ci2ayqgdeqb38::::res://digits/0.png<>res://cars/R32 GTR/gear_ui.gd<>res://cars/R32 GTR/speedo_ui.gd<>uid://843j1lg4seh0::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_0.jpg<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>res://cars/[COMMON]/camera_1.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader<>uid://drn4wjyuuotva::::res://cars/[COMMON]/glass.tres<>uid://j8gsfaro441h::::res://cars/[COMMON]/clear glass.tres<>uid://bdhcg2iru7jv5::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_1.png<>uid://bvchub64t05x8::::res://audio/mechanical_sounds/other_sounds.tscn<>uid://beda61k7ekh7u::::res://audio/default_engine_sound/engine_sound.tscn<>uid://co78yx7q0at76::::res://audio/tyre_sounds/tyres.tscn<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav<>res://cars/[COMMON]/trail_effect.gd<>res://cars/930/glitch.gdshader<>uid://4wcvv4svsctu::::res://addons/freecam.tscn
+R32 GTR.tscn::PackedScene::835834142487317595::1721620752::0::1::::<><>::res://scripts/player_vehicle.gd<>uid://ce1cxghh8rast::::res://cars/R32 GTR/default curve.tres<>uid://bjjukpdui11sb::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_4.png<>uid://cgeds7r238f::::res://cars/R32 GTR/brake disk.tres<>uid://qnrugbojpopf::::res://cars/R32 GTR/rev.png<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>res://scripts/tacho_needle_ui.gd<>uid://ci2ayqgdeqb38::::res://assets/digits/0.png<>res://cars/R32 GTR/gear_ui.gd<>res://scripts/speedo_ui.gd<>uid://843j1lg4seh0::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_0.jpg<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>res://cars/[COMMON]/camera_1.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader<>uid://drn4wjyuuotva::::res://cars/[COMMON]/glass.tres<>uid://j8gsfaro441h::::res://cars/[COMMON]/clear glass.tres<>uid://bdhcg2iru7jv5::::res://cars/R32 GTR/Nissan Skyline GT-R R32_Image_1.png<>uid://bvchub64t05x8::::res://audio/mechanical_sounds/other_sounds.tscn<>uid://beda61k7ekh7u::::res://audio/default_engine_sound/engine_sound.tscn<>uid://co78yx7q0at76::::res://audio/tyre_sounds/tyres.tscn<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav<>res://cars/[COMMON]/trail_effect.gd<>res://shaders/glitch.gdshader<>res://shaders/vhs2.gdshader<>uid://4wcvv4svsctu::::res://addons/freecam.tscn<>res://shaders/vhs3.gdshader
 rev.png::CompressedTexture2D::1150926631100057539::1711553573::1716253489::1::::<><>::
 speedo.png::CompressedTexture2D::8537981828979865611::1711553791::1715653052::1::::<><>::
-speedo_needle_ui.gd::GDScript::-1::1711782828::0::1::::<>Sprite2D<>::
-speedo_ui.gd::GDScript::-1::1717644661::0::1::::<>Control<>::
-tacho_needle_ui.gd::GDScript::-1::1717645960::0::1::::<>Sprite2D<>::
 ::res://cars/R32 GTR/paint/::1717727752
 Black Pearl Metallic.tres::StandardMaterial3D::6956201695839373053::1717566453::0::1::::<><>::
 Crystal White.tres::StandardMaterial3D::8372502572436533935::1717727752::0::1::::<><>::
@@ -1445,34 +1471,24 @@ wire w wheel_Image_3.png::CompressedTexture2D::1513191500497663763::1714814194::
 wire w wheel_Image_4.png::CompressedTexture2D::937518290707158654::1714814189::1715653052::1::::<><>::
 wire.obj::Mesh::2070392755962427161::1711289271::1715653056::1::::<><>::
 ::res://cars/RX-7/::1715827810
-::res://cars/SUPRA/::1718004763
-PLAYER.tscn::PackedScene::7913235903543709232::1718004763::0::1::::<><>::res://cars/R32 GTR/player_vehicle.gd<>uid://dnjnqntqr6i0a::::res://cars/SUPRA/Toyota Supra Turbo A80_Image_3.png<>uid://qy7ciqmu7vsr::::res://cars/SUPRA/Toyota Supra Turbo A80_Image_2.png<>uid://ck8wh8l4pkb5h::::res://cars/SUPRA/Toyota Supra Turbo A80_Image_4.png<>uid://di0s5i7pchjyj::::res://cars/SUPRA/Toyota Supra Turbo A80_Image_0.png<>uid://bdguhsm6pkp52::::res://cars/SUPRA/Toyota Supra Turbo A80_Image_1.png<>res://cars/[COMMON]/camera_1.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader<>res://cars/[COMMON]/trail_effect.gd<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>uid://dxkd7ep71xh20::::res://cars/930/930 rev.png<>uid://ci2ayqgdeqb38::::res://digits/0.png<>res://cars/R32 GTR/gear_ui.gd<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>res://cars/R32 GTR/tacho_needle_ui.gd<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>res://cars/R32 GTR/speedo_needle_ui.gd<>res://cars/R32 GTR/speedo_ui.gd<>res://cars/930/glitch.gdshader<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav<>res://audio/engine_sound/2jz/engine.tscn
+::res://cars/SUPRA/::1721620503
+PLAYER.tscn::PackedScene::7913235903543709232::1721620503::0::1::::<><>::res://scripts/player_vehicle.gd<>uid://dnjnqntqr6i0a::::res://cars/SUPRA/Toyota Supra Turbo A80_Image_3.png<>uid://qy7ciqmu7vsr::::res://cars/SUPRA/Toyota Supra Turbo A80_Image_2.png<>uid://ck8wh8l4pkb5h::::res://cars/SUPRA/Toyota Supra Turbo A80_Image_4.png<>uid://di0s5i7pchjyj::::res://cars/SUPRA/Toyota Supra Turbo A80_Image_0.png<>uid://bdguhsm6pkp52::::res://cars/SUPRA/Toyota Supra Turbo A80_Image_1.png<>res://cars/[COMMON]/camera_1.gd<>uid://fv5025aoykty::::res://assets/motion_blur/blur_material.tres<>res://assets/motion_blur/motion_blur.gd<>res://shaders/rain.gdshader<>res://cars/[COMMON]/trail_effect.gd<>uid://bt0b4qeo5p203::::res://cars/[COMMON]/tyre smoke.tscn<>uid://dxkd7ep71xh20::::res://cars/930/930 rev.png<>uid://ci2ayqgdeqb38::::res://assets/digits/0.png<>res://cars/R32 GTR/gear_ui.gd<>uid://dxasex0kbq0o0::::res://cars/R32 GTR/NEEDLE2.png<>res://scripts/tacho_needle_ui.gd<>uid://dtv4kwgjqo5s6::::res://cars/R32 GTR/speedo.png<>uid://b1xc8vr5id7ua::::res://cars/R32 GTR/NEEDLE.png<>res://scripts/speedo_needle_ui.gd<>res://scripts/speedo_ui.gd<>res://shaders/glitch.gdshader<>uid://du57sc3m6gvp0::::res://audio/impact_sounds/impact_1.wav<>uid://cikuvqpak7poo::::res://audio/impact_sounds/impact_2.wav<>uid://d13npw5ja18om::::res://audio/impact_sounds/impact_3.wav<>uid://bhiv5pm5usxqb::::res://audio/impact_sounds/impact_4.wav<>res://audio/engine_sound/2jz/engine.tscn
 Toyota Supra Turbo A80.glb::PackedScene::2946450473485466439::1717766237::1717766298::1::::<><>::
 Toyota Supra Turbo A80_Image_0.png::CompressedTexture2D::7773529194027032725::1717766297::1717766299::1::::<><>::
 Toyota Supra Turbo A80_Image_1.png::CompressedTexture2D::2610601286931130611::1717766296::1717766299::1::::<><>::
 Toyota Supra Turbo A80_Image_2.png::CompressedTexture2D::1174513525139195657::1717766294::1717766299::1::::<><>::
 Toyota Supra Turbo A80_Image_3.png::CompressedTexture2D::8091115024674453306::1717766295::1717766299::1::::<><>::
 Toyota Supra Turbo A80_Image_4.png::CompressedTexture2D::5544204295650165927::1717766295::1717766299::1::::<><>::
-::res://cars/[COMMON]/::1720480416
-brake_lights.tres::StandardMaterial3D::2529269843771604405::1720480416::0::1::::<><>::
+::res://cars/[COMMON]/::1721620392
+brake_lights.tres::StandardMaterial3D::2529269843771604405::1721620392::0::1::::<><>::
 Cam2.gd::GDScript::-1::1716253556::0::1::::<>Node3D<>::
-camera_1.gd::GDScript::-1::1720079779::0::1::::<>Node3D<>::
-clear glass.tres::StandardMaterial3D::700220768282186839::1720480416::0::1::::<><>::
+camera_1.gd::GDScript::-1::1721400050::0::1::::<>Node3D<>::
+clear glass.tres::StandardMaterial3D::700220768282186839::1721620392::0::1::::<><>::
 glass.tres::StandardMaterial3D::8381109894706231366::1719754839::0::1::::<><>::
+NEEDLE.png::CompressedTexture2D::2022488543352490260::1711635928::1720494320::1::::<><>::
 smoke.png::CompressedTexture2D::1233625906357192280::1704981772::1711288696::1::::<><>::
 trail_effect.gd::GDScript::-1::1705585038::0::1::::Trail3D<>MeshInstance3D<>::
-tyre smoke.tscn::PackedScene::3771731508912846834::1715683268::0::1::::<><>::uid://rttvybl75a3q::::res://cars/[COMMON]/smoke.png
-::res://digits/::1713715309
-0.png::CompressedTexture2D::5390134024688504061::1713714224::1713714853::1::::<><>::
-1.png::CompressedTexture2D::7315546543041201424::1713714370::1713714853::1::::<><>::
-2.png::CompressedTexture2D::2865015767353041815::1713714782::1713714853::1::::<><>::
-3.png::CompressedTexture2D::5674094237704398259::1713714871::1713714983::1::::<><>::
-4.png::CompressedTexture2D::6395337841664020705::1713714909::1713714983::1::::<><>::
-5.png::CompressedTexture2D::3370865555135267482::1713714934::1713714983::1::::<><>::
-6.png::CompressedTexture2D::8073744058944511704::1713714946::1713714983::1::::<><>::
-7.png::CompressedTexture2D::618727527843261731::1713715278::1713715309::1::::<><>::
-8.png::CompressedTexture2D::8261468040472677439::1713715299::1713715309::1::::<><>::
-9.png::CompressedTexture2D::6491602106332308184::1713715296::1713715309::1::::<><>::
+tyre smoke.tscn::PackedScene::3771731508912846834::1721527749::0::1::::<><>::uid://rttvybl75a3q::::res://cars/[COMMON]/smoke.png
 ::res://game_settings/::1711852347
 ::res://game_settings/components/::1711466645
 ::res://game_settings/components/arrow_list/::1711466645
@@ -1516,11 +1532,11 @@ reset_btn.tscn::PackedScene::-1::1711466645::0::1::::<><>::res://game_settings/c
 binary_selection.gd::GDScript::-1::1711466645::0::1::::<>ggsUIComponent<>::
 ::res://game_settings/settings/::1711466798
 nonempty.txt::TextFile::-1::1711466645::0::1::::<><>::
-::res://game_settings/settings/display/::1720480416
+::res://game_settings/settings/display/::1721620392
 audio.tres::Resource::6486032155478775740::1712744439::0::1::::<><>::res://game_settings/templates/audio/audio_volume.gd
 brake.tres::Resource/Resource::6902663252672967987::1712753464::0::1::::<><>::res://game_settings/templates/input.gd
-fullscreen.tres::Resource::7789446967331889962::1720480416::0::1::::<><>::res://game_settings/templates/display/display_fullscreen.gd
-throttle.tres::Resource/ggsInputSetting::1019476184712720192::1720480416::0::1::::<><>::res://game_settings/templates/input.gd
+fullscreen.tres::Resource::7789446967331889962::1721620392::0::1::::<><>::res://game_settings/templates/display/display_fullscreen.gd
+throttle.tres::Resource/ggsInputSetting::1019476184712720192::1721620392::0::1::::<><>::res://game_settings/templates/input.gd
 ::res://game_settings/templates/::1711466645
 input.gd::GDScript::-1::1711466645::0::1::::ggsInputSetting<>ggsSetting<>::
 ::res://game_settings/templates/audio/::1711466645
@@ -1530,44 +1546,56 @@ audio_volume.gd::GDScript::-1::1711466645::0::1::::<>ggsSetting<>::
 display_fullscreen.gd::GDScript::-1::1711466645::0::1::::<>ggsSetting<>::
 display_scale.gd::GDScript::-1::1711466645::0::1::::<>ggsSetting<>::
 display_size.gd::GDScript::-1::1711466645::0::1::::<>ggsSetting<>::
-::res://lib/::1711900962
-::res://lib/godot-steering-ai-framework-master/::1711197057
+::res://guardrail/::1721620000
+guardrail1.glb::PackedScene::4814763367736302922::1721619613::1721619982::1::::<><>::uid://c0ilgxm1hfb1t::::res://guardrail/guardrail1_Fence01_SDR_Base_Color.png<>uid://ctp2pm45ubuus::::res://guardrail/guardrail1_Fence01_SDR_Roughness.png<>uid://bm4khrpt5x0t8::::res://guardrail/guardrail1_Fence01_SDR_Normal_DirectX.png
+guardrail1_Fence01_SDR_Base_Color.png::CompressedTexture2D::6544757309818930659::1721619965::1721619999::1::::<><>::
+guardrail1_Fence01_SDR_Normal_DirectX.png::CompressedTexture2D::3289174349675537475::1721619956::1721620000::1::::<><>::
+guardrail1_Fence01_SDR_Roughness.png::CompressedTexture2D::6139061885002364370::1721619973::1721619999::1::::<><>::
+::res://lib__/::1711900962
+::res://lib__/godot-steering-ai-framework-master/::1711197057
 CHANGELOG.md::TextFile::-1::1711197057::0::1::::<><>::
 README.md::TextFile::-1::1711197057::0::1::::<><>::
 reference.json::JSON::-1::1711197057::0::1::::<><>::
-::res://lib/godot-steering-ai-framework-master/assets/::1711900995
-banner.svg::CompressedTexture2D::5953531226865406032::1711197057::1711900995::1::::<><>::
-::res://proof of concept/::1720480419
-2deletelater.tscn::PackedScene::7642760929948279068::1718070862::0::1::::<><>::res://addons/road-generator/nodes/road_point.gd
-2deletelaterrp_001.tscn::PackedScene::52582592612803286::1718070879::0::1::::<><>::res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/nodes/road_segment.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_lane.gd
-barrier.gd::GDScript::-1::1720480416::0::1::::<>Path3D<>::
-curve_L.tscn::PackedScene::8973097472616781267::1720480419::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
-curve_R.tscn::PackedScene::622010799606542991::1720480418::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
-deletelater.tscn::PackedScene::2316250048382159070::1718070978::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd<>uid://0qa66q25xp3::::res://proof of concept/2deletelaterrp_001.tscn
+::res://lib__/godot-steering-ai-framework-master/assets/::1721620580
+banner.svg::CompressedTexture2D::5953531226865406032::1711197057::1721620580::1::::<><>::
+::res://road/::1721527810
+curve_L.tscn::PackedScene::8973097472616781267::1720677442::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
+curve_R.tscn::PackedScene::622010799606542991::1720677442::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
 GAME.gd::GDScript::-1::1718769000::0::1::::<>Node3D<>::
-GAME.tscn::PackedScene::2107824207869456801::1720480417::0::1::::<><>::res://proof of concept/road_god.gd<>res://proof of concept/GAME.gd<>res://addons/road-generator/nodes/road_manager.gd<>res://sky/sky updated/dynamic_sky.gd<>res://sky/sky updated/sky.gdshader<>uid://b432faq60e5o2::::res://sky/sky updated/stars.png
-long_straight.tscn::PackedScene::6033409895946112572::1720480418::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
-road_god.gd::GDScript::-1::1720258311::0::1::::<>Node3D<>::
-straight.tscn::PackedScene::3729551748838547147::1720480418::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
+GAME.tscn::PackedScene::2107824207869456801::1721527648::0::1::::<><>::res://road/road_god.gd<>res://road/GAME.gd<>res://addons/road-generator/nodes/road_manager.gd<>res://sky/sky updated/dynamic_sky.gd<>res://sky/sky updated/sky.gdshader<>uid://b432faq60e5o2::::res://sky/sky updated/stars.png
+long_straight.tscn::PackedScene::6033409895946112572::1720677442::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
+road_god.gd::GDScript::-1::1721142854::0::1::::<>Node3D<>::
+straight.tscn::PackedScene::3729551748838547147::1720677442::0::1::::<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dd45j1t4k546o::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd
 ::res://saves/::1715005020
-::res://script_templates/::1712158337
-::res://script_templates/AIController/::1712158759
-controller_template.gd::GDScript::-1::1712158759::0::1::::<>_BASE_<>::
-::res://shaders/::1720491720
-canvas_retrowave.gdshader::Shader::-1::1720491720::0::1::::<><>::
-crt.gdshader::Shader::-1::1720491720::0::1::::<><>::
-glass.gdshader::Shader::-1::1720491720::0::1::::<><>::
-grid.gdshader::Shader::-1::1720491720::0::1::::<><>::
-pulse_glow.gdshader::Shader::-1::1720491720::0::1::::<><>::
-rain.gdshader::Shader::-1::1720491720::0::1::::<><>::
-sobel_w_gaussian.gdshader::Shader::-1::1720491720::0::1::::<><>::
-stylized_sky.gdshader::Shader::-1::1720491720::0::1::::<><>::
-ter.gdshader::Shader::-1::1720491720::0::1::::<><>::
-test.gdshader::Shader::-1::1720491720::0::1::::<><>::
-tiles.gdshader::Shader::-1::1720491720::0::1::::<><>::
-vhs.gdshader::Shader::-1::1720491720::0::1::::<><>::
-::res://shaders/cel shader/::1720480416
-diffuse-texture.tres::GradientTexture1D::3862723911531671896::1720480416::0::1::::<><>::
+::res://scripts/::1721620400
+camera_1_archived.gd::GDScript::-1::1717640353::0::1::::<>Node3D<>::
+player_vehicle.gd::GDScript::-1::1721359622::0::1::::PlayerVehicle<>VehicleBody3D<>::
+police_vehicle.gd::GDScript::-1::1721142773::0::1::::PoliceVehicle<>VehicleBody3D<>::
+speedo_needle_ui.gd::GDScript::-1::1711782828::0::1::::<>Sprite2D<>::
+speedo_ui.gd::GDScript::-1::1717644661::0::1::::<>Control<>::
+tacho_needle_ui.gd::GDScript::-1::1717645960::0::1::::<>Sprite2D<>::
+traffic_vehicle.gd::GDScript::-1::1721142954::0::1::::TrafficVehicle<>VehicleBody3D<>::
+traffic_vehicle_police.gd::GDScript::-1::1721102790::0::1::::PoliceVehicleTest<>VehicleBody3D<>::
+::res://shaders/::1721620533
+canvas_retrowave.gdshader::Shader::-1::1721620755::0::1::::<><>::
+crt.gdshader::Shader::-1::1721620754::0::1::::<><>::
+glass.gdshader::Shader::-1::1721620754::0::1::::<><>::
+glitch.gdshader::Shader::-1::1721620755::0::1::::<><>::
+glow outline.gdshader::Shader::-1::1721620755::0::1::::<><>::
+grid.gdshader::Shader::-1::1721620754::0::1::::<><>::
+pulse_glow.gdshader::Shader::-1::1721620754::0::1::::<><>::
+rain.gdshader::Shader::-1::1721620754::0::1::::<><>::
+retro_sun.gdshader::Shader::-1::1721620755::0::1::::<><>::
+sobel_w_gaussian.gdshader::Shader::-1::1721620754::0::1::::<><>::
+stylized_sky.gdshader::Shader::-1::1721620754::0::1::::<><>::
+ter.gdshader::Shader::-1::1721620754::0::1::::<><>::
+test.gdshader::Shader::-1::1721620754::0::1::::<><>::
+tiles.gdshader::Shader::-1::1721620754::0::1::::<><>::
+tubeclock.gdshader::Shader::-1::1721620755::0::1::::<><>::
+vhs2.gdshader::Shader::-1::1721620755::0::1::::<><>::
+vhs3.gdshader::Shader::-1::1721620755::0::1::::<><>::
+::res://shaders/cel shader/::1721620392
+diffuse-texture.tres::GradientTexture1D::3862723911531671896::1721620392::0::1::::<><>::
 ::res://shaders/cel shader/src/::1715778821
 cel-shader-base.gdshader::Shader::-1::1714013697::0::1::::<><>::
 outline.gdshader::Shader::-1::1714013697::0::1::::<><>::
@@ -1590,10 +1618,7 @@ dynamic sky.tscn::PackedScene::3036828501316273272::1720487523::0::1::::<><>::re
 dynamic_sky.gd::GDScript::-1::1717556407::0::1::::<>Node3D<>::
 sky.gdshader::Shader::-1::1704620680::0::1::::<><>::
 stars.png::CompressedTexture2D::4481348040242902527::1704620680::1717555568::1::::<><>::
-::res://textures/::1717751422
-barrier_one_albedo000.png::CompressedTexture2D::1751563892118640616::1717459409::1717459412::1::::<><>::
-barrier_one_normal000.png::CompressedTexture2D::3663113015181560138::1717459409::1717459412::1::::<><>::
-barrier_one_orm000.png::CompressedTexture2D::6484195376112290029::1717459409::1717459412::1::::<><>::
+::res://textures/::1721527819
 Road_albedo000.png::CompressedTexture2D::7645997211114554366::1714737302::1714737308::1::::<><>::
 Road_albedo002.png::CompressedTexture2D::1692332508816340100::1714737303::1714737308::1::::<><>::
 Road_albedo003.png::CompressedTexture2D::4708311677908417984::1714737303::1714737308::1::::<><>::
@@ -1606,7 +1631,7 @@ Road_normal003.png::CompressedTexture2D::8357886643544347603::1714737304::171473
 Road_orm000.png::CompressedTexture2D::9203387021367642999::1714737302::1714737308::1::::<><>::
 Road_orm002.png::CompressedTexture2D::7107503408058088410::1714737303::1714737308::1::::<><>::
 Road_orm003.png::CompressedTexture2D::4161587830401355905::1714737304::1714737308::1::::<><>::
-::res://ui/::1720493189
+::res://ui/::1720494206
 keybind.gd::GDScript::-1::1710672131::0::1::::keybind<>Resource<>::
 keybind_default.tres::Resource/Resource::3890020057303833363::1710678529::0::1::::<><>::res://ui/keybind.gd
 MENU.gd::GDScript::-1::1703328005::0::1::::<>Control<>::
@@ -1615,6 +1640,6 @@ pause.tscn::PackedScene::4603295262435804099::1710679712::0::1::::<><>::
 Save.gd::GDScript::-1::1715005338::0::1::::Save<>Node<>::
 setting.tscn::PackedScene::4739531613516890472::1714664313::0::1::::<><>::uid://cyn5acj2m75oi::::res://game_settings/settings/display/audio.tres<>uid://di8jb230k8yww::::res://game_settings/settings/display/fullscreen.tres<>uid://bobbvhicbn4gy::::res://ui/menu.tres<>uid://cha8xesfthpfk::::res://game_settings/components/switch/switch.tscn<>uid://dm1av7skxvp1j::::res://game_settings/components/input_btn/input_btn.tscn<>uid://or3vheoj0k5e::::res://game_settings/settings/display/throttle.tres<>uid://ds06mwhee8ygm::::res://game_settings/components/slider/slider.tscn<>res://game_settings/templates/input.gd
 title.png::CompressedTexture2D::2362947253103713855::1710070622::1720493193::1::::<><>::
-TITLE.tscn::PackedScene::8020835671024247695::1717727907::0::1::::<><>::uid://bltwnd44064lv::::res://ui/transparnet.png<>uid://bobbvhicbn4gy::::res://ui/menu.tres<>uid://djnqngssttojd::::res://cars/R32 GTR/gtr logo.webp<>uid://rcs2fh05dkoh::::res://assets/emergency parking lot/emergency_parking_lot_0.jpg<>res://ui/Save.gd
-transparnet.png::CompressedTexture2D::3199080333921885415::1710076879::1715575819::1::::<><>::
+TITLE.tscn::PackedScene::8020835671024247695::1720494202::0::1::::<><>::uid://bltwnd44064lv::::res://ui/transparent.png<>uid://bobbvhicbn4gy::::res://ui/menu.tres<>uid://djnqngssttojd::::res://cars/R32 GTR/gtr logo.webp<>uid://rcs2fh05dkoh::::res://assets/emergency parking lot/emergency_parking_lot_0.jpg<>res://ui/Save.gd
+transparent.png::CompressedTexture2D::3199080333921885415::1710076879::1720494206::1::::<><>::
 Untitled.png::Image::8742477201272136942::1710070094::1715575819::1::::<><>::

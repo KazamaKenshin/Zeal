@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bfh7hben5ka2x"
-path="res://.godot/imported/untitled.glb-c5854041f5346f361402d670d2bc05f4.scn"
+path="res://.godot/imported/untitled.glb-321a7595710e8138226c527a6c4535cd.scn"
 
 [deps]
 
-source_file="res://cars/DeLorean/untitled.glb"
-dest_files=["res://.godot/imported/untitled.glb-c5854041f5346f361402d670d2bc05f4.scn"]
+source_file="res://cars/DELOREAN/untitled.glb"
+dest_files=["res://.godot/imported/untitled.glb-321a7595710e8138226c527a6c4535cd.scn"]
 
 [params]
 

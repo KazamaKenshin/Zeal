@@ -1,6 +1,6 @@
 [gd_scene load_steps=30 format=3 uid="uid://dmjl8ylsiybnr"]
 
-[ext_resource type="Texture2D" uid="uid://bltwnd44064lv" path="res://ui/transparnet.png" id="5_iob2k"]
+[ext_resource type="Texture2D" uid="uid://bltwnd44064lv" path="res://ui/transparent.png" id="5_iob2k"]
 [ext_resource type="Theme" uid="uid://bobbvhicbn4gy" path="res://ui/menu.tres" id="7_y2agw"]
 [ext_resource type="Texture2D" uid="uid://djnqngssttojd" path="res://cars/R32 GTR/gtr logo.webp" id="9_h0jk6"]
 [ext_resource type="Texture2D" uid="uid://rcs2fh05dkoh" path="res://assets/emergency parking lot/emergency_parking_lot_0.jpg" id="10_37k17"]

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cw7y7x2h0ku3c"
-path="res://.godot/imported/Cybercar.glb-0bd490f36c7aeec53f9aa02ae97a7378.scn"
+path="res://.godot/imported/Cybercar.glb-02ee0552ae2aff96d297223b4d3f9aa8.scn"
 
 [deps]
 
-source_file="res://cars/Cybercar/Cybercar.glb"
-dest_files=["res://.godot/imported/Cybercar.glb-0bd490f36c7aeec53f9aa02ae97a7378.scn"]
+source_file="res://cars/CYBERCAR/Cybercar.glb"
+dest_files=["res://.godot/imported/Cybercar.glb-02ee0552ae2aff96d297223b4d3f9aa8.scn"]
 
 [params]
 

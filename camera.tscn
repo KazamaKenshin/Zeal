@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://ud3f0l62hu0u"]
 
-[ext_resource type="Script" path="res://cars/[COMMON]/camera_1.gd" id="1_4raaf"]
+[ext_resource type="Script" path="res://scripts/camera_1.gd" id="1_4raaf"]
 [ext_resource type="Material" uid="uid://fv5025aoykty" path="res://assets/motion_blur/blur_material.tres" id="2_km4y1"]
 [ext_resource type="Script" path="res://assets/motion_blur/motion_blur.gd" id="3_72qd6"]
 [ext_resource type="Shader" path="res://shaders/rain.gdshader" id="4_qjoio"]

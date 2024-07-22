@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://addons/road-generator/nodes/road_point.gd" id="7_0vkbh"]
 [ext_resource type="Shader" path="res://sky/sky updated/sky.gdshader" id="7_f7om5"]
 [ext_resource type="Texture2D" uid="uid://b432faq60e5o2" path="res://sky/sky updated/stars.png" id="8_5qr8g"]
-[ext_resource type="PackedScene" uid="uid://bgf2jcd4ojg71" path="res://cars/930/930.tscn" id="8_qpwox"]
+[ext_resource type="PackedScene" uid="uid://cfc47xpkomhk6" path="res://cars/CYBERCAR/Cybercar.tscn" id="8_cghtx"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dd5h7"]
 emission_shape_scale = Vector3(100, 1, 100)
@@ -585,4 +585,6 @@ prior_pt_init = NodePath("../RP_023")
 prior_mag = 16.0
 next_mag = 16.0
 
-[node name="Porsche 930" parent="." instance=ExtResource("8_qpwox")]
+[node name="Cybercar" parent="." instance=ExtResource("8_cghtx")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.004, 0.510841, -13.182)
+center_of_mass = Vector3(0, -0.3, 0)

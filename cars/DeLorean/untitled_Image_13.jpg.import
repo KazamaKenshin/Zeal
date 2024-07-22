@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4n4dbtes1fom"
-path.s3tc="res://.godot/imported/untitled_Image_13.jpg-9de10d9a70c2483dc37d456a9a6563f6.s3tc.ctex"
+path.s3tc="res://.godot/imported/untitled_Image_13.jpg-d869f1a59b2568830a98adbda765a70a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://cars/DeLorean/untitled_Image_13.jpg"
-dest_files=["res://.godot/imported/untitled_Image_13.jpg-9de10d9a70c2483dc37d456a9a6563f6.s3tc.ctex"]
+source_file="res://cars/DELOREAN/untitled_Image_13.jpg"
+dest_files=["res://.godot/imported/untitled_Image_13.jpg-d869f1a59b2568830a98adbda765a70a.s3tc.ctex"]
 
 [params]
 
